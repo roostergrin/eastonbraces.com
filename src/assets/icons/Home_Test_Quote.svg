@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="83px" viewBox="0 0 113 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.469263158 54 0.469263158 54 83 0 83"></polygon>
+        <polygon id="path-3" points="0 0.469263158 54 0.469263158 54 83 0 83"></polygon>
+    </defs>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.677120536">
+        <g id="Home" transform="translate(-730.000000, -2695.000000)">
+            <g id="Group-2-+-Welcome-to-Halvorsen-+-Our-practice-strives-+-Group-5-+-Group-5-+-Group-5-+-Footer-+-Testimonials-+-Facebook-+-Group-12-+-25-Belmont-St.,-Unit-+-We-Have-Temporarily-+-We-have-temporarily-+-165-Belmont-Street,-+-Group-13-Mask" transform="translate(0.000000, 717.000000)">
+                <g id="Testimonials" transform="translate(-110.000000, 1549.000000)">
+                    <g id="Group-7" transform="translate(953.500000, 480.500000) scale(-1, 1) translate(-953.500000, -480.500000) translate(494.000000, 220.000000)">
+                        <g id="Group" transform="translate(460.000000, 209.000000)">
+                            <g id="Group-3">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M27,0.469115789 C12.0887027,0.469115789 0,12.6756421 0,27.7322737 C0,42.7889053 12.0887027,54.9954316 27,54.9954316 C27.4028108,54.9954316 27.4378378,55.0131158 27.7297297,54.9954316 C33.407027,54.6564842 14.0823243,83.4169053 14.5945946,82.9954316 C48.1621622,69.7322737 54,36.2619579 54,27.7322737 C54,12.6756421 41.9112973,0.469115789 27,0.469115789" id="Fill-1" fill="#62BFF2" opacity="0.303125" mask="url(#mask-2)"></path>
+                            </g>
+                            <g id="Group-6" transform="translate(59.000000, 0.000000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Clip-5"></g>
+                                <path d="M27,0.469115789 C12.0887027,0.469115789 0,12.6756421 0,27.7322737 C0,42.7889053 12.0887027,54.9954316 27,54.9954316 C27.4028108,54.9954316 27.4378378,55.0131158 27.7297297,54.9954316 C33.407027,54.6564842 14.0823243,83.4169053 14.5945946,82.9954316 C48.1621622,69.7322737 54,36.2619579 54,27.7322737 C54,12.6756421 41.9112973,0.469115789 27,0.469115789" id="Fill-4" fill="#62BFF2" opacity="0.303125" mask="url(#mask-4)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
