@@ -1,0 +1,55 @@
+// --------------------------------------------------------
+// TODO LIST
+//  1. TODO - make comments more newbie friendly
+//  2. TODO - create example in styleguide page
+//  3. TODO - clear up any todos on grid.sass
+//  4. TODO - break up classes to separate file so grid is only variables
+// --------------------------------------------------------
+
+
+// --------------------------------------------------------
+// initial values
+// --------------------------------------------------------
+
+$width-large: 1330px
+
+// --------------------------------------------------------
+// container
+// --------------------------------------------------------
+
+$width: 1180px
+$gutter: 21px
+$columns: 12
+
+// --------------------------------------------------------
+// NOTE: not used yet finding ways to implement a responsive height structure for larger templating issues
+// --------------------------------------------------------
+
+$rows: 1
+
+// --------------------------------------------------------
+// screen sizes
+// --------------------------------------------------------
+
+$screen-desktop: 2560px
+$screen-laptop-lg: 1440px
+$screen-laptop: 1100px
+$screen-tablet-lg: 1024px
+$screen-tablet: 768px
+$screen-phone-lg: 480px
+$screen-phone: 400px
+
+// --------------------------------------------------------
+// breakpoints
+// NOTE: media breakpoints for the containers ideally set it to two rems higher than your widths these are used to add padding to your containers so they are never touching the edges of the screen
+// --------------------------------------------------------
+
+$max-width: calc(#{$width} + #{$gutter})
+$max-width-large: calc(#{$width-large} + #{$gutter})
+
+
+// --------------------------------------------------------
+// classes
+// --------------------------------------------------------
+
+$columns-large: $columns + 2
