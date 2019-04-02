@@ -2,28 +2,28 @@
 // Fades
 // -------------------------------------
 
-.fade
+@mixin fade($duration)
   &-enter-active,
   &-leave-active
-    transition: opacity .35s ease-in-out
+    transition: opacity $duration ease-in-out
 
   &-enter,
   &-leave-to
     opacity: 0
 
 
-.crossfade
+@mixin crossfade($duration, $delay-leave, $duration-leave)
   backface-visibility: hidden
 
   &-enter-active
     transition-property: opacity
-    transition-duration: .55s
+    transition-duration: $duration
     transition-timing-function: ease-in-out
 
   &-leave-active
-    transition-delay: .1s
+    transition-delay: $delay-leave
     transition-property: opacity
-    transition-duration: .45s
+    transition-duration: $duration-leave
 
   &-enter,
   &-leave-active

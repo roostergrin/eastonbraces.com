@@ -17,3 +17,12 @@
   &--fade
     transform: $after
     opacity: 1
+
+@mixin svg-size ($width, $height)
+  font-size: 0
+  svg
+    width: $width
+    height: $height
+    @supports(display: grid)
+      width: $width
+      height: auto
