@@ -18,7 +18,7 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      navigation: true,
+      navigation: false,
       meta: [
         {
           path: '/#welcome',
@@ -56,22 +56,34 @@ const router = new VueRouter({
         {
           path: '/about-us#doctor',
           name: 'Meet Dr. Halvorsen',
-          anchor: 'doctor'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'doctor',
+          background: null,
+          icon: null
         },
         {
           path: '/about-us#team',
           name: 'Meet the Team',
-          anchor: 'team'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'team',
+          background: null,
+          icon: null
         },
         {
           path: '/about-us#gallery',
-          name: 'Community Involbement Gallery',
-          anchor: 'gallery'
+          name: 'Community Involvement Gallery',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'gallery',
+          background: null,
+          icon: null
         },
         {
           path: '/about-us#map',
           name: 'Map & Direction',
-          anchor: 'map'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'map',
+          background: 'https://d2h72j3eibsl5m.cloudfront.net/Home_MapBG.jpg',
+          icon: 'Location'
         }
       ],
       component: AboutUs
@@ -84,32 +96,50 @@ const router = new VueRouter({
         {
           path: '/treatments#invisalign',
           name: 'Invisalign/Clear Aligners',
-          anchor: 'invisalign'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'invisalign',
+          background: null,
+          icon: null
         },
         {
           path: '/treatments#braces',
           name: 'Braces',
-          anchor: 'braces'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'braces',
+          background: null,
+          icon: null
         },
         {
           path: '/treatments#early',
           name: 'Early Treatment',
-          anchor: 'early'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'early',
+          background: null,
+          icon: null
         },
         {
           path: '/treatments#adult',
           name: 'Adult Treatment',
-          anchor: 'adult'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'adult',
+          background: null,
+          icon: null
         },
         {
           path: '/treatments#life',
           name: 'Life with Braces',
-          anchor: 'life'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'life',
+          background: null,
+          icon: null
         },
         {
           path: '/treatments#faq',
           name: 'FAQ',
-          anchor: 'faq'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'faq',
+          background: null,
+          icon: null
         }
       ],
       component: Treatments
@@ -122,22 +152,34 @@ const router = new VueRouter({
         {
           path: '/new-patients#first',
           name: 'Your First Appointment',
-          anchor: 'first'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'first',
+          background: null,
+          icon: null
         },
         {
           path: '/new-patients#financial',
           name: 'Financial Info',
-          anchor: 'financial'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'financial',
+          background: null,
+          icon: null
         },
         {
           path: '/new-patients#consultation',
           name: 'Schedule a Free Consultation',
-          anchor: 'consultation'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'consultation',
+          background: null,
+          icon: null
         },
         {
           path: '/new-patients#contact',
           name: 'Contact Us',
-          anchor: 'contact'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'contact',
+          background: null,
+          icon: null
         }
       ],
       component: NewPatients
@@ -150,17 +192,26 @@ const router = new VueRouter({
         {
           path: '/halvorsen-difference#apart',
           name: 'What Sets Us Apart',
-          anchor: 'apart'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'apart',
+          background: null,
+          icon: null
         },
         {
           path: '/halvorsen-difference#reviews',
           name: 'Reviews',
-          anchor: 'reviews'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'reviews',
+          background: null,
+          icon: null
         },
         {
           path: '/halvorsen-difference#before',
           name: 'Before and Afters',
-          anchor: 'before'
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'before',
+          background: null,
+          icon: null
         }
       ],
       component: HalvorsenDifference
