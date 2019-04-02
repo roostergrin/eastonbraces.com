@@ -1,3 +1,24 @@
-.navigation-desktop
-  span(v-for='link in links')
-    router-link(:to='link.path', v-html='link.name')
+nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' v-if='loaded')
+  .navigation-desktop__background
+    .navigation-desktop__container
+      router-link.navigation-desktop__home-link(to='/')
+        BaseIcon.navigation-desktop__logo(:name='content.logo')
+          
+      .navigation-desktop__content    
+        .navigation-desktop__links(@mouseenter='dropdownActive' @mouseleave='dropdownLeave')
+          .navigation-desktop__link(v-for='(link, i) in links', :to='link.path', :key='"link - " + i' @mouseover='hoverDropdown(i, link)' @click='pageLink(link)', :class='{ "navigation-desktop__link--active": $route.name === link.name }' ref='root')
+            h3 {{ link.name }}
+          .navigation-desktop__dropdown(:style='{ left: left, height: height }', :class='{ "navigation-desktop__dropdown--active": dropdownShow, "navigation-desktop__dropdown--open": dropdownSmooth }')
+            .navigation-desktop__dropdown-arrow
+            .navigation-desktop__dropdown-background
+              .navigation-desktop__dropdown-container(v-for='(link, i) in links', :key='"drop-link - " + i' ref='link', :class="{ 'navigation-desktop__dropdown-container--active': showing === i }")
+                .navigation-desktop__dropdown-header
+                  .navigation-desktop__dropdown-image(v-for='(image, i) in link.meta', :style="{ backgroundImage: 'url(' + image.image + ')' }")
+                router-link.navigation-desktop__dropdown-content(v-for='(item, j) in link.meta', :key='j', :to='item.path', :class="{ 'navigation-desktop__dropdown-content--background': item.background }", :style="{ backgroundImage: 'url(' + item.background + ')' }")
+                  .navigation-desktop__dropdown-content-overlay(v-if='item.background')
+                  BaseIcon.navigation-desktop__dropdown-icon(:name='item.icon')
+                  h3.navigation-desktop__dropdown-text(v-html='item.name')
+        .navigation-desktop__contact
+          router-link.navigation-desktop__request(:to='content.appointment.href', v-html='content.appointment.label')
+          router-link.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", :to="icon.href")
+            BaseIcon(:name='icon.icon')
