@@ -16,7 +16,7 @@ nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' 
                   .navigation-desktop__dropdown-image(v-for='(image, i) in link.meta', :style="{ backgroundImage: 'url(' + image.image + ')' }")
                 router-link.navigation-desktop__dropdown-content(v-for='(item, j) in link.meta', :key='j', :to='item.path', :class="{ 'navigation-desktop__dropdown-content--background': item.background }", :style="{ backgroundImage: 'url(' + item.background + ')' }")
                   .navigation-desktop__dropdown-content-overlay(v-if='item.background')
-                  BaseIcon.navigation-desktop__dropdown-icon(:name='item.icon')
+                  BaseIcon.navigation-desktop__dropdown-icon(:name='item.icon' v-if='item.icon')
                   h3.navigation-desktop__dropdown-text(v-html='item.name')
         .navigation-desktop__contact
           router-link.navigation-desktop__request(:to='content.appointment.href', v-html='content.appointment.label')

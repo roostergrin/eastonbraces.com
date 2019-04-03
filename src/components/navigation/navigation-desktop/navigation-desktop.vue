@@ -29,6 +29,9 @@ export default {
     window.addEventListener('scroll', () => {
       this.offsetTop = window.pageYOffset
     })
+    if (typeof this.content !== 'undefined') {
+      this.loaded = true
+    }
   },
   watch: {
     'content' (data) {
@@ -58,9 +61,9 @@ export default {
       }, 500)
     },
     dropdownLeave () {
-      // this.dropdownShow = false
-      // this.dropdownSmooth = false
-      // this.showing = null
+      this.dropdownShow = false
+      this.dropdownSmooth = false
+      this.showing = null
     }
   }
 }
