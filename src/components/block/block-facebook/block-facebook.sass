@@ -1,0 +1,78 @@
+.block-facebook
+  position: relative
+  z-index: 9
+  margin-top: 5rem
+
+  &__background
+    position: absolute
+    top: 20rem
+    left: 50%
+    transform: rotate(5deg) translate(-50%, 0)
+    width: 4000px
+    height: 75%
+    overflow: hidden
+    transform-origin: center top
+
+  &__overlay
+    position: absolute
+    top: 50%
+    left: 50%
+    transform:  rotate(-5deg) translate(-50%, -50%)
+    background: linear-gradient(to left, $white, $flat-blue 38%, $darkish-blue)
+    width: 100%
+    height: 500%
+
+  &__icon
+    @include svg-size(12rem, 12rem)
+    position: absolute
+    top: calc(50% - 8rem)
+    left: calc(50% - ((#{$max-width} / 12) * 5))
+    transform: translate(-50%, -50%)
+    z-index: 1
+
+  &__container
+    @extend .container
+
+  &__col-1
+    @extend .col-5
+    @extend .col-1--offset
+
+  &__col-2
+    @extend .col-5
+
+  &__slider
+    position: relative
+    margin: auto
+    border-radius: 50%
+    width: 25rem
+    min-height: 25rem
+    overflow: hidden
+
+    &-image
+      @extend .img-centered
+      transition: opacity .25s ease-in
+      opacity: 0
+
+      &--active
+        opacity: 1
+
+  &__text-box
+    padding-left: 3rem
+
+  &__title
+    padding-bottom: 10rem
+    color: $sky-blue
+
+  &__body
+    padding-right: 3rem
+    padding-bottom: 2rem
+    color: $white
+
+  &__button
+    @include svg-size(10rem, 51px)
+    display: block
+    border-radius: .5rem
+    background: $white
+    padding: .5rem .5rem 0
+    width: 11rem
+    height: 3.55rem
