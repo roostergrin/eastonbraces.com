@@ -1,0 +1,9 @@
+.custom-home-heading
+  .custom-home-heading__background(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+  .custom-home-heading__overlay
+  h1.custom-home-heading__title(v-html='content.title')
+  .custom-home-heading__container
+    .custom-home-heading__col-left
+      BaseIcon(:name='content.icon')
+    .custom-home-heading__col-right
+      .custom-home-heading__body(v-html='content.body')

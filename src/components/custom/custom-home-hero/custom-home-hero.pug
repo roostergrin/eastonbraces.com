@@ -1,0 +1,16 @@
+.custom-home-hero
+  .custom-home-hero__background(v-for="(slide, i) in content"
+    :key="'slide - ' + i"
+    :class="{ 'custom-home-hero__background--active': activeSlide === i }"
+    :style="{ backgroundImage: 'url(' + slide.image + ')' }")
+  
+  .custom-home-hero__nav
+    .custom-home-hero__nav-left(@click='setPrev')
+      BaseIcon.custom-home-hero__nav-left-icon(name='Lft_Arrow')
+    .custom-home-hero__nav-track
+      .custom-home-hero__nav-slide(v-for="(thumb, i) in content"
+        :key="'thumb - ' + i"
+        :class="{ 'custom-home-hero__nav-slide--after': activeSlide <= i - 2, 'custom-home-hero__nav-slide--before': activeSlide >= i + 2, 'custom-home-hero__nav-slide--active': activeSlide === i, 'custom-home-hero__nav-slide--next': i > 0 ? activeSlide === (i - 1) : activeSlide === (content.length - 1), 'custom-home-hero__nav-slide--prev': i < (content.length - 1) ? activeSlide === (i + 1) : activeSlide === 0 }"
+        :style="{ backgroundImage: 'url(' + thumb.image_thumb + ')' }")
+    .custom-home-hero__nav-right(@click='setNext')
+      BaseIcon.custom-home-hero__nav-right-icon(name='Rt_Arrow')
