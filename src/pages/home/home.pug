@@ -1,2 +1,11 @@
 .pages-home(v-if='props')
-  pre {{ props }}
+  CustomHomeHero(:content='props.hero')
+  //- Due to the background configuration eveything had to be slotted into the Tabs component
+  CustomHomeTabs(:content='props.tabs')
+    //- Top of Tab component, the relocation component
+    CustomHomeHeading(:content='props.home_heading', slot='top')
+    //-  Facebook Section
+    BlockFacebook(slot='facebook', :content='props.facebook')
+    //- The testimonial section
+    pre(slot='testimonials') {{ props.testimonials }}
+  pre {{ props.retainers }}
