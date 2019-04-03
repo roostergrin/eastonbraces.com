@@ -1,1 +1,772 @@
-<svg id="088a1392-3d6a-4cf5-bf65-234c55111ab0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 87.34 87"><defs><mask id="a5f4a6a6-2a1b-4c96-bf85-72732b255b28" x="0" y="0" width="87.34" height="87" maskUnits="userSpaceOnUse"><g transform="translate(0.78)"><g id="adb8e61a-88d3-4d88-b000-947c813633b6" data-name="mask-2"><polygon id="7109a849-40ce-46cc-b167-f04af94f89fe" data-name="path-1" points="-0.78 0 86.56 0 86.56 87 -0.78 87 -0.78 0" style="fill:#fff"/></g></g></mask><mask id="7d1a1783-3e4d-423c-ab93-d4ab274ad04b" x="0" y="0" width="87.34" height="87" maskUnits="userSpaceOnUse"><g transform="translate(0.78)"><g id="03a72780-56e1-4407-b33d-4fd544e1fc36" data-name="mask-4"><polygon id="7c50ca30-0bfb-4260-99cf-3364093d64e1" data-name="path-3" points="-0.78 87 86.56 87 86.56 0 -0.78 0 -0.78 87" style="fill:#fff"/></g></g></mask><mask id="0811cb42-95e7-4e6a-89bf-c9e0cdc3d00c" x="37.43" y="9.32" width="10.14" height="17.87" maskUnits="userSpaceOnUse"><g transform="translate(0.78)"><g id="ff56c88c-58d3-4133-94ef-0854df78b39f" data-name="mask-6"><path id="5156400c-74f4-4c14-b346-ae6ebe03cfa8" data-name="path-5" d="M46.7,15.72A2.33,2.33,0,0,0,45,14c-.95-.15-2.34.69-3.12.69h-.26c-.78,0-2.17-.84-3.12-.69a2.34,2.34,0,0,0-1.73,1.72,5,5,0,0,0,.67,3.42,5.13,5.13,0,0,1,.46,3.17c0,3,.78,4.84,1.48,4.88s.81-.48.89-1a11.13,11.13,0,0,0-.06-2.06,3.63,3.63,0,0,1,.18-1.87,1.48,1.48,0,0,1,2.72,0,3.63,3.63,0,0,1,.18,1.87,11.13,11.13,0,0,0-.06,2.06c.08.51.26,1,.89,1s1.48-1.88,1.48-4.88A5.13,5.13,0,0,1,46,19.14a5,5,0,0,0,.67-3.42" style="fill:#fff"/></g></g></mask><radialGradient id="9bd2ad91-ccb1-4920-86c9-ae35cba46d3c" cx="-662.36" cy="608.68" r="0.67" gradientTransform="matrix(2.69, 2.82, 9.22, -8.78, -3792.16, 7227.38)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.68" stop-color="#6b6b6b"/><stop offset="1"/></radialGradient><mask id="5a1c59ec-f0e8-4305-84e5-7b9d07685cc5" x="37.43" y="13.98" width="10.14" height="13.21" maskUnits="userSpaceOnUse"><g transform="translate(0.78)"><g id="180ba74e-7b0d-484c-821b-83dfa279f690" data-name="mask-6"><path id="93aedaa6-60f3-4661-8dd9-8f211be2e389" data-name="path-5" d="M46.7,15.72A2.33,2.33,0,0,0,45,14c-.95-.15-2.34.69-3.12.69h-.26c-.78,0-2.17-.84-3.12-.69a2.34,2.34,0,0,0-1.73,1.72,5,5,0,0,0,.67,3.42,5.13,5.13,0,0,1,.46,3.17c0,3,.78,4.84,1.48,4.88s.81-.48.89-1a11.13,11.13,0,0,0-.06-2.06,3.63,3.63,0,0,1,.18-1.87,1.48,1.48,0,0,1,2.72,0,3.63,3.63,0,0,1,.18,1.87,11.13,11.13,0,0,0-.06,2.06c.08.51.26,1,.89,1s1.48-1.88,1.48-4.88A5.13,5.13,0,0,1,46,19.14a5,5,0,0,0,.67-3.42" style="fill:#fff"/></g></g></mask></defs><title>Home_Welcome</title><g id="47be7b8c-85bf-4861-8079-9a8dc3dd0b70" data-name="V2"><g id="2477ccba-734b-417d-9abe-3da25513d3ab" data-name="Home"><g id="aae4cedc-55b6-495e-a6a2-7912cd4f8b89" data-name="Group-2-+-Welcome-to-Halvorsen-+-Our-practice-strives-+-Group-5-+-Group-5-+-Group-5-+-Footer-+-Testimonials-+-Facebook-+-Group-12-+-25-Belmont-St.,-Unit-+-We-Have-Temporarily-+-We-have-temporarily-+-165-Belmont-Street,-+-Group-13-Mask"><g id="cf9f1ed7-931f-4342-b064-e7c380b32a50" data-name="Group-5"><g id="eb411e5c-c396-4359-a263-af15e055bd2d" data-name="Group"><g style="mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28)"><path id="a29a7baa-d141-4c16-9f9e-171792bbc624" data-name="Fill-1" d="M86.56,43.5A43.58,43.58,0,0,1,43,87h-.07a43.49,43.49,0,0,1-13.33-2.07c-.49-.15-1-.32-1.46-.49a43.54,43.54,0,1,1,57-52.32c.11.41.22.82.31,1.23.17.7.32,1.4.46,2.11a44.36,44.36,0,0,1,.74,8" transform="translate(0.78)" style="fill:#eff6ff"/></g><g style="mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28)"><polygon id="995cae2f-8a17-420a-b10e-889a6b531be0" data-name="Fill-4" points="42.5 16.31 15.77 32.5 15.6 32.6 15.6 66.8 22.63 66.8 24.56 65.44 24.56 38.3 40.87 38.3 40.87 65.44 42.8 66.8 69.4 66.8 69.4 31.79 42.5 16.31" style="fill:#fff"/></g><g style="mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28)"><polygon id="79113e27-d032-4c47-a4e8-b88301214533" data-name="Fill-6" points="32.77 36.51 22.61 36.51 22.61 66.8 24.58 65.46 32.77 65.46 40.92 65.45 42.89 66.8 42.89 36.51 32.77 36.51" style="fill:#e3e3e3"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="061f878c-0da7-4492-91a5-b840e5a4b588" data-name="Fill-8" points="24.95 66.03 40.55 66.03 40.55 37.29 24.95 37.29 24.95 66.03" style="fill:#d06e69"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="5c8ca537-35f2-4485-96ba-02e78ec3a585" data-name="Fill-10" points="24.95 51.27 40.55 51.27 40.55 37.29 24.95 37.29 24.95 51.27" style="fill:#9bdcff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="bb82b558-2cfb-4645-95c3-290830ff5699" data-name="Fill-11" d="M24,65.44H39.19V37.1H24Zm-.59.59H39.77V36.51H23.39Z" transform="translate(0.78)" style="fill:#d06e69"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="39eaaabf-5183-4c3e-bc65-c6b5b97ae526" data-name="Fill-12" points="64.72 11.65 64.72 26.41 56.93 24.13 56.93 11.65 64.72 11.65" style="fill:#5d4037"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="1d4e7d8a-b5cc-46b8-98a6-bd6568e3fbdd" data-name="Fill-13" points="70.96 30.66 44.89 15.54 15.6 32.59 15.6 34.95 46.15 17.87 70.14 31.03 70.96 30.66"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="472294a3-cf3f-461f-8b75-bf789d36bbef" data-name="Fill-14" points="71.74 28.02 42.55 10.88 13.26 28.07 13.26 34.18 42.57 17.05 71.74 34.18 71.74 28.02" style="fill:#6d4c41"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="4a7b6434-51c7-4b7b-8243-ac7b34898d07" data-name="Fill-15" points="64.72 11.65 64.72 16.31 56.93 14.95 56.93 11.65 64.72 11.65"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="eb51d908-e042-46b9-a743-0b85865225fd" data-name="Fill-16" d="M65.11,15.54H55a.43.43,0,0,1-.39-.45v-3a.42.42,0,0,1,.39-.45H65.11a.42.42,0,0,1,.39.45v3a.43.43,0,0,1-.39.45" transform="translate(0.78)" style="fill:#4e342e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="119723b4-7bd8-436a-bce9-3c2c918ae806" data-name="Fill-17" d="M24.66,51.39h6.42V38.68H24.66Zm7.4,0h6.42V38.68H32.06ZM39,52l0-14.75H24.19l0,14.75Z" transform="translate(0.78)" style="fill:#d06e69"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="2d8dfb4b-05fd-4a24-b0cf-96c6d9b9c29c" data-name="Fill-18" points="48.35 52.05 63.16 52.05 63.16 37.29 48.35 37.29 48.35 52.05" style="fill:#b9d8f0"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="eea27ddd-7c07-431e-aac6-646c5643886c" data-name="Fill-19" d="M47.54,51.72h6.52v-6.5H47.54Zm0-7.52h6.52V37.39H47.54Zm7.51,7.52h6.52v-6.5H55.05Zm0-7.52h6.52V37.39H55.05Zm7.38,8.4V36.51H46.68V52.6H46v1H63.17v-1Z" transform="translate(0.78)" style="fill:#cc905a"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="98bd874e-87ac-47dd-a7f4-999136456919" data-name="Fill-20" points="56.15 52.05 62.38 52.05 62.38 45.83 56.15 45.83 56.15 52.05" style="fill:#9bdcff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="df57a753-53ec-44d6-8298-6fa50e14aa4c" data-name="Fill-21" points="48.35 44.28 54.59 44.28 54.59 38.06 48.35 38.06 48.35 44.28" style="fill:#9bdcff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="cc36eeb1-c8bd-4617-aa1e-1d5f8c1a5f7b" data-name="Fill-22" points="56.15 44.28 62.38 44.28 62.38 38.06 56.15 38.06 56.15 44.28" style="fill:#9bdcff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="96144679-baaa-4a3c-9c4e-a0cf3c11a813" data-name="Fill-23" points="48.35 52.05 54.59 52.05 54.59 45.83 48.35 45.83 48.35 52.05" style="fill:#9bdcff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="f56f03e4-eca4-4691-8e1f-8f095cb8ada9" data-name="Fill-24" points="56.51 46.2 62.38 46.2 62.38 45.83 56.15 45.83 56.15 52.05 56.51 52.05 56.51 46.2"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="72e85093-5e84-45bf-9237-0b7ba2191237" data-name="Fill-25" points="48.72 38.42 54.59 38.42 54.59 38.06 48.35 38.06 48.35 44.28 48.72 44.28 48.72 38.42"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="feea6103-8b2a-48d5-8047-0ec203cf2812" data-name="Fill-26" points="56.51 38.42 62.38 38.42 62.38 38.06 56.15 38.06 56.15 44.28 56.51 44.28 56.51 38.42"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="d8308fe2-5646-4b19-a97c-6919f7f86474" data-name="Fill-27" points="48.72 46.2 54.59 46.2 54.59 45.83 48.35 45.83 48.35 52.05 48.72 52.05 48.72 46.2"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="d5ad77ed-5647-4bee-8776-64101d77b7cb" data-name="Fill-28" d="M55.05,44.2h6.52V37.39H55.05Zm0,7.52h6.52v-6.5H55.05ZM47.54,44.2h6.52V37.39H47.54Zm0,7.52h6.52v-6.5H47.54Zm14.89.88V36.51H46.68V52.6H46v1H63.17v-1Z" transform="translate(0.78)" style="fill:#d06e69"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="c5dd90eb-8657-42d8-a6f1-48791d7eddba" data-name="Fill-37" d="M39,52a.78.78,0,1,0,.78.78A.78.78,0,0,0,39,52" transform="translate(0.78)" style="fill:#d5d9d9"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="a4e0c803-2a17-40ab-a80a-c7b8eb127b46" data-name="Fill-38" d="M38.59,52a.39.39,0,0,0-.38.39.39.39,0,0,0,.77,0,.39.39,0,0,0-.39-.39" transform="translate(0.78)" style="fill:#fff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="b2da271d-a4b2-4e72-999c-d3324782248e" data-name="Fill-40" points="25.73 47.38 31.97 40.83 31.97 38.84 25.73 45.39 25.73 47.38" style="fill:#fff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="5702fb54-a8f4-455e-aa85-b4a4fb7cce27" data-name="Fill-41" points="33.53 47.38 39.77 40.83 39.77 38.84 33.53 45.39 33.53 47.38" style="fill:#fff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="e4506a58-9019-4d17-9116-92a4244d9882" data-name="Fill-42" points="33.53 50.49 39.77 43.78 39.77 42.72 33.53 49.44 33.53 50.49" style="fill:#fff"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><polygon id="bf43d116-d604-408d-9375-b4de06ff3b6d" data-name="Fill-55" points="13.26 67.58 13.96 67.58 13.96 64.47 13.26 64.47 13.26 67.58" style="fill:#6d4c41"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="96cd763a-139b-4733-8bd2-33bdc57ffb26" data-name="Fill-56" d="M12.48,51.27c-1.73,0-3.12,5-3.12,8.68s1.39,4.52,3.12,4.52S15.6,63.59,15.6,60s-1.4-8.68-3.12-8.68" transform="translate(0.78)" style="fill:#9ccc65"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="ff38685a-04c2-4265-a7c8-9e97cdb7208c" data-name="Fill-57" d="M12.51,51.27h0v13.2h0c2.14,0,3.87-.88,3.87-4.52s-1.73-8.68-3.87-8.68" transform="translate(0.78)" style="fill:#7cb342"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="5fe45529-cf0a-4e59-99c3-875ba9b569d6" data-name="Fill-58" d="M10.92,54.38a7.83,7.83,0,0,0,.88,1.17c.42.41.56.42.64.34s.07-.22-.35-.63a7.83,7.83,0,0,0-1.17-.88" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="5a1d18cf-f239-4463-ad8a-ab26c30a2e4a" data-name="Fill-59" d="M10.92,56.71a7.83,7.83,0,0,0,.88,1.17c.42.41.56.42.64.34s.07-.22-.35-.63a7.83,7.83,0,0,0-1.17-.88" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="ba5ed2e7-1c24-4153-9338-8b9aea78f9f7" data-name="Fill-60" d="M10.92,59.81A7.32,7.32,0,0,0,11.8,61c.42.42.56.43.64.35s.07-.22-.35-.64a8.67,8.67,0,0,0-1.17-.88" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="b3e783ec-e525-411f-b1f6-a72e41261ddd" data-name="Fill-61" d="M12.52,55.89c.08.08.21.07.63-.34A8.21,8.21,0,0,0,14,54.38a7.7,7.7,0,0,0-1.18.88c-.42.41-.42.55-.34.63" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="6ad9279f-bb20-442b-92e6-65ffcc1b619b" data-name="Fill-62" d="M12.52,58.22c.08.08.21.07.63-.34A8.21,8.21,0,0,0,14,56.71a7.7,7.7,0,0,0-1.18.88c-.42.41-.42.55-.34.63" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><path id="9a60f272-84df-404e-a3bb-12b517d6d041" data-name="Fill-63" d="M12.52,60.55c.08.08.21.07.63-.34A8.21,8.21,0,0,0,14,59a7.7,7.7,0,0,0-1.18.88c-.42.41-.42.55-.34.63" transform="translate(0.78)" style="fill:#33691e"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><ellipse id="8dd0588d-197e-4692-82a2-f72c97cccb72" data-name="Oval-10" cx="43.28" cy="21.36" rx="10.53" ry="10.49" style="fill:#79d5fd;stroke:#000;stroke-width:2px"/></g><g style="mask:url(#7d1a1783-3e4d-423c-ab93-d4ab274ad04b)"><ellipse id="0847ff49-75fb-4c76-95e8-1e214f8e09cf" data-name="Oval-10" cx="42.5" cy="20.58" rx="10.53" ry="10.49" style="fill:#79d5fd;stroke:#fff;stroke-width:2px"/></g><g id="2601b114-3324-4e65-91fe-12942a52e48e" data-name="Mask"><path id="0663bc56-3395-4f6d-8ee6-6527ecaeea6e" data-name="path-5" d="M46.7,15.72A2.33,2.33,0,0,0,45,14c-.95-.15-2.34.69-3.12.69h-.26c-.78,0-2.17-.84-3.12-.69a2.34,2.34,0,0,0-1.73,1.72,5,5,0,0,0,.67,3.42,5.13,5.13,0,0,1,.46,3.17c0,3,.78,4.84,1.48,4.88s.81-.48.89-1a11.13,11.13,0,0,0-.06-2.06,3.63,3.63,0,0,1,.18-1.87,1.48,1.48,0,0,1,2.72,0,3.63,3.63,0,0,1,.18,1.87,11.13,11.13,0,0,0-.06,2.06c.08.51.26,1,.89,1s1.48-1.88,1.48-4.88A5.13,5.13,0,0,1,46,19.14a5,5,0,0,0,.67-3.42" transform="translate(0.78)" style="fill:#fefefe"/></g><g style="mask:url(#0811cb42-95e7-4e6a-89bf-c9e0cdc3d00c)"><ellipse id="24522150-e370-4702-86f7-955b661703bf" data-name="Oval-3" cx="42.5" cy="12.43" rx="1.95" ry="3.11" style="opacity:0.09760044515132904;isolation:isolate;fill:url(#9bd2ad91-ccb1-4920-86c9-ae35cba46d3c)"/></g><g style="mask:url(#5a1c59ec-f0e8-4305-84e5-7b9d07685cc5)"><path id="771551b8-66bf-4dea-adbc-12770b5037a7" data-name="Mask" d="M45,14c-.95-.15-2.34.69-3.12.69h-.26c-.78,0-2.17-.84-3.12-.69a2.34,2.34,0,0,0-1.73,1.72,5,5,0,0,0,.67,3.42,5.13,5.13,0,0,1,.46,3.17c0,3,.78,4.84,1.48,4.88s.81-.48.89-1a11.13,11.13,0,0,0-.06-2.06,3.63,3.63,0,0,1,.18-1.87,1.48,1.48,0,0,1,2.72,0,3.63,3.63,0,0,1,.18,1.87,11.13,11.13,0,0,0-.06,2.06c.08.51.26,1,.89,1s1.48-1.88,1.48-4.88A5.13,5.13,0,0,1,46,19.14a5,5,0,0,0,.67-3.42A2.33,2.33,0,0,0,45,14Z" transform="translate(0.78)" style="fill:#62bff2"/></g></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 87.34 87" style="enable-background:new 0 0 87.34 87;" xml:space="preserve">
+<style type="text/css">
+	.welcome-fill-0{filter:url(#Adobe_OpacityMaskFilter);}
+	.welcome-fill-1{fill:#FFFFFF;}
+	.welcome-fill-2{mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28_1_);}
+	.welcome-fill-3{fill:#EFF6FF;}
+	.welcome-fill-4{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.welcome-fill-5{mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28_2_);}
+	.welcome-fill-6{filter:url(#Adobe_OpacityMaskFilter_2_);}
+	.welcome-fill-7{mask:url(#a5f4a6a6-2a1b-4c96-bf85-72732b255b28_3_);}
+	.welcome-fill-8{fill:#E3E3E3;}
+	.welcome-fill-9{filter:url(#Adobe_OpacityMaskFilter_3_);}
+	.welcome-fill-10{mask:url(#SVGID_1_);}
+	.welcome-fill-11{fill:#D06E69;}
+	.welcome-fill-12{filter:url(#Adobe_OpacityMaskFilter_4_);}
+	.welcome-fill-13{mask:url(#SVGID_2_);}
+	.welcome-fill-14{fill:#9BDCFF;}
+	.welcome-fill-15{filter:url(#Adobe_OpacityMaskFilter_5_);}
+	.welcome-fill-16{mask:url(#SVGID_3_);}
+	.welcome-fill-17{filter:url(#Adobe_OpacityMaskFilter_6_);}
+	.welcome-fill-18{mask:url(#SVGID_4_);}
+	.welcome-fill-19{fill:#5D4037;}
+	.welcome-fill-20{filter:url(#Adobe_OpacityMaskFilter_7_);}
+	.welcome-fill-21{mask:url(#SVGID_5_);}
+	.welcome-fill-22{filter:url(#Adobe_OpacityMaskFilter_8_);}
+	.welcome-fill-23{mask:url(#SVGID_6_);}
+	.welcome-fill-24{fill:#6D4C41;}
+	.welcome-fill-25{filter:url(#Adobe_OpacityMaskFilter_9_);}
+	.welcome-fill-26{mask:url(#SVGID_7_);}
+	.welcome-fill-27{filter:url(#Adobe_OpacityMaskFilter_10_);}
+	.welcome-fill-28{mask:url(#SVGID_8_);}
+	.welcome-fill-29{fill:#4E342E;}
+	.welcome-fill-30{filter:url(#Adobe_OpacityMaskFilter_11_);}
+	.welcome-fill-31{mask:url(#SVGID_9_);}
+	.welcome-fill-32{filter:url(#Adobe_OpacityMaskFilter_12_);}
+	.welcome-fill-33{mask:url(#SVGID_10_);}
+	.welcome-fill-34{fill:#B9D8F0;}
+	.welcome-fill-35{filter:url(#Adobe_OpacityMaskFilter_13_);}
+	.welcome-fill-36{mask:url(#SVGID_11_);}
+	.welcome-fill-37{fill:#CC905A;}
+	.welcome-fill-38{filter:url(#Adobe_OpacityMaskFilter_14_);}
+	.welcome-fill-39{mask:url(#SVGID_12_);}
+	.welcome-fill-40{filter:url(#Adobe_OpacityMaskFilter_15_);}
+	.welcome-fill-41{mask:url(#SVGID_13_);}
+	.welcome-fill-42{filter:url(#Adobe_OpacityMaskFilter_16_);}
+	.welcome-fill-43{mask:url(#SVGID_14_);}
+	.welcome-fill-44{filter:url(#Adobe_OpacityMaskFilter_17_);}
+	.welcome-fill-45{mask:url(#SVGID_15_);}
+	.welcome-fill-46{filter:url(#Adobe_OpacityMaskFilter_18_);}
+	.welcome-fill-47{mask:url(#SVGID_16_);}
+	.welcome-fill-48{filter:url(#Adobe_OpacityMaskFilter_19_);}
+	.welcome-fill-49{mask:url(#SVGID_17_);}
+	.welcome-fill-50{filter:url(#Adobe_OpacityMaskFilter_20_);}
+	.welcome-fill-51{mask:url(#SVGID_18_);}
+	.welcome-fill-52{filter:url(#Adobe_OpacityMaskFilter_21_);}
+	.welcome-fill-53{mask:url(#SVGID_19_);}
+	.welcome-fill-54{filter:url(#Adobe_OpacityMaskFilter_22_);}
+	.welcome-fill-55{mask:url(#SVGID_20_);}
+	.welcome-fill-56{filter:url(#Adobe_OpacityMaskFilter_23_);}
+	.welcome-fill-57{mask:url(#SVGID_21_);}
+	.welcome-fill-58{fill:#D5D9D9;}
+	.welcome-fill-59{filter:url(#Adobe_OpacityMaskFilter_24_);}
+	.welcome-fill-60{mask:url(#SVGID_22_);}
+	.welcome-fill-61{filter:url(#Adobe_OpacityMaskFilter_25_);}
+	.welcome-fill-62{mask:url(#SVGID_23_);}
+	.welcome-fill-63{filter:url(#Adobe_OpacityMaskFilter_26_);}
+	.welcome-fill-64{mask:url(#SVGID_24_);}
+	.welcome-fill-65{filter:url(#Adobe_OpacityMaskFilter_27_);}
+	.welcome-fill-66{mask:url(#SVGID_25_);}
+	.welcome-fill-67{filter:url(#Adobe_OpacityMaskFilter_28_);}
+	.welcome-fill-68{mask:url(#SVGID_26_);}
+	.welcome-fill-69{filter:url(#Adobe_OpacityMaskFilter_29_);}
+	.welcome-fill-70{mask:url(#SVGID_27_);}
+	.welcome-fill-71{fill:#9CCC65;}
+	.welcome-fill-72{filter:url(#Adobe_OpacityMaskFilter_30_);}
+	.welcome-fill-73{mask:url(#SVGID_28_);}
+	.welcome-fill-74{fill:#7CB342;}
+	.welcome-fill-75{filter:url(#Adobe_OpacityMaskFilter_31_);}
+	.welcome-fill-76{mask:url(#SVGID_29_);}
+	.welcome-fill-77{fill:#33691E;}
+	.welcome-fill-78{filter:url(#Adobe_OpacityMaskFilter_32_);}
+	.welcome-fill-79{mask:url(#SVGID_30_);}
+	.welcome-fill-80{filter:url(#Adobe_OpacityMaskFilter_33_);}
+	.welcome-fill-81{mask:url(#SVGID_31_);}
+	.welcome-fill-82{filter:url(#Adobe_OpacityMaskFilter_34_);}
+	.welcome-fill-83{mask:url(#SVGID_32_);}
+	.welcome-fill-84{filter:url(#Adobe_OpacityMaskFilter_35_);}
+	.welcome-fill-85{mask:url(#SVGID_33_);}
+	.welcome-fill-86{filter:url(#Adobe_OpacityMaskFilter_36_);}
+	.welcome-fill-87{mask:url(#SVGID_34_);}
+	.welcome-fill-88{filter:url(#Adobe_OpacityMaskFilter_37_);}
+	.welcome-fill-89{mask:url(#SVGID_35_);}
+	.welcome-fill-90{fill:#79D5FD;stroke:#000000;stroke-width:2;}
+	.welcome-fill-91{filter:url(#Adobe_OpacityMaskFilter_38_);}
+	.welcome-fill-92{mask:url(#SVGID_36_);}
+	.welcome-fill-93{fill:#79D5FD;stroke:#FFFFFF;stroke-width:2;}
+	.welcome-fill-94{filter:url(#Adobe_OpacityMaskFilter_39_);}
+	.welcome-fill-95{mask:url(#SVGID_37_);}
+	.welcome-fill-96{opacity:0.0976;fill:url(#SVGID_38_);enable-background:new    ;}
+	.welcome-fill-97{filter:url(#Adobe_OpacityMaskFilter_40_);}
+	.welcome-fill-98{mask:url(#SVGID_39_);}
+	.welcome-fill-99{fill:#62BFF2;}
+	.welcome-fill-100{fill:#FEFEFE;}
+</style>
+<title>Home_Welcome</title>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.36" y="0.01" width="87.07" height="86.99">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0.36" y="0.01" width="87.07" height="86.99" id="a5f4a6a6-2a1b-4c96-bf85-72732b255b28_1_">
+	<g transform="translate(0.78)" class="welcome-fill-0">
+		<g id="adb8e61a-88d3-4d88-b000-947c813633b6_1_">
+			<polygon class="welcome-fill-1" points="-0.78,0 86.56,0 86.56,87 -0.78,87 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-2">
+	<path id="a29a7baa-d141-4c16-9f9e-171792bbc624" class="welcome-fill-3" d="M87.34,43.5C87.3,67.53,67.81,86.99,43.78,87h-0.07
+		c-4.52,0.01-9.02-0.69-13.33-2.07c-0.49-0.15-1-0.32-1.46-0.49C6.34,76.16-5.25,51.15,3.03,28.57S36.32-5.6,58.9,2.68
+		c13.24,4.86,23.31,15.83,27.02,29.44c0.11,0.41,0.22,0.82,0.31,1.23c0.17,0.7,0.32,1.4,0.46,2.11c0.49,2.64,0.74,5.32,0.74,8"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="15.6" y="16.31" width="53.8" height="50.49">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="15.6" y="16.31" width="53.8" height="50.49" id="a5f4a6a6-2a1b-4c96-bf85-72732b255b28_2_">
+	<g transform="translate(0.78)" class="welcome-fill-4">
+		<g id="adb8e61a-88d3-4d88-b000-947c813633b6_2_">
+			<polygon class="welcome-fill-1" points="-0.78,0 86.56,0 86.56,87 -0.78,87 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-5">
+	<polygon class="welcome-fill-1" points="42.5,16.31 15.77,32.5 15.6,32.6 15.6,66.8 22.63,66.8 24.56,65.44 24.56,38.3 40.87,38.3
+		40.87,65.44 42.8,66.8 69.4,66.8 69.4,31.79 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="22.61" y="36.51" width="20.28" height="30.29">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="22.61" y="36.51" width="20.28" height="30.29" id="a5f4a6a6-2a1b-4c96-bf85-72732b255b28_3_">
+	<g transform="translate(0.78)" class="welcome-fill-6">
+		<g id="adb8e61a-88d3-4d88-b000-947c813633b6_3_">
+			<polygon class="welcome-fill-1" points="-0.78,0 86.56,0 86.56,87 -0.78,87 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-7">
+	<polygon class="welcome-fill-8" points="32.77,36.51 22.61,36.51 22.61,66.8 24.58,65.46 32.77,65.46 40.92,65.45 42.89,66.8 42.89,36.51 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_3_" filterUnits="userSpaceOnUse" x="24.95" y="37.29" width="15.6" height="28.74">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="24.95" y="37.29" width="15.6" height="28.74" id="SVGID_1_">
+	<g transform="translate(0.78)" class="welcome-fill-9">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-10">
+	<polygon class="welcome-fill-11" points="24.95,66.03 40.55,66.03 40.55,37.29 24.95,37.29 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="24.95" y="37.29" width="15.6" height="13.98">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="24.95" y="37.29" width="15.6" height="13.98" id="SVGID_2_">
+	<g transform="translate(0.78)" class="welcome-fill-12">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-13">
+	<polygon class="welcome-fill-14" points="24.95,51.27 40.55,51.27 40.55,37.29 24.95,37.29 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_5_" filterUnits="userSpaceOnUse" x="24.17" y="36.51" width="16.38" height="29.52">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="24.17" y="36.51" width="16.38" height="29.52" id="SVGID_3_">
+	<g transform="translate(0.78)" class="welcome-fill-15">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-16">
+	<path id="bb82b558-2cfb-4645-95c3-290830ff5699" class="welcome-fill-11" d="M24.78,65.44h15.19V37.1H24.78V65.44z M24.19,66.03h16.36V36.51
+		H24.17L24.19,66.03z"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_6_" filterUnits="userSpaceOnUse" x="56.93" y="11.65" width="7.79" height="14.76">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.93" y="11.65" width="7.79" height="14.76" id="SVGID_4_">
+	<g transform="translate(0.78)" class="welcome-fill-17">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-18">
+	<polygon class="welcome-fill-19" points="64.72,11.65 64.72,26.41 56.93,24.13 56.93,11.65 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_7_" filterUnits="userSpaceOnUse" x="15.6" y="15.54" width="55.36" height="19.41">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="15.6" y="15.54" width="55.36" height="19.41" id="SVGID_5_">
+	<g transform="translate(0.78)" class="welcome-fill-20">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-21">
+	<polygon points="70.96,30.66 44.89,15.54 15.6,32.59 15.6,34.95 46.15,17.87 70.14,31.03 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_8_" filterUnits="userSpaceOnUse" x="13.26" y="10.88" width="58.48" height="23.3">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.26" y="10.88" width="58.48" height="23.3" id="SVGID_6_">
+	<g transform="translate(0.78)" class="welcome-fill-22">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-23">
+	<polygon class="welcome-fill-24" points="71.74,28.02 42.55,10.88 13.26,28.07 13.26,34.18 42.57,17.05 71.74,34.18 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_9_" filterUnits="userSpaceOnUse" x="56.93" y="11.65" width="7.79" height="4.66">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.93" y="11.65" width="7.79" height="4.66" id="SVGID_7_">
+	<g transform="translate(0.78)" class="welcome-fill-25">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-26">
+	<polygon points="64.72,11.65 64.72,16.31 56.93,14.95 56.93,11.65 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_10_" filterUnits="userSpaceOnUse" x="55.39" y="11.64" width="10.89" height="3.9">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="55.39" y="11.64" width="10.89" height="3.9" id="SVGID_8_">
+	<g transform="translate(0.78)" class="welcome-fill-27">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-28">
+	<path id="eb51d908-e042-46b9-a743-0b85865225fd" class="welcome-fill-29" d="M65.89,15.54H55.78c-0.23-0.02-0.4-0.22-0.39-0.45v-3
+		c-0.02-0.23,0.16-0.43,0.39-0.45c0,0,0,0,0,0h10.11c0.23,0.02,0.41,0.22,0.39,0.45c0,0,0,0,0,0v3
+		C66.29,15.32,66.12,15.52,65.89,15.54"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_11_" filterUnits="userSpaceOnUse" x="24.97" y="37.25" width="14.81" height="14.75">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="24.97" y="37.25" width="14.81" height="14.75" id="SVGID_9_">
+	<g transform="translate(0.78)" class="welcome-fill-30">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-31">
+	<path class="welcome-fill-11" d="M25.44,51.39h6.42V38.68h-6.42V51.39z M32.84,51.39h6.42V38.68h-6.42V51.39z M39.78,52V37.25H24.97V52H39.78z
+		"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_12_" filterUnits="userSpaceOnUse" x="48.35" y="37.29" width="14.81" height="14.76">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="48.35" y="37.29" width="14.81" height="14.76" id="SVGID_10_">
+	<g transform="translate(0.78)" class="welcome-fill-32">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-33">
+	<polygon class="welcome-fill-34" points="48.35,52.05 63.16,52.05 63.16,37.29 48.35,37.29 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_13_" filterUnits="userSpaceOnUse" x="46.78" y="36.51" width="17.17" height="17.09">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="46.78" y="36.51" width="17.17" height="17.09" id="SVGID_11_">
+	<g transform="translate(0.78)" class="welcome-fill-35">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-36">
+	<path id="eea27ddd-7c07-431e-aac6-646c5643886c" class="welcome-fill-37" d="M48.32,51.72h6.52v-6.5h-6.52V51.72z M48.32,44.2h6.52v-6.81
+		h-6.52V44.2z M55.83,51.72h6.52v-6.5h-6.52L55.83,51.72z M55.83,44.2h6.52v-6.81h-6.52L55.83,44.2z M63.21,52.6V36.51H47.46V52.6
+		h-0.68v1h17.17v-1H63.21z"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_14_" filterUnits="userSpaceOnUse" x="56.15" y="45.83" width="6.23" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.15" y="45.83" width="6.23" height="6.22" id="SVGID_12_">
+	<g transform="translate(0.78)" class="welcome-fill-38">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-39">
+	<polygon class="welcome-fill-14" points="56.15,52.05 62.38,52.05 62.38,45.83 56.15,45.83 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_15_" filterUnits="userSpaceOnUse" x="48.35" y="38.06" width="6.24" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="48.35" y="38.06" width="6.24" height="6.22" id="SVGID_13_">
+	<g transform="translate(0.78)" class="welcome-fill-40">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-41">
+	<polygon id="df57a753-53ec-44d6-8298-6fa50e14aa4c" class="welcome-fill-14" points="48.35,44.28 54.59,44.28 54.59,38.06 48.35,38.06 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_16_" filterUnits="userSpaceOnUse" x="56.15" y="38.06" width="6.23" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.15" y="38.06" width="6.23" height="6.22" id="SVGID_14_">
+	<g transform="translate(0.78)" class="welcome-fill-42">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-43">
+	<polygon id="cc36eeb1-c8bd-4617-aa1e-1d5f8c1a5f7b" class="welcome-fill-14" points="56.15,44.28 62.38,44.28 62.38,38.06 56.15,38.06 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_17_" filterUnits="userSpaceOnUse" x="48.35" y="45.83" width="6.24" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="48.35" y="45.83" width="6.24" height="6.22" id="SVGID_15_">
+	<g transform="translate(0.78)" class="welcome-fill-44">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-45">
+	<polygon class="welcome-fill-14" points="48.35,52.05 54.59,52.05 54.59,45.83 48.35,45.83 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_18_" filterUnits="userSpaceOnUse" x="56.15" y="45.83" width="6.23" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.15" y="45.83" width="6.23" height="6.22" id="SVGID_16_">
+	<g transform="translate(0.78)" class="welcome-fill-46">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-47">
+	<polygon id="f56f03e4-eca4-4691-8e1f-8f095cb8ada9" points="56.51,46.2 62.38,46.2 62.38,45.83 56.15,45.83 56.15,52.05
+		56.51,52.05 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_19_" filterUnits="userSpaceOnUse" x="48.35" y="38.06" width="6.24" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="48.35" y="38.06" width="6.24" height="6.22" id="SVGID_17_">
+	<g transform="translate(0.78)" class="welcome-fill-48">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-49">
+	<polygon points="48.72,38.42 54.59,38.42 54.59,38.06 48.35,38.06 48.35,44.28 48.72,44.28 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_20_" filterUnits="userSpaceOnUse" x="56.15" y="38.06" width="6.23" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="56.15" y="38.06" width="6.23" height="6.22" id="SVGID_18_">
+	<g transform="translate(0.78)" class="welcome-fill-50">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-51">
+	<polygon id="feea6103-8b2a-48d5-8047-0ec203cf2812" points="56.51,38.42 62.38,38.42 62.38,38.06 56.15,38.06 56.15,44.28
+		56.51,44.28 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_21_" filterUnits="userSpaceOnUse" x="48.35" y="45.83" width="6.24" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="48.35" y="45.83" width="6.24" height="6.22" id="SVGID_19_">
+	<g transform="translate(0.78)" class="welcome-fill-52">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-53">
+	<polygon id="d8308fe2-5646-4b19-a97c-6919f7f86474" points="48.72,46.2 54.59,46.2 54.59,45.83 48.35,45.83 48.35,52.05
+		48.72,52.05 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_22_" filterUnits="userSpaceOnUse" x="46.78" y="36.51" width="17.17" height="17.09">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="46.78" y="36.51" width="17.17" height="17.09" id="SVGID_20_">
+	<g transform="translate(0.78)" class="welcome-fill-54">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-55">
+	<path id="d5ad77ed-5647-4bee-8776-64101d77b7cb" class="welcome-fill-11" d="M55.83,44.2h6.52v-6.81h-6.52V44.2z M55.83,51.72h6.52v-6.5h-6.52
+		V51.72z M48.32,44.2h6.52v-6.81h-6.52V44.2z M48.32,51.72h6.52v-6.5h-6.52V51.72z M63.21,52.6V36.51H47.46V52.6h-0.68v1h17.17v-1
+		L63.21,52.6z"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_23_" filterUnits="userSpaceOnUse" x="39" y="52" width="1.56" height="1.56">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="39" y="52" width="1.56" height="1.56" id="SVGID_21_">
+	<g transform="translate(0.78)" class="welcome-fill-56">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-57">
+	<path id="c5dd90eb-8657-42d8-a6f1-48791d7eddba" class="welcome-fill-58" d="M39.78,52C39.35,52,39,52.35,39,52.78c0,0.43,0.35,0.78,0.78,0.78
+		c0.43,0,0.78-0.35,0.78-0.78c0,0,0,0,0,0C40.56,52.35,40.21,52,39.78,52"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_24_" filterUnits="userSpaceOnUse" x="38.99" y="52" width="0.77" height="0.72">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="38.99" y="52" width="0.77" height="0.72" id="SVGID_22_">
+	<g transform="translate(0.78)" class="welcome-fill-59">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-60">
+	<path id="a4e0c803-2a17-40ab-a80a-c7b8eb127b46" class="welcome-fill-1" d="M39.37,52c-0.21,0.01-0.38,0.18-0.38,0.39
+		c0.03,0.21,0.23,0.36,0.45,0.32c0.17-0.03,0.3-0.16,0.32-0.32C39.76,52.17,39.59,52,39.37,52"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_25_" filterUnits="userSpaceOnUse" x="25.73" y="38.84" width="6.24" height="8.54">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="25.73" y="38.84" width="6.24" height="8.54" id="SVGID_23_">
+	<g transform="translate(0.78)" class="welcome-fill-61">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-62">
+	<polygon id="b2da271d-a4b2-4e72-999c-d3324782248e" class="welcome-fill-1" points="25.73,47.38 31.97,40.83 31.97,38.84 25.73,45.39 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_26_" filterUnits="userSpaceOnUse" x="33.53" y="38.84" width="6.24" height="8.54">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="33.53" y="38.84" width="6.24" height="8.54" id="SVGID_24_">
+	<g transform="translate(0.78)" class="welcome-fill-63">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-64">
+	<polygon class="welcome-fill-1" points="33.53,47.38 39.77,40.83 39.77,38.84 33.53,45.39 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_27_" filterUnits="userSpaceOnUse" x="33.53" y="42.72" width="6.24" height="7.77">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="33.53" y="42.72" width="6.24" height="7.77" id="SVGID_25_">
+	<g transform="translate(0.78)" class="welcome-fill-65">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-66">
+	<polygon id="e4506a58-9019-4d17-9116-92a4244d9882" class="welcome-fill-1" points="33.53,50.49 39.77,43.78 39.77,42.72 33.53,49.44 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_28_" filterUnits="userSpaceOnUse" x="13.26" y="64.47" width="0.7" height="3.11">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.26" y="64.47" width="0.7" height="3.11" id="SVGID_26_">
+	<g transform="translate(0.78)" class="welcome-fill-67">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-68">
+	<polygon id="bf43d116-d604-408d-9375-b4de06ff3b6d" class="welcome-fill-24" points="13.26,67.58 13.96,67.58 13.96,64.47 13.26,64.47 	"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_29_" filterUnits="userSpaceOnUse" x="10.14" y="51.27" width="6.24" height="13.2">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="10.14" y="51.27" width="6.24" height="13.2" id="SVGID_27_">
+	<g transform="translate(0.78)" class="welcome-fill-69">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-70">
+	<path class="welcome-fill-71" d="M13.26,51.27c-1.73,0-3.12,5-3.12,8.68s1.39,4.52,3.12,4.52s3.12-0.88,3.12-4.47s-1.4-8.68-3.12-8.68"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_30_" filterUnits="userSpaceOnUse" x="13.29" y="51.27" width="3.87" height="13.2">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.29" y="51.27" width="3.87" height="13.2" id="SVGID_28_">
+	<g transform="translate(0.78)" class="welcome-fill-72">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-73">
+	<path id="ff38685a-04c2-4265-a7c8-9e97cdb7208c" class="welcome-fill-74" d="M13.29,51.27L13.29,51.27v13.2l0,0c2.14,0,3.87-0.88,3.87-4.52
+		S15.43,51.27,13.29,51.27"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_31_" filterUnits="userSpaceOnUse" x="11.7" y="54.38" width="1.56" height="1.55">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="11.7" y="54.38" width="1.56" height="1.55" id="SVGID_29_">
+	<g transform="translate(0.78)" class="welcome-fill-75">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-76">
+	<path class="welcome-fill-77" d="M11.7,54.38c0.26,0.42,0.55,0.81,0.88,1.17c0.42,0.41,0.56,0.42,0.64,0.34s0.07-0.22-0.35-0.63
+		C12.51,54.93,12.12,54.64,11.7,54.38"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_32_" filterUnits="userSpaceOnUse" x="11.7" y="56.71" width="1.56" height="1.55">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="11.7" y="56.71" width="1.56" height="1.55" id="SVGID_30_">
+	<g transform="translate(0.78)" class="welcome-fill-78">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-79">
+	<path class="welcome-fill-77" d="M11.7,56.71c0.26,0.42,0.55,0.81,0.88,1.17c0.42,0.41,0.56,0.42,0.64,0.34s0.07-0.22-0.35-0.63
+		C12.51,57.26,12.12,56.97,11.7,56.71"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_33_" filterUnits="userSpaceOnUse" x="11.7" y="59.81" width="1.56" height="1.58">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="11.7" y="59.81" width="1.56" height="1.58" id="SVGID_31_">
+	<g transform="translate(0.78)" class="welcome-fill-80">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-81">
+	<path id="ba5ed2e7-1c24-4153-9338-8b9aea78f9f7" class="welcome-fill-77" d="M11.7,59.81c0.25,0.43,0.55,0.82,0.88,1.19
+		c0.42,0.42,0.56,0.43,0.64,0.35s0.07-0.22-0.35-0.64c-0.36-0.33-0.76-0.62-1.17-0.88"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_34_" filterUnits="userSpaceOnUse" x="13.22" y="54.38" width="1.56" height="1.55">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.22" y="54.38" width="1.56" height="1.55" id="SVGID_32_">
+	<g transform="translate(0.78)" class="welcome-fill-82">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-83">
+	<path id="b3e783ec-e525-411f-b1f6-a72e41261ddd" class="welcome-fill-77" d="M13.3,55.89c0.08,0.08,0.21,0.07,0.63-0.34
+		c0.32-0.36,0.6-0.76,0.85-1.17c-0.42,0.25-0.82,0.55-1.18,0.88c-0.42,0.41-0.42,0.55-0.34,0.63"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_35_" filterUnits="userSpaceOnUse" x="13.22" y="56.71" width="1.56" height="1.55">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.22" y="56.71" width="1.56" height="1.55" id="SVGID_33_">
+	<g transform="translate(0.78)" class="welcome-fill-84">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-85">
+	<path class="welcome-fill-77" d="M13.3,58.22c0.08,0.08,0.21,0.07,0.63-0.34c0.32-0.36,0.6-0.76,0.85-1.17c-0.42,0.25-0.82,0.55-1.18,0.88
+		c-0.42,0.41-0.42,0.55-0.34,0.63"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_36_" filterUnits="userSpaceOnUse" x="13.22" y="59" width="1.56" height="1.59">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="13.22" y="59" width="1.56" height="1.59" id="SVGID_34_">
+	<g transform="translate(0.78)" class="welcome-fill-86">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-87">
+	<path class="welcome-fill-77" d="M13.3,60.55c0.08,0.08,0.21,0.07,0.63-0.34c0.32-0.38,0.6-0.78,0.85-1.21c-0.42,0.25-0.82,0.55-1.18,0.88
+		c-0.42,0.41-0.42,0.55-0.34,0.63"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_37_" filterUnits="userSpaceOnUse" x="31.75" y="9.87" width="23.06" height="22.98">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="31.75" y="9.87" width="23.06" height="22.98" id="SVGID_35_">
+	<g transform="translate(0.78)" class="welcome-fill-88">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-89">
+	<ellipse class="welcome-fill-90" cx="43.28" cy="21.36" rx="10.53" ry="10.49"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_38_" filterUnits="userSpaceOnUse" x="30.97" y="9.09" width="23.06" height="22.98">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="30.97" y="9.09" width="23.06" height="22.98" id="SVGID_36_">
+	<g transform="translate(0.78)" class="welcome-fill-91">
+		<g>
+			<polygon class="welcome-fill-1" points="-0.78,87 86.56,87 86.56,0 -0.78,0 			"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-92">
+	<ellipse class="welcome-fill-93" cx="42.5" cy="20.58" rx="10.53" ry="10.49"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_39_" filterUnits="userSpaceOnUse" x="40.55" y="9.32" width="3.9" height="6.22">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="40.55" y="9.32" width="3.9" height="6.22" id="SVGID_37_">
+	<g transform="translate(0.78)" class="welcome-fill-94">
+		<g id="ff56c88c-58d3-4133-94ef-0854df78b39f_1_">
+			<path class="welcome-fill-1" d="M46.7,15.72c-0.2-0.85-0.86-1.51-1.7-1.72c-0.95-0.15-2.34,0.69-3.12,0.69h-0.26
+				c-0.78,0-2.17-0.84-3.12-0.69c-0.85,0.2-1.52,0.87-1.73,1.72c-0.19,1.18,0.04,2.4,0.67,3.42c0.49,0.98,0.65,2.09,0.46,3.17
+				c0,3,0.78,4.84,1.48,4.88s0.81-0.48,0.89-1c0.04-0.69,0.02-1.38-0.06-2.06c-0.11-0.63-0.04-1.27,0.18-1.87
+				c0.32-0.75,1.19-1.1,1.94-0.78c0.35,0.15,0.63,0.43,0.78,0.78c0.22,0.6,0.29,1.24,0.18,1.87c-0.08,0.68-0.1,1.37-0.06,2.06
+				c0.08,0.51,0.26,1,0.89,1s1.48-1.88,1.48-4.88c-0.21-1.07-0.07-2.18,0.4-3.17c0.63-1.02,0.86-2.24,0.67-3.42"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-95">
+
+		<radialGradient id="SVGID_38_" cx="-650.2526" cy="-539.6302" r="0.67" gradientTransform="matrix(2.69 2.82 -9.22 8.78 -3188.0898 6586.98)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="0.68" style="stop-color:#6B6B6B"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<ellipse class="welcome-fill-96" cx="42.5" cy="12.43" rx="1.95" ry="3.11"/>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_40_" filterUnits="userSpaceOnUse" x="37.48" y="13.98" width="10.03" height="13.21">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="37.48" y="13.98" width="10.03" height="13.21" id="SVGID_39_">
+	<g transform="translate(0.78)" class="welcome-fill-97">
+		<g>
+			<path class="welcome-fill-1" d="M46.7,15.72c-0.2-0.85-0.86-1.51-1.7-1.72c-0.95-0.15-2.34,0.69-3.12,0.69h-0.26
+				c-0.78,0-2.17-0.84-3.12-0.69c-0.85,0.2-1.52,0.87-1.73,1.72c-0.19,1.18,0.04,2.4,0.67,3.42c0.49,0.98,0.65,2.09,0.46,3.17
+				c0,3,0.78,4.84,1.48,4.88s0.81-0.48,0.89-1c0.04-0.69,0.02-1.38-0.06-2.06c-0.11-0.63-0.04-1.27,0.18-1.87
+				c0.32-0.75,1.19-1.1,1.94-0.78c0.35,0.15,0.63,0.43,0.78,0.78c0.22,0.6,0.29,1.24,0.18,1.87c-0.08,0.68-0.1,1.37-0.06,2.06
+				c0.08,0.51,0.26,1,0.89,1s1.48-1.88,1.48-4.88c-0.21-1.07-0.07-2.18,0.4-3.17c0.63-1.02,0.86-2.24,0.67-3.42"/>
+		</g>
+	</g>
+</mask>
+<g class="welcome-fill-98">
+	<path class="welcome-fill-99" d="M45.78,14c-0.95-0.15-2.34,0.69-3.12,0.69H42.4c-0.78,0-2.17-0.84-3.12-0.69c-0.85,0.2-1.52,0.87-1.73,1.72
+		c-0.19,1.18,0.04,2.4,0.67,3.42c0.49,0.98,0.65,2.09,0.46,3.17c0,3,0.78,4.84,1.48,4.88s0.81-0.48,0.89-1
+		c0.04-0.69,0.02-1.38-0.06-2.06c-0.11-0.63-0.04-1.27,0.18-1.87c0.32-0.75,1.19-1.1,1.94-0.78c0.35,0.15,0.63,0.43,0.78,0.78
+		c0.22,0.6,0.29,1.24,0.18,1.87c-0.08,0.68-0.1,1.37-0.06,2.06c0.08,0.51,0.26,1,0.89,1s1.48-1.88,1.48-4.88
+		c-0.21-1.07-0.07-2.18,0.4-3.17c0.63-1.02,0.86-2.24,0.67-3.42C47.25,14.88,46.61,14.22,45.78,14z"/>
+</g>
+<g>
+	<path class="welcome-fill-100" d="M47.48,15.72c-0.2-0.85-0.86-1.51-1.7-1.72c-0.95-0.15-2.34,0.69-3.12,0.69H42.4
+		c-0.78,0-2.17-0.84-3.12-0.69c-0.85,0.2-1.52,0.87-1.73,1.72c-0.19,1.18,0.04,2.4,0.67,3.42c0.49,0.98,0.65,2.09,0.46,3.17
+		c0,3,0.78,4.84,1.48,4.88s0.81-0.48,0.89-1c0.04-0.69,0.02-1.38-0.06-2.06c-0.11-0.63-0.04-1.27,0.18-1.87
+		c0.32-0.75,1.19-1.1,1.94-0.78c0.35,0.15,0.63,0.43,0.78,0.78c0.22,0.6,0.29,1.24,0.18,1.87c-0.08,0.68-0.1,1.37-0.06,2.06
+		c0.08,0.51,0.26,1,0.89,1s1.48-1.88,1.48-4.88c-0.21-1.07-0.07-2.18,0.4-3.17c0.63-1.02,0.86-2.24,0.67-3.42"/>
+</g>
+</svg>
