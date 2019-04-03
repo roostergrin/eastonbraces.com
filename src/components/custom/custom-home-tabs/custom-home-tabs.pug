@@ -1,0 +1,23 @@
+.custom-home-tabs
+  slot(name='top')
+  .custom-home-tabs__overlay
+  .custom-home-tabs__container
+    BaseIcon.custom-home-tabs__background(:name='content.background')
+    .custom-home-tabs__tabs
+      .custom-home-tabs__tab(v-for='(title, i) in content.tabs'
+        :key="'tab - ' + i"
+        :class="{ 'custom-home-tabs__tab--active': activeTab === i }"
+        @mouseenter='setActive(i)'
+        @click='setActive(i)')
+        BaseIcon.custom-home-tabs__tab-icon(:name='title.tab.icon')
+        .custom-home-tabs__tab-label(v-html='title.tab.label')
+    
+    .custom-home-tabs__content
+      .custom-home-tabs__text-box(v-for='(content, i) in content.tabs'
+        :key="'body - ' + i"
+        :class="{ 'custom-home-tabs__text-box--active': activeTab === i }")
+        h1.custom-home-tabs__title(v-html='content.body.title')
+        .custom-home-tabs__body(v-html='content.body.body')
+        router-link.custom-home-tabs__button(v-html='content.body.button.label' v-if='content.body.button.label', :to='content.body.button.href')
+  slot(name='facebook')
+  slot(name='testimonials')

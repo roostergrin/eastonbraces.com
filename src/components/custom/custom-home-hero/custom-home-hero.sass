@@ -1,0 +1,75 @@
+.custom-home-hero
+  position: relative
+  height: 100vh
+
+  &__background
+    @extend .img-centered
+    transition: opacity .35s ease-in
+    opacity: 0
+
+    &--active
+      opacity: 1
+
+  &__nav
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 30rem
+    height: 7.5rem
+    overflow: hidden
+
+    &-left,
+    &-right
+      @include svg-size(1.5rem, 1.5rem)
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      z-index: 99
+
+    &-left
+      left: .75rem
+
+    &-right
+      right: -.75rem
+
+    &-track
+      position: absolute
+      width: 100%
+      height: 100%
+
+    &-slide
+      @extend .img-centered
+      border: 3px solid $white
+      border-radius: 50%
+      width: 4rem
+      height: 4rem
+
+      &--before,
+      &--after
+        opacity: 0
+
+      &--before
+        left: 25%
+
+      &--after
+        left: 75%
+
+      &--prev,
+      &--next,
+      &--active
+        transition: left .25s ease-in, opacity .25s ease-in, transform .25s ease-in
+        opacity: 1
+
+      &--active
+        @extend .img-centered
+        transform: translate(-50%, -50%) scale(1.5)
+        z-index: 99
+        border: 3px solid $white
+        border-radius: 50%
+
+      &--prev
+        left: 25%
+
+      &--next
+        left: 75%
