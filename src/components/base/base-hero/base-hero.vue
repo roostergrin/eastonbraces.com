@@ -3,7 +3,9 @@
 <script>
 export default {
   props: {
-    content: [Object, Array]
+    content: {
+      type: [Object, Array]
+    }
   }
 }
 </script>

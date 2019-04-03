@@ -2,6 +2,7 @@
 
 <script>
 import BlockFacebook from 'components/block/block-facebook/block-facebook'
+import BlockTestimonials from 'components/block/block-testimonials/block-testimonials'
 import CustomHomeHeading from 'components/custom/custom-home-heading/custom-home-heading'
 import CustomHomeHero from 'components/custom/custom-home-hero/custom-home-hero'
 import CustomHomeTabs from 'components/custom/custom-home-tabs/custom-home-tabs'
@@ -15,6 +16,7 @@ export default {
   },
   components: {
     BlockFacebook,
+    BlockTestimonials,
     CustomHomeHeading,
     CustomHomeHero,
     CustomHomeTabs
