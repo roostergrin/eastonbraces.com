@@ -1,7 +1,8 @@
 <template lang="pug" src="./app.pug"></template>
 
 <script>
-import NavigationDesktop from 'components/navigation/navigation-desktop/navigation-desktop'
+import NavigationDesktop from 'components/the-navigation/navigation-desktop/navigation-desktop'
+import TheFooter from 'components/the-footer/the-footer'
 
 export default {
   async created () {
@@ -14,7 +15,8 @@ export default {
     this.$store.dispatch('VIEW_MODALCONTENT', false)
   },
   components: {
-    NavigationDesktop
+    NavigationDesktop,
+    TheFooter
   }
 }
 </script>

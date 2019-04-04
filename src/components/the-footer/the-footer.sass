@@ -1,0 +1,95 @@
+.the-footer
+  position: relative
+  padding-top: 8rem
+
+  &__background
+    @extend .img-full
+    background-position: center
+    height: calc(100% - 4rem)
+
+  &__container
+    @extend .container
+    padding-bottom: 6rem
+
+  &__col-links
+    @extend .col-12
+
+  &__links
+    @extend .flex-start-between
+    text-align: center
+
+  &__link-list
+    @extend .flex-center-start
+    flex-direction: column
+    width: calc(100% / 5)
+
+  &__link
+    display: block
+    transition: color .25s ease-in
+    padding: .25rem 0
+    text-transform: capitalize
+    text-decoration: none
+    color: $brown-grey
+
+    &:hover
+      color: $sky-blue
+
+    &--top
+      padding-bottom: 1.75rem
+      color: $light-navy
+
+      &:hover
+        color: $sky-blue
+
+  &__col-contact
+    @extend .col-4
+    @extend .col-4--offset
+
+  &__contacts
+    padding-top: 4rem
+
+  &__social
+    @extend .flex-center
+
+    &-item
+      @include svg-size(1.5rem, 1.5rem)
+      @include button
+      margin-right: 1rem
+      border-radius: 50%
+      padding: .5rem
+
+      &:last-child
+        margin: 0
+
+    &-icon
+      @include svg-size(2rem, 2rem)
+
+  &__title
+    padding: 1rem 0 .5rem
+    text-align: center
+    color: $light-navy
+
+  &__address,
+  &__phone
+    display: block
+    transition: color .25s ease-in
+    text-align: center
+    text-decoration: none
+    color: $brown-grey
+
+    &:hover
+      color: $sky-blue
+
+  &__phone
+    padding-top: .25rem
+
+
+  &__copyright
+    @extend .flex-center
+    background: $sky-blue
+    height: 4rem
+    text-decoration: none
+    color: $white
+
+    &:hover
+      color: $white-two

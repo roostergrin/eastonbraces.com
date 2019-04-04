@@ -1,0 +1,30 @@
+.the-footer(v-if='content')
+  BaseBGImg.the-footer__background(:src='content.background')
+  .the-footer__container
+    .the-footer__col-links
+      .the-footer__links
+        .the-footer__link-list(v-for='(list, i) in links', :key="'list - ' + i")
+          router-link.the-footer__link.the-footer__link--top(v-html='list.name', :to='list.path')
+          router-link.the-footer__link(v-for="(link, j) in list.meta"
+            :key="'link - ' + j"
+            v-html='link.name'
+            :to='link.path')
+    .the-footer__col-contact
+      .the-footer__contacts
+        .the-footer__social
+          a.the-footer__social-item(
+            v-for='(item, i) in content.social_bar'
+            target='_blank'
+            :href='item.href')
+            BaseIcon.the-footer__social-icon(:name='item.icon')
+        h3.the-footer__title(v-html='content.title')
+        a.the-footer__address(
+          :href='content.address.href'
+          v-html='content.address.label')
+        a.the-footer__phone(
+          :href='content.phone.href'
+          v-html='content.phone.label')
+  a.the-footer__copyright(
+    v-html='content.copyright.label'
+    :href='content.copyright.href'
+    target="_blank")
