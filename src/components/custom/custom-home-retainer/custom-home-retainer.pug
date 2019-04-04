@@ -1,0 +1,6 @@
+.custom-home-retainer
+  BaseBGImg.custom-home-retainer__background(:src='content.image' v-parallax='.1')
+  .custom-home-retainer__container
+    .custom-home-retainer__col
+      h1.custom-home-retainer__title(v-html='content.title')
+      .custom-home-retainer__body(v-html='content.body')

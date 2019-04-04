@@ -5,6 +5,7 @@ import BlockFacebook from 'components/block/block-facebook/block-facebook'
 import BlockTestimonials from 'components/block/block-testimonials/block-testimonials'
 import CustomHomeHeading from 'components/custom/custom-home-heading/custom-home-heading'
 import CustomHomeHero from 'components/custom/custom-home-hero/custom-home-hero'
+import CustomHomeRetainer from 'components/custom/custom-home-retainer/custom-home-retainer'
 import CustomHomeTabs from 'components/custom/custom-home-tabs/custom-home-tabs'
 
 export default {
@@ -19,6 +20,7 @@ export default {
     BlockTestimonials,
     CustomHomeHeading,
     CustomHomeHero,
+    CustomHomeRetainer,
     CustomHomeTabs
   }
 }
