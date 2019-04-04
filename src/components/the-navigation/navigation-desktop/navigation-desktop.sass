@@ -5,12 +5,13 @@
   top: 0
   left: 0
   transform: translateZ(0)
-  transition: background .25s ease-in-out, box-shadow .25s ease-in-out
+  transition: background .25s ease-in, box-shadow .25s ease-in
   z-index: 9999
   padding: 0 3rem
   width: 100%
 
   &--scrolled
+    box-shadow: 0 2px 2px $shadow
     background: $white
 
   &__container
