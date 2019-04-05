@@ -1,16 +1,14 @@
 import Vue from 'vue'
 import VeeValidate from 'vee-validate'
-// import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import 'swiper/dist/css/swiper.css'
-// import VueWaypoint from 'vue-waypoint'
+import VueWaypoint from 'vue-waypoint'
 import VueScrollTo from 'vue-scrollto'
+import VueParallaxJs from 'vue-parallax-js'
 // import VueCookies from 'vue-cookies'
 // import VueAxe from 'vue-axe'
 
 const vendors = () => {
   Vue.use(VeeValidate)
-  // Vue.use(VueAwesomeSwiper, /* { default global options } */)
-  // Vue.use(VueWaypoint)
+  Vue.use(VueWaypoint)
   Vue.use(VueScrollTo, {
     container: 'body',
     duration: 1500,
@@ -22,6 +20,7 @@ const vendors = () => {
     x: false,
     y: true
   })
+  Vue.use(VueParallaxJs, {minWidth: 768})
   // Vue.use(VueCookies)
   // Vue.use(VueAxe, {
   //   config: {
