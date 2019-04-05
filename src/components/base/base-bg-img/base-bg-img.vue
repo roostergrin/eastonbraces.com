@@ -14,8 +14,7 @@ export default {
   },
   data () {
     return {
-      pageLoaded: false,
-      imageLoading: false,
+      currentImg: null,
       compSrc: '@/assets/error.png',
       intersectionOptions: {
         root: null,
@@ -25,17 +24,17 @@ export default {
     }
   },
   mounted () {
-    this.pageLoaded = true
     this.setCompressed()
   },
   methods: {
     setCompressed () {
       this.compSrc = this.src.split(/\.(?=[^.]+$)/).join('-compressed.')
+      this.currentImg = this.compSrc
     },
     onWaypoint ({ going, direction }) {
       if (going === 'in') {
         console.log('worked')
-        this.imageLoading = true
+        this.currentImg = this.src
       }
     }
   }

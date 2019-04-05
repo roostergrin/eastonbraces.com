@@ -1,7 +1,6 @@
 .base-bg-img(
   role='img'
   :aria-label='alt'
-  :style="{ backgroundImage: 'url(' + loaded ? src : compSrc + ')' }"
-  v-waypoint="{ active: true, options: intersectionOptions }"
-)
-  img(:alt='alt')
+  :style="{ backgroundImage: 'url(' + currentImg + ')' }"
+  v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }")
+  img(:alt='alt', style='visibility: hidden; height: 0;')
