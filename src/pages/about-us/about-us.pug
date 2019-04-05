@@ -1,2 +1,15 @@
 .pages-about-us(v-if='props')
-  pre {{ props }}
+  BaseHero(:content='props.hero')
+  BaseContainer(v-show='$route.hash === "#doctor"')
+    CustomAboutDoctor(slot='first', :content='props.doctor')
+  BaseContainer(v-show='$route.hash === "#team"')
+    pre(slot='first') {{ props.heading }}
+    pre(slot='second') {{ props.team }}
+  BaseContainer(v-show='$route.hash === "#gallery"')
+    pre(slot='first') {{ props.lives }}
+    pre(slot='second') {{ props.community }}
+  BaseContainer(v-show='$route.hash === "#facebook"')
+    pre(slot='first') {{ props.facebook }}
+  BaseContainer(v-show='$route.hash === "#map"')
+    pre(slot='first') {{ props.heading_2 }}
+    pre(slot='second') {{ props.map }}
