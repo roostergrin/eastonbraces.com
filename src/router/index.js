@@ -19,6 +19,7 @@ const router = new VueRouter({
       path: '/',
       name: 'home',
       navigation: false,
+      list: true,
       meta: [
         {
           path: '/#welcome',
@@ -37,7 +38,7 @@ const router = new VueRouter({
         },
         {
           path: '/#facebook',
-          name: 'Check Us Out on Facebook',
+          name: 'Facebook',
           anchor: 'facebook'
         },
         {
@@ -52,6 +53,7 @@ const router = new VueRouter({
       path: '/about-us',
       name: 'about us',
       navigation: true,
+      list: true,
       meta: [
         {
           path: '/about-us#doctor',
@@ -71,9 +73,17 @@ const router = new VueRouter({
         },
         {
           path: '/about-us#gallery',
-          name: 'Community Involvement Gallery',
+          name: 'In the Community',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'gallery',
+          background: null,
+          icon: null
+        },
+        {
+          path: '/about-us#facebook',
+          name: 'Facebook',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          anchor: 'facebook',
           background: null,
           icon: null
         },
@@ -92,10 +102,11 @@ const router = new VueRouter({
       path: '/treatments',
       name: 'treatments',
       navigation: true,
+      list: true,
       meta: [
         {
           path: '/treatments#invisalign',
-          name: 'Invisalign/Clear Aligners',
+          name: 'Invisalign',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'invisalign',
           background: null,
@@ -111,7 +122,7 @@ const router = new VueRouter({
         },
         {
           path: '/treatments#early',
-          name: 'Early Treatment',
+          name: 'Early Intervention',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'early',
           background: null,
@@ -148,10 +159,11 @@ const router = new VueRouter({
       path: '/new-patients',
       name: 'new patients',
       navigation: true,
+      list: true,
       meta: [
         {
           path: '/new-patients#first',
-          name: 'Your First Appointment',
+          name: 'First Appointment',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'first',
           background: null,
@@ -167,7 +179,7 @@ const router = new VueRouter({
         },
         {
           path: '/new-patients#consultation',
-          name: 'Schedule a Free Consultation',
+          name: 'Free Consultation',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'consultation',
           background: null,
@@ -175,7 +187,7 @@ const router = new VueRouter({
         },
         {
           path: '/new-patients#contact',
-          name: 'Contact Us',
+          name: 'Contact',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'contact',
           background: null,
@@ -188,6 +200,7 @@ const router = new VueRouter({
       path: '/halvorsen-difference',
       name: 'halvorsen difference',
       navigation: true,
+      list: true,
       meta: [
         {
           path: '/halvorsen-difference#apart',
@@ -220,16 +233,25 @@ const router = new VueRouter({
       path: '/styleguide',
       name: 'Styleguide',
       navigation: false,
+      list: false,
       component: Styleguide
     },
     {
       path: '/*',
       name: '404',
       navigation: false,
+      list: false,
       component: PageNotFound
     }
   ],
   scrollBehavior
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.path !== from.path) {
+    window.scrollTo(0, 0)
+  }
+  next()
 })
 
 export default router
