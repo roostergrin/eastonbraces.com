@@ -1,0 +1,11 @@
+.base-hero
+  .base-hero__background(:style="{ backgroundImage: 'url(' + content.image + ')' }")
+  
+  .base-hero__nav
+    .base-hero__link(
+      v-for='(link, i) in $route.meta'
+      :key="'link - ' + i"
+      :id="link.anchor"
+      v-html='link.name'
+      @click='changeSection(link)'
+      :class="{ 'base-hero__link--active': activeLink === link.anchor }")
