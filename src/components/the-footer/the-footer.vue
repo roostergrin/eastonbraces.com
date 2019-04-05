@@ -9,9 +9,6 @@ export default {
     content () {
       return this.$store.state.app['the-footer']
     }
-  },
-  mounted () {
-    console.log(this.links)
   }
 }
 </script>
