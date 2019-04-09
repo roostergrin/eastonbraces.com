@@ -1,0 +1,129 @@
+.block-tabs-wheel
+  position: relative
+  background: $white
+  overflow: hidden
+
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    background: $sky-blue-13
+    width: 100%
+    height: 100%
+
+  &__background
+    @include svg-size(100rem, 10rem)
+    position: absolute
+    top: -8rem
+    left: 2rem
+    z-index: 9
+    fill: $white
+
+  &__container
+    position: relative
+    margin: 0 auto
+    max-width: $max-width
+    min-height: 40rem
+
+  &__container-title
+    @extend .container
+
+  &__col-title
+    @extend .col-10
+    @extend .col-2--offset
+
+  &__title
+    position: relative
+    z-index: 10
+    padding-top: 3rem
+    color: $sky-blue
+
+  &__tabs
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    width: calc(100% * (4 / 12))
+    height: 100%
+
+  &__tab
+    @extend .flex-center-start
+    position: absolute
+    top: 57%
+    left: 5%
+    transform: translate(0, -50%)
+    cursor: pointer
+
+    &:hover
+      .block-tabs-wheel__tab-icon
+        border-color: $sunny-yellow
+      .block-tabs-wheel__tab-label
+        box-shadow: 2px 2px 1px 1px $sunny-yellow
+
+    &-icon
+      @include svg-size(3rem, 3rem)
+      transition: border .25s ease-in
+      z-index: 9
+      border: 3px solid $sky-blue
+      border-top: none
+      border-left: none
+      border-radius: 50%
+      background: $white
+      padding: .75rem
+
+    &-label
+      @include button
+      position: absolute
+      bottom: -.5rem
+      left: 4rem
+      min-width: 10.5rem
+      text-align: center
+      color: $brown-grey
+
+    &:first-child
+      top: 17.5%
+      left: 35%
+
+    &:nth-child(2)
+      top: 35%
+      left: 15%
+
+    &:last-child
+      top: 80%
+      left: 5%
+
+  &__content
+    position: absolute
+    top: 0
+    left: calc(100% * (4 / 12))
+    z-index: 9
+    width: calc(100% * (6 / 12))
+    height: 100%
+
+  &__text-box
+    @extend .img-centered
+    transition: opacity .25s ease-in
+    opacity: 0
+    height: auto
+
+    &--active
+      opacity: 1
+      transition-delay: .25s
+
+  &__section-title
+    padding-bottom: 2rem
+    color: $sky-blue
+
+  &__body
+    padding-bottom: .5rem
+    color: $brown-grey
+
+    &-title
+      @extend h2
+      padding: .5rem 0
+      color: $sky-blue
+
+  &__button
+    text-decoration: none
+    color: $sky-blue
