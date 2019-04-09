@@ -1,0 +1,28 @@
+.block-text-image
+  padding: 4rem 0
+  &__container
+    @extend .container
+
+  &__col-title
+    @extend .col-11
+    @extend .col-1--offset
+
+  &__col-image
+    @extend .col-3
+    @extend .col-1--offset
+
+  &__col-body
+    @extend .col-7
+
+  &__image-box
+    position: relative
+
+  &__layer-image
+    @include layer-image(20rem)
+
+  &__title
+    padding: 0 0 4rem
+    color: $sky-blue
+
+  &__body
+    color: $brown-grey
