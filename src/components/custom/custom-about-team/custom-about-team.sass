@@ -1,0 +1,38 @@
+.custom-about-team
+
+  &__section
+    padding: 2rem 0
+
+  &__container
+    @extend .container
+
+    .custom-about-team__section--alt &
+      flex-direction: row-reverse
+      justify-content: flex-end
+
+  &__col-image
+    @extend .col-3
+    @extend .col-1--offset
+
+    .custom-about-team__section--alt &
+      margin: 0
+
+
+  &__col-body
+    @extend .col-7
+
+    .custom-about-team__section--alt &
+      margin-left: calc((1 / 12) * 100%)
+
+  &__image-box
+    position: relative
+
+  &__layer-image
+    @include layer-image(20rem)
+
+  &__title
+    padding: 1rem 0 2rem
+    color: $sky-blue
+
+  &__body
+    color: $brown-grey
