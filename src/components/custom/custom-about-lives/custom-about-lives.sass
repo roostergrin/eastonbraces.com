@@ -1,0 +1,41 @@
+.custom-about-lives
+  position: relative
+  z-index: 1
+  padding-bottom: 2rem
+
+  &__title
+    padding: 2rem 0 4rem
+    color: $sky-blue
+
+  &__container
+    @extend .container
+
+  &__col
+    &-title
+      @extend .col-12
+
+    &-right
+      @extend .col-5
+
+    &-left
+      @extend .col-4
+      @extend .col-1--offset
+
+  &__image
+    @extend .img-full
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+    &-box
+      position: relative
+      height: 100%
+
+  &__body
+    color: $brown-grey
+
+  &__button
+    display: block
+    padding-top: 2rem
+    text-decoration: none
+    color: $sky-blue

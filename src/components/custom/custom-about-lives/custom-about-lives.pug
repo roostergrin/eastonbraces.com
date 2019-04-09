@@ -1,0 +1,13 @@
+.custom-about-lives
+  .custom-about-lives__container
+    .custom-about-lives__col-title
+      h1.custom-about-lives__title(v-html='content.title')
+    .custom-about-lives__col-left
+      .custom-about-lives__image-box
+        BaseBGImg.custom-about-lives__image(:src='content.icon')
+    .custom-about-lives__col-right
+      .custom-about-lives__body(v-html='content.body')
+      a.custom-about-lives__button(
+        :href='content.button.href'
+        target='_blank'
+        v-html='content.button.label')
