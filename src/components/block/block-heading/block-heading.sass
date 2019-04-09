@@ -1,0 +1,33 @@
+.block-heading
+  position: relative
+  z-index: -1
+  background: $sky-blue-13
+  padding: 6rem 0 4rem
+  overflow-x: hidden
+
+  &__background
+    @include svg-size(250rem, 10rem)
+    position: absolute
+    top: -5rem
+    left: -35rem
+    fill: $white
+
+  &__container
+    @extend .container
+
+    .custom-about-team__section--alt &
+      flex-direction: row-reverse
+
+  &__col
+    @extend .col-6
+    @extend .col-3--offset
+
+    &-title
+      @extend .col-12
+
+  &__title
+    color: $sky-blue
+
+  &__body
+    padding-top: 4rem
+    color: $brown-grey
