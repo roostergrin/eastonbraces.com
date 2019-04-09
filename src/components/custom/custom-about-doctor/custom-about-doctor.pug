@@ -1,3 +1,18 @@
 .custom-about-doctor
   .custom-about-doctor__container
-    pre {{ content }}
+    .custom-about-doctor__col-top.custom-about-doctor__col--top
+      .custom-about-doctor__top-content
+        BaseBGImg.custom-about-doctor__image(:src='content.image')
+        .custom-about-doctor__text-box
+          h1.custom-about-doctor__title(v-html='content.title')
+          .custom-about-doctor__education(v-html='content.education')
+  .custom-about-doctor__container
+    .custom-about-doctor__col.custom-about-doctor__col--bottom-left
+      .custom-about-doctor__body.custom-about-doctor__body--mid(v-html='content.body')
+      .custom-about-doctor__body(v-html='content.sub_body')
+    .custom-about-doctor__col.custom-about-doctor__col--bottom-right
+      .custom-about-doctor__image-box
+        .custom-about-doctor__layer-image
+          BaseBGImg.custom-about-doctor__layer-image-image(:src='content.sub_image')
+          .custom-about-doctor__layer-image-bg-1
+          .custom-about-doctor__layer-image-bg-2

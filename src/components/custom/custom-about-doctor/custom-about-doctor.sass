@@ -1,2 +1,49 @@
 .custom-about-doctor
-  position: relative
+  padding: 6rem 0
+
+  &__container
+    @extend .container
+
+  &__col
+    &--top
+      @extend .col-6
+      @extend .col-1--offset
+    &--mid
+      @extend .col-11
+      @extend .col-1--offset
+    &--bottom-left
+      @extend .col-6
+      @extend .col-1--offset
+    &--bottom-right
+      @extend .col-4
+
+  &__top-content
+    @extend .flex-start
+
+  &__image
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    min-height: 10rem
+
+  &__text-box
+    padding-left: 2rem
+
+  &__title
+    padding-bottom: 1rem
+    color: $sky-blue
+
+  &__education
+    line-height: 1.5
+    color: $brown-grey
+
+  &__body
+    color: $brown-grey
+    &--mid
+      padding: 4rem 0 2rem
+
+  &__image-box
+    padding-top: 4rem
+
+  &__layer-image
+    @include layer-image(20rem)
