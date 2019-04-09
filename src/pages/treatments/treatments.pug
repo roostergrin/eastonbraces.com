@@ -1,2 +1,4 @@
 .pages-treatments(v-if='props')
+  BaseHero(:content='props.hero')
+  transition-group(name='fade')
   pre {{ props }}
