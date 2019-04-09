@@ -1,15 +1,16 @@
 .pages-about-us(v-if='props')
   BaseHero(:content='props.hero')
-  BaseContainer(v-show='$route.hash === "#doctor"')
-    CustomAboutDoctor(slot='first', :content='props.doctor')
-  BaseContainer(v-show='$route.hash === "#team"')
-    pre(slot='first') {{ props.heading }}
-    pre(slot='second') {{ props.team }}
-  BaseContainer(v-show='$route.hash === "#gallery"')
-    pre(slot='first') {{ props.lives }}
-    pre(slot='second') {{ props.community }}
-  BaseContainer(v-show='$route.hash === "#facebook"')
-    pre(slot='first') {{ props.facebook }}
-  BaseContainer(v-show='$route.hash === "#map"')
-    pre(slot='first') {{ props.heading_2 }}
-    pre(slot='second') {{ props.map }}
+  transition-group(name='fade')
+    BaseContainer(v-show='$route.hash === "#doctor" || $route.hash === ""' key='1')
+      CustomAboutDoctor(slot='first', :content='props.doctor')
+    BaseContainer(v-show='$route.hash === "#team"' key='2')
+      BlockHeading(slot='first', :content='props.heading')
+      CustomAboutTeam(slot='second', :content='props.team')
+    BaseContainer(v-show='$route.hash === "#gallery"' key='3')
+      BlockHeading(slot='first', :content='props.heading_2')
+      CustomAboutLives(slot='second', :content='props.lives')
+      CustomAboutCommunity(slot='third', :content='props.community')
+    BaseContainer(v-show='$route.hash === "#facebook"' key='4')
+      BlockFacebook(slot='first', :content='props.facebook')
+    BaseContainer(v-show='$route.hash === "#map"' key='5')
+      pre(slot='second') {{ props.map }}
