@@ -1,3 +1,11 @@
 .pages-new-patients(v-if='props')
   BaseHero(:content='props.hero')
-  pre {{ props }}
+  transition-group(name='fade')
+    BaseContainer(v-show='$route.hash === "#first" || $route.hash === ""' key='1')
+      BlockTextImage(slot='first', :content='props.text_image')
+    BaseContainer(v-show='$route.hash === "#financial"' key='2')
+      BlockTabsWheel(slot='first', :content='props.wheel')
+    BaseContainer(v-show='$route.hash === "#consultation"' key='3')
+      pre(slot='first') {{ props.free }}
+    BaseContainer(v-show='$route.hash === "#contact"' key='4')
+      pre(slot='first') {{ props.contact }}
