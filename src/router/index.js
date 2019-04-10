@@ -217,15 +217,15 @@ const router = new VueRouter({
           anchor: 'reviews',
           background: null,
           icon: null
-        },
-        {
-          path: '/halvorsen-difference#before',
-          name: 'Before and Afters',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'before',
-          background: null,
-          icon: null
         }
+        // {
+        //   path: '/halvorsen-difference#before',
+        //   name: 'Before and Afters',
+        //   image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+        //   anchor: 'before',
+        //   background: null,
+        //   icon: null
+        // }
       ],
       component: HalvorsenDifference
     },
