@@ -1,0 +1,25 @@
+.custom-about-free
+  position: relative
+  background: $sky-blue-6
+  overflow: hidden
+
+  &__background
+    @include svg-size(100rem, 10rem)
+    position: absolute
+    top: -8rem
+    left: 0
+    z-index: 9
+    fill: $white
+
+  &__container
+    @extend .container
+
+  &__col-title
+    @extend .col-10
+    @extend .col-2--offset
+
+  &__title
+    position: relative
+    z-index: 10
+    padding-top: 3rem
+    color: $sky-blue
