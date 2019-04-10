@@ -24,12 +24,6 @@ $half: $columns / 2 - 1
         @media screen and (max-width: $screen-phone-lg)
           flex-basis: 100%
 
-    @if $i <= $half
-      @include tablet-lg
-        width: 50%
-      @include phone-lg
-        width: 100%
-
     .container-large &
       @include tablet-lg
         width: 100%
@@ -46,12 +40,6 @@ $half: $columns / 2 - 1
 
           @media screen and (max-width: $screen-phone-lg)
             flex-basis: 100%
-
-      @if $i <= $half
-        @include tablet-lg
-          width: 50%
-        @include phone-lg
-          width: 100%
 
     &--offset
       @include tablet-lg
