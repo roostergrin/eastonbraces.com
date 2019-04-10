@@ -1,0 +1,34 @@
+.custom-new-contact
+  position: relative
+
+  &__container
+    @extend .container
+
+  &__col-title
+    @extend .col-6
+
+  &__col-form
+    @extend .col-6
+
+  &__col-info
+    @extend .col-4
+
+  &__title
+    position: relative
+    z-index: 10
+    padding-top: 6rem
+    padding-bottom: 4rem
+    color: $sky-blue
+
+  &__subtitle
+    padding-bottom: .5rem
+    color: $light-navy
+
+  &__link
+    display: block
+    transition: color .25s ease-in
+    text-decoration: none
+    color: $brown-grey
+
+    &:hover
+      color: $sky-blue
