@@ -1,0 +1,35 @@
+.form-contact
+  transition(name='fade-in')
+    h1.form-contact__thank-you(v-if='formSuccess && formSubmitted') Thank you for Contacting Us!
+  transition(name='fade-in')
+    .form-contact__sending-overlay(v-if='!formSuccess && formSubmitted')
+      h1.form-contact__sending Sending
+        span .
+        span .
+        span .
+        
+  form.form-contact__form(@submit.prevent='validate', method='post', v-if='!formSubmitted')
+    
+    .form-contact__group
+      input.form-contact__input(name='fullName', v-model='fullName', v-validate="'required|alpha_spaces'", :class="{ 'form-contact__input--error': errors.has('fullName') }", type='text')
+      label.form-contact__label(:class="{ 'form-contact__label--active': fullName }") Patient Name
+      .form-contact__message(v-show="errors.has('fullName')") Your name is required.
+      
+    .form-contact__group
+      input.form-contact__input(name='guardName', v-model='guardName', v-validate="'required|alpha_spaces'", :class="{ 'form-contact__input--error': errors.has('guardName') }", type='text')
+      label.form-contact__label(:class="{ 'form-contact__label--active': guardName }") Parent/Guardian Name
+      .form-contact__message(v-show="errors.has('guardName')") Your Guardian's name is required.
+    
+    .form-contact__group
+      input.form-contact__input(name='clientEmail', v-model='clientEmail', v-validate="'required|email'", :class="{ 'input': true, 'form-contact__input--error': errors.has('clientEmail') }")
+      label.form-contact__label(:class="{ 'form-contact__label--active': clientEmail }") E-mail
+      .form-contact__message(v-show="errors.has('clientEmail')")  Please Input a Valid E-mail
+    
+    .form-contact__group.form-contact__group--phone
+      input.form-contact__input(name='clientPhone', v-model='clientPhone', v-validate="'required|numeric'", :class="{ 'input': true, 'form-contact__input--error': errors.has('clientPhone') }")
+      label.form-contact__label(:class="{ 'form-contact__label--active': clientPhone }") Phone
+      .form-contact__message(v-show="errors.has('clientPhone')") Please Input a Valid Phone Number, Only Numbers
+    
+    .form-contact__button-group
+      .form-contact__submit-button.active(@click='validate')
+        span Submit

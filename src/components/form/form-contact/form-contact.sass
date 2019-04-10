@@ -1,0 +1,125 @@
+.form-contact
+  z-index: 5
+  padding-bottom: 2rem
+  width: 100%
+
+  &__form
+    @extend .flex-center-between
+    flex-wrap: wrap
+
+  &__group
+    position: relative
+    margin-top: 2rem
+    width: 100%
+
+    &:first-child
+      margin-top: 0
+
+    &--phone
+      @include phone
+        width: 100%
+      width: 50%
+
+  &__label
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    transition: font-size .25s ease-in, transform .25s ease-in, top .25s ease-in
+    padding-left: .75rem
+    color: $brown-grey
+    pointer-events: none
+
+    &--active
+      top: .25rem
+      transform: translateY(0)
+      color: $brown-grey
+      font-size: 11px
+
+  &__input
+    @extend p
+    border-bottom: 2px solid $sunny-yellow
+    background: $white-two
+    padding: 1rem
+    width: 100%
+    color: $brown-grey
+
+    &:focus,
+    &:active
+      outline: transparent
+
+    &:focus + .form-contact__label,
+    &:active + .form-contact__label
+      top: .25rem
+      transform: translateY(0)
+      color: $brown-grey
+      font-size: 11px
+
+    &--error
+      border-color: $danger
+
+    &--error,
+    &--error + .form-contact__label
+      color: $danger
+
+  &__message
+    position: absolute
+    right: 0
+    bottom: -1.25rem
+    padding: .25rem .75rem
+    color: $danger
+    font-size: 9px
+
+    .form-contact__group-message &
+      bottom: .75rem
+
+  &__button-group
+    display: block
+    padding-top: 3rem
+    width: 100%
+
+  &__submit-button
+    @include button
+    display: inline-block
+    cursor: pointer
+    width: 10rem
+    text-align: center
+
+
+  &__thank-you
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+  &__sending-overlay
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 99
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+  &__sending
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    span
+      animation: ellipsis 1s ease infinite
+      opacity: 0
+
+      @for $i from 1 through 3
+        &:nth-child(#{$i})
+          animation-delay: (($i - 1) * .1s)
+
+      @keyframes ellipsis
+        0%
+          opacity: 0
+        50%
+          opacity: 0
+        100%
+          opacity: 1
