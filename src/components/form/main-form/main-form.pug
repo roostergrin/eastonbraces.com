@@ -1,0 +1,35 @@
+.main-form
+  transition(name='fade-in')
+    h1.main-form__thank-you(v-if='formSuccess && formSubmitted') Thank you for Contacting Us!
+  transition(name='fade-in')
+    .main-form__sending-overlay(v-if='!formSuccess && formSubmitted')
+      h1.main-form__sending Sending
+        span .
+        span .
+        span .
+        
+  form.main-form__form(@submit.prevent='validate', method='post', v-if='!formSubmitted')
+    
+    .main-form__group
+      input.main-form__input(name='fullName', v-model='fullName', v-validate="'required|alpha_spaces'", :class="{ 'main-form__input--error': errors.has('fullName') }", type='text')
+      label.main-form__label(:class="{ 'main-form__label--active': fullName }") Name
+      .main-form__message(v-show="errors.has('fullName')") Your name is required.
+    
+    .main-form__group.main-form__group--half
+      input.main-form__input(name='clientEmail', v-model='clientEmail', v-validate="'required|email'", :class="{ 'input': true, 'main-form__input--error': errors.has('clientEmail') }")
+      label.main-form__label(:class="{ 'main-form__label--active': clientEmail }") E-mail
+      .main-form__message(v-show="errors.has('clientEmail')")  Please Input a Valid E-mail
+    
+    .main-form__group.main-form__group--half
+      input.main-form__input(name='clientPhone', v-model='clientPhone', v-validate="'required|numeric'", :class="{ 'input': true, 'main-form__input--error': errors.has('clientPhone') }")
+      label.main-form__label(:class="{ 'main-form__label--active': clientPhone }") Phone
+      .main-form__message(v-show="errors.has('clientPhone')") Please Input a Valid Phone Number, Only Numbers
+    
+    .main-form__group.main-form__group-message
+      textarea.main-form__input(name='comments', v-model='comments', v-validate="'required'", :class="{ 'input': true, 'main-form__input--error': errors.has('comments') }")
+      label.main-form__label(:class="{ 'main-form__label--active': comments }") Comments
+      .main-form__message(v-show="errors.has('comments')") Please Input a Reason for Contacting Us
+    
+    .main-form__button-group
+      .main-form__submit-button.active(@click='validate')
+        span Submit
