@@ -1,0 +1,7 @@
+.block-gradient(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+  .block-gradient__overlay
+  .block-gradient__content
+    .block-gradient__container
+      .block-gradient__col
+        h1.block-gradient__title(v-html='content.title')
+        .block-gradient__body(v-html='content.body')

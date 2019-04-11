@@ -1,0 +1,24 @@
+.block-gradient
+  position: relative
+  background-repeat: no-repeat
+  background-position: right
+  background-size: contain
+  padding: 4rem 0
+
+  &__overlay
+    @extend .img-full
+    background-image: linear-gradient(to right, $white, transparent 70%)
+
+  &__container
+    @extend .container
+
+  &__col
+    @extend .col-8
+
+  &__title
+    padding-right: 40%
+    padding-bottom: 4rem
+    color: $sky-blue
+
+  &__body
+    color: $brown-grey
