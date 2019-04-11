@@ -1,4 +1,15 @@
 .pages-treatments(v-if='props')
   BaseHero(:content='props.hero')
   transition-group(name='fade')
-  pre {{ props }}
+    BaseContainer(v-show='$route.hash === "#invisalign" || $route.hash === ""' key='1')
+      BlockGradient(slot='first', :content='props.gradient')
+    BaseContainer(v-show='$route.hash === "#braces"' key='2')
+      pre(slot='first') {{ props.braces }}
+    BaseContainer(v-show='$route.hash === "#early"' key='3')
+      pre(slot='first') {{ props.early }}
+    BaseContainer(v-show='$route.hash === "#adult"' key='4')
+      BlockGradient(slot='first', :content='props.gradient_2')
+    BaseContainer(v-show='$route.hash === "#life"' key='5')
+      pre(slot='first') {{ props.life }}
+    BaseContainer(v-show='$route.hash === "#faq"' key='6')
+      pre(slot='first') {{ props.faq }}
