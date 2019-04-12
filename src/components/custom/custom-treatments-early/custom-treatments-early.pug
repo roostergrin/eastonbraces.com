@@ -1,0 +1,16 @@
+.custom-treatments-early(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+  .custom-treatments-early__container
+    .custom-treatments-early__col-title
+      h1.custom-treatments-early__title(v-html='content.title')
+    .custom-treatments-early__col-body
+      .custom-treatments-early__text-box
+        .custom-treatments-early__content(
+          v-for='(content, i) in content.qa'
+          :key="'content - ' + i")
+          .custom-treatments-early__question(
+            v-html='content.question'
+            @click='setActive(i)'
+            :class="{ 'custom-treatments-early__question--active': activeAccord === i }")
+          .custom-treatments-early__answer(
+            v-html='content.answer'
+            :class="{ 'custom-treatments-early__answer--active': activeAccord === i }")
