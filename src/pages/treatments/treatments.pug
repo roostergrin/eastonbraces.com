@@ -4,12 +4,14 @@
     BaseContainer(v-show='$route.hash === "#invisalign" || $route.hash === ""' key='1')
       BlockGradient(slot='first', :content='props.gradient')
     BaseContainer(v-show='$route.hash === "#braces"' key='2')
-      pre(slot='first') {{ props.braces }}
+      CustomTreatmentsBraces(slot='first', :content='props.braces')
     BaseContainer(v-show='$route.hash === "#early"' key='3')
-      pre(slot='first') {{ props.early }}
+      CustomTreatmentsEarly(slot='first', :content='props.early')
     BaseContainer(v-show='$route.hash === "#adult"' key='4')
       BlockGradient(slot='first', :content='props.gradient_2')
     BaseContainer(v-show='$route.hash === "#life"' key='5')
-      pre(slot='first') {{ props.life }}
+      BlockGradient(slot='first', :content='props.gradient_3')
+      CustomTreatmentsEmergencies(slot='second', :content='props.emergencies')
+      CustomTreatmentsColor(slot='third', :content='props.color')
     BaseContainer(v-show='$route.hash === "#faq"' key='6')
       pre(slot='first') {{ props.faq }}
