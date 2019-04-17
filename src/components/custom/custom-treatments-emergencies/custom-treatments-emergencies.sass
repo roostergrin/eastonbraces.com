@@ -1,0 +1,62 @@
+.custom-treatments-emergencies
+  padding: 4rem 0
+
+  &__container
+    @extend .container
+
+  &__col-title
+    @extend .col-12
+
+  &__col-body,
+  &__col-qa
+    @extend .col-6
+    color: $brown-grey
+
+  &__title
+    padding-bottom: 2rem
+    color: $sky-blue
+
+  &__text-box
+    min-height: 20rem
+
+  &__content
+    cursor: pointer
+
+  &__question
+    position: relative
+    padding-bottom: .5rem
+    padding-left: 1rem
+    color: $sky-blue
+
+    &:before,
+    &:after
+      position: absolute
+      top: calc(50% - .5rem)
+      left: 0
+      transform: translateY(-50%)
+      transition: transform .25s ease-in
+      background: $sky-blue
+      width: .5rem
+      height: 1px
+      content: ''
+
+    &:after
+      transform: translateY(-50%) rotate(90deg)
+
+    &--active
+      &:after
+        transform: rotate(0)
+
+  &__answer
+    opacity: 0
+    padding: .5rem
+    padding-top: 0
+    padding-left: 1.5rem
+    height: 0
+    color: $brown-grey
+    pointer-events: none
+
+    &--active
+      transition: opacity .25s ease-in, height .25s ease-in
+      opacity: 1
+      height: auto

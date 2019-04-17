@@ -1,0 +1,18 @@
+.custom-treatments-emergencies
+  .custom-treatments-emergencies__container
+    .custom-treatments-emergencies__col-title
+      h1.custom-treatments-emergencies__title(v-html='content.title')
+    .custom-treatments-emergencies__col-body
+      .custom-treatments-emergencies__body(v-html='content.body')
+    .custom-treatments-emergencies__col-qa
+      .custom-treatments-emergencies__text-box
+        .custom-treatments-emergencies__content(
+          v-for='(content, i) in content.qa'
+          :key="'content - ' + i")
+          .custom-treatments-emergencies__question(
+            v-html='content.question'
+            @click='setActive(i)'
+            :class="{ 'custom-treatments-emergencies__question--active': activeAccord === i }")
+          .custom-treatments-emergencies__answer(
+            v-html='content.answer'
+            :class="{ 'custom-treatments-emergencies__answer--active': activeAccord === i }")
