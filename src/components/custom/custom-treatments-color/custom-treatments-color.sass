@@ -1,0 +1,125 @@
+.custom-treatments-color
+  padding: 4rem 0
+
+  &__container
+    @extend .container
+
+  &__content
+    position: relative
+    min-height: 35rem
+
+  &__title
+    padding-bottom: 2rem
+    color: $sky-blue
+
+  &__background
+    @extend .img-full
+
+    &-color-fade
+      @extend .img-centered
+      z-index: 2
+      background-image: linear-gradient(to left, #e7f3fc 25%, transparent 50%, transparent, transparent 65%, $white 77.5%)
+      width: calc(#{$max-width} * 2)
+      pointer-events: none
+
+    &-color
+      @extend .img-centered
+      z-index: 0
+      background-image: linear-gradient(to left, #e7f3fc, $white)
+      width: 100%
+      pointer-events: none
+
+    &-selector
+      @extend .img-centered
+      z-index: 1
+      width: calc(#{$max-width} + 10rem)
+
+    &-image
+      @extend .img-centered
+      width: calc(#{$max-width} + 10rem)
+
+  &__band
+    &-color
+      z-index: -1
+
+    &-click
+      z-index: 9
+
+    &-color,
+    &-click
+      position: absolute
+      top: 44%
+      left: 23%
+      cursor: pointer
+      width: 2.5rem
+      height: 1.75rem
+
+      &--1
+        top: 45.5%
+        left: 27.5%
+
+      &--2
+        top: 46.5%
+        left: 32%
+
+      &--3
+        top: 46.5%
+        left: 32%
+
+      &--4
+        top: 47.5%
+        left: 36%
+
+      &--5
+        top: 48%
+        left: 39.25%
+        width: 2rem
+
+      &--6
+        top: 53.5%
+        left: 29%
+
+      &--7
+        top: 54%
+        left: 32%
+
+      &--8
+        top: 54%
+        left: 35.5%
+        width: 1.75rem
+
+      &--9
+        top: 54%
+        left: 37.5%
+        width: 1.75rem
+
+  &__text-box
+    @extend .flex-center-start
+    position: absolute
+    top: 50%
+    left: calc(50% + 2rem)
+    flex-direction: column
+    transform: translateY(-50%)
+    z-index: 9
+    max-width: calc((#{$max-width} / 2) - 2rem)
+    min-height: 30rem
+
+  &__body
+    padding-bottom: 2rem
+    color: $brown-grey
+
+  &__selectors
+    @extend .flex-center-start
+    flex-wrap: wrap
+
+  &__selector
+    margin: .25rem
+    cursor: pointer
+    width: 2rem
+    height: 2rem
+
+  &__button
+    display: block
+    padding-top: 2rem
+    &-icon
+      @include svg-size(12rem, 3.5rem)

@@ -1,0 +1,30 @@
+.custom-treatments-color
+  .custom-treatments-color__container
+    h1.custom-treatments-color__title(v-html='content.title')
+  
+  .custom-treatments-color__content
+    .custom-treatments-color__background
+      .custom-treatments-color__background-selector
+        .custom-treatments-color__background-image(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+        .custom-treatments-color__band-color(
+          v-for='(selector, i) in content.colors'
+          :key='"band color - " + i'
+          :class="'custom-treatments-color__band-color--' + i"
+          :style="{ backgroundColor: band[i] }")
+        .custom-treatments-color__band-click(
+          v-for='(selector, i) in content.colors'
+          :key='"clicker - " + i'
+          :class="'custom-treatments-color__band-click--' + i"
+          @click='setBandColor(i)')
+      .custom-treatments-color__background-color
+      .custom-treatments-color__background-color-fade
+    .custom-treatments-color__text-box
+      .custom-treatments-color__body(v-html='content.body')
+      .custom-treatments-color__selectors
+        .custom-treatments-color__selector(
+          v-for='(selector, i) in content.colors'
+          :key='"selector - " + i'
+          :style="{ backgroundColor: selector.color }"
+          @click='setActiveColor(selector.color, i)')
+      a.custom-treatments-color__button(:href='content.button.href')
+        BaseIcon.custom-treatments-color__button-icon(:name='content.button.icon')
