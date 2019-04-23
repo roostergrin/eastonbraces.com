@@ -17,13 +17,6 @@ $half: $columns / 2 - 1
       flex-basis: calc(#{$i} / #{$columns})
       flex-grow: 0
 
-      @if $i <= $half
-        @media screen and (max-width: $screen-tablet-lg)
-          flex-basis: 50%
-
-        @media screen and (max-width: $screen-phone-lg)
-          flex-basis: 100%
-
     .container-large &
       @include tablet-lg
         width: 100%
@@ -33,13 +26,6 @@ $half: $columns / 2 - 1
         flex: 0 0 auto
         flex-basis: calc((#{$i} / #{$columns}) * 100%)
         flex-grow: 0
-
-        @if $i <= $half
-          @media screen and (max-width: $screen-tablet-lg)
-            flex-basis: 50%
-
-          @media screen and (max-width: $screen-phone-lg)
-            flex-basis: 100%
 
     &--offset
       @include tablet-lg
