@@ -14,4 +14,4 @@
       CustomTreatmentsEmergencies(slot='second', :content='props.emergencies')
       CustomTreatmentsColor(slot='third', :content='props.color')
     BaseContainer(v-show='$route.hash === "#faq"' key='6')
-      pre(slot='first') {{ props.faq }}
+      CustomTreatmentsFAQ(slot='first', :content='props.faq')

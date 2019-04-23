@@ -6,6 +6,7 @@ import CustomTreatmentsBraces from 'components/custom/custom-treatments-braces/c
 import CustomTreatmentsColor from 'components/custom/custom-treatments-color/custom-treatments-color'
 import CustomTreatmentsEarly from 'components/custom/custom-treatments-early/custom-treatments-early'
 import CustomTreatmentsEmergencies from 'components/custom/custom-treatments-emergencies/custom-treatments-emergencies'
+import CustomTreatmentsFAQ from 'components/custom/custom-treatments-faq/custom-treatments-faq'
 
 export default {
   name: 'treatments',
@@ -19,7 +20,8 @@ export default {
     CustomTreatmentsBraces,
     CustomTreatmentsColor,
     CustomTreatmentsEarly,
-    CustomTreatmentsEmergencies
+    CustomTreatmentsEmergencies,
+    CustomTreatmentsFAQ
   }
 }
 </script>
