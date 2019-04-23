@@ -1,4 +1,6 @@
 .the-footer
+  @include phone-lg
+    padding-top: 2rem
   position: relative
   padding-top: 8rem
 
@@ -9,6 +11,8 @@
 
   &__container
     @extend .container
+    @include phone-lg
+      padding-bottom: 2rem
     padding-bottom: 6rem
 
   &__col-links
@@ -16,14 +20,20 @@
 
   &__links
     @extend .flex-start-between
+    @include phone-lg
+      flex-wrap: wrap
     text-align: center
 
   &__link-list
     @extend .flex-center-start
+    @include phone-lg
+      width: 100%
     flex-direction: column
     width: calc(100% / 5)
 
   &__link
+    @include phone-lg
+      display: none
     display: block
     transition: color .25s ease-in
     padding: .25rem 0
@@ -35,6 +45,8 @@
       color: $sky-blue
 
     &--top
+      @include phone-lg
+        display: block
       padding-bottom: 1.75rem
       color: $light-navy
 
@@ -46,6 +58,8 @@
     @extend .col-4--offset
 
   &__contacts
+    @include phone-lg
+      padding-top: 0
     padding-top: 4rem
 
   &__social
@@ -86,6 +100,8 @@
 
   &__copyright
     @extend .flex-center
+    @include phone-lg
+      text-align: center
     background: $sky-blue
     height: 4rem
     text-decoration: none
