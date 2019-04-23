@@ -2,24 +2,39 @@
   position: relative
   z-index: 9
   padding-top: 5rem
-  max-width: 100vw
-  overflow: hidden
 
   .pages-about-us &
     padding-top: 10rem
     padding-bottom: 8rem
 
-  &__background
+  &__background-overflow
     @include phone-lg
-      top: 25rem
+      height: calc(100% + 25rem)
     @include phone
-      top: 20rem
+      height: calc(100% + 20rem)
     position: absolute
-    top: 27.5rem
+    width: 100vw
+    height: calc(100% + 27.5rem)
+    overflow: hidden
+
+  &__background
+    @include tablet-lg
+      top: 12.5rem
+      transform: rotate(2.5deg) translate(-50%, 0)
+    @include tablet
+      top: 17.5rem
+    @include phone-lg
+      top: 5rem
+      transform: translate(-50%, 0)
+    @include phone
+      top: 7.5rem
+      height: 17.5rem
+    position: absolute
+    top: 20rem
     left: 50%
     transform: rotate(5deg) translate(-50%, 0)
     width: 4000px
-    height: 50%
+    height: 20rem
     overflow: hidden
     transform-origin: center top
 
@@ -34,6 +49,8 @@
 
   &__icon
     @include svg-size(12rem, 12rem)
+    @include tablet-lg
+      display: none
     position: absolute
     top: calc(50% - 8rem)
     left: calc(50% - ((#{$max-width} / 12) * 5))
@@ -59,6 +76,9 @@
       width: 100%
 
   &__slider
+    @include tablet-lg
+      width: 22.5rem
+      min-height: 22.5rem
     @include phone-lg
       display: none
     position: relative
