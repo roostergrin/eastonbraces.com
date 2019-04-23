@@ -1,18 +1,28 @@
 .custom-about-team
 
   &__section
+    @include phone-lg
+      padding: 2rem 0 0
     padding: 2rem 0
 
   &__container
     @extend .container
+    @include phone-lg
+      flex-direction: column-reverse
 
     .custom-about-team__section--alt &
+      @include phone-lg
+        flex-direction: column-reverse
       flex-direction: row-reverse
       justify-content: flex-end
 
   &__col-image
     @extend .col-3
     @extend .col-1--offset
+    @include tablet-lg
+      width: 50%
+    @include phone-lg
+      width: 100%
 
     .custom-about-team__section--alt &
       margin: 0
@@ -20,8 +30,14 @@
 
   &__col-body
     @extend .col-7
+    @include tablet-lg
+      width: 50%
+    @include phone-lg
+      width: 100%
 
     .custom-about-team__section--alt &
+      @include tablet-lg
+        margin-left: 0
       margin-left: calc((1 / 12) * 100%)
 
   &__image-box
@@ -29,10 +45,15 @@
 
   &__layer-image
     @include layer-image(20rem)
+    @include tablet-lg
+      margin: 0 auto
+      width: 75%
 
   &__title
     padding: 1rem 0 2rem
     color: $sky-blue
 
   &__body
+    @include phone-lg
+      padding-bottom: 2rem
     color: $brown-grey
