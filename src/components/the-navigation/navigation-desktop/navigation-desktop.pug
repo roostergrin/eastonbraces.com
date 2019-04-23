@@ -20,5 +20,5 @@ nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' 
                   h3.navigation-desktop__dropdown-text(v-html='item.name')
         .navigation-desktop__contact
           router-link.navigation-desktop__request(:to='content.appointment.href', v-html='content.appointment.label')
-          router-link.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", :to="icon.href")
+          a.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", :href="icon.href")
             BaseIcon(:name='icon.icon')
