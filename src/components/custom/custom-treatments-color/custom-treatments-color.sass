@@ -1,4 +1,6 @@
 .custom-treatments-color
+  @include tablet-lg
+    padding: 0 0 4rem
   padding: 4rem 0
 
   &__container
@@ -9,11 +11,15 @@
     min-height: 35rem
 
   &__title
+    @include tablet-lg
+      padding: 0 calc(#{$gutter} / 2) 2rem
     padding-bottom: 2rem
     color: $sky-blue
 
   &__background
     @extend .img-full
+    @include phone-lg
+      display: none
 
     &-color-fade
       @extend .img-centered
@@ -95,12 +101,20 @@
 
   &__text-box
     @extend .flex-center-start
+    @include tablet-lg
+      left: calc(40% + 2rem)
+      max-width: calc(60% - 2rem)
+    @include phone-lg
+      position: static
+      transform: none
+      padding: 0 calc(#{$gutter} / 2)
     position: absolute
     top: 50%
     left: calc(50% + 2rem)
     flex-direction: column
     transform: translateY(-50%)
     z-index: 9
+    width: 100%
     max-width: calc((#{$max-width} / 2) - 2rem)
     min-height: 30rem
 
@@ -110,6 +124,8 @@
 
   &__selectors
     @extend .flex-center-start
+    @include phone-lg
+      display: none
     flex-wrap: wrap
 
   &__selector
