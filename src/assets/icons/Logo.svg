@@ -3,12 +3,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 291.5 74.4" style="enable-background:new 0 0 291.5 74.4;" xml:space="preserve">
 <style type="text/css">
-	.logo-0{fill:url(#SVGID_1_);}
+	.logo-0{fill:url(#logoGradient) #2061AA;}
 	.logo-1{fill:#FFFFFF;}
 	.logo-text{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:1.5;}
 </style>
 <title>Logo</title>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-684.1993" y1="-509.3925" x2="-684.1993" y2="-508.3525" gradientTransform="matrix(83.85 0 0 73.86 57412.0312 37625)">
+<linearGradient id="logoGradient" gradientUnits="userSpaceOnUse" x1="-684.1993" y1="-509.3925" x2="-684.1993" y2="-508.3525" gradientTransform="matrix(83.85 0 0 73.86 57412.0312 37625)">
 	<stop  offset="0" style="stop-color:#8BA9D3"/>
 	<stop  offset="1" style="stop-color:#2061AA"/>
 </linearGradient>
