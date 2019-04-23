@@ -1,4 +1,8 @@
 .custom-treatments-emergencies
+  @include tablet-lg
+    padding-top: 0
+  @include phone-lg
+    padding-top: 4rem
   padding: 4rem 0
 
   &__container
@@ -16,7 +20,13 @@
     padding-bottom: 2rem
     color: $sky-blue
 
+  &__body
+    @include tablet-lg
+      padding-bottom: 2rem
+
   &__text-box
+    @include tablet-lg
+      min-height: 15rem
     min-height: 20rem
 
   &__content
