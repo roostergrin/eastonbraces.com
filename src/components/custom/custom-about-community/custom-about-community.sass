@@ -1,4 +1,6 @@
 .custom-about-community
+  @include phone-lg
+    padding: 4rem 0
   padding: 6rem 0 4rem
 
   &__title
@@ -13,11 +15,18 @@
     @extend .col-12
 
   &__slider
+    @include phone-lg
+      min-height: 20rem
     position: relative
     min-height: 30rem
 
   &__slide
     @extend .img-centered
+    @include phone-lg
+      top: 0
+      transform: translateX(-50%)
+      width: 100%
+      height: calc(100% - 7.5rem)
     transition: opacity .25s ease-in
     opacity: 0
     width: calc(100% * (8 / 12))
@@ -29,6 +38,10 @@
   &__next
     @extend h1
     @extend .img-centered
+    @include phone-lg
+      top: unset
+      bottom: 0
+    transform: translateY(-50%)
     transition: border-color .25s ease-in
     border: 4px solid $sky-blue
     border-top: none
@@ -46,8 +59,12 @@
       border-color: $sunny-yellow
 
   &__prev
-    left: 4rem
+    @include phone-lg
+      left: 0
+    left: 2rem
 
   &__next
-    right: 1rem
+    @include phone-lg
+      right: 0
+    right: 2rem
     left: auto
