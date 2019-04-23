@@ -1,4 +1,7 @@
 .custom-treatments-braces
+  @include tablet-lg
+    background-image: none !important
+    padding: 6rem 0
   position: relative
   background-repeat: no-repeat
   background-position: right
@@ -13,6 +16,9 @@
 
   &__col-body
     @extend .col-7
+    @include phone-lg
+      display: flex
+      flex-direction: column-reverse
 
   &__title
     color: $sky-blue
@@ -44,6 +50,8 @@
 
   &__tab-box
     @extend .flex-start
+    @include phone-lg
+      padding: 2rem 0
 
   &__tab
     transition: background .25s ease-in
