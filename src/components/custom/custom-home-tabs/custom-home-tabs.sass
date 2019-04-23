@@ -4,6 +4,8 @@
   overflow: hidden
 
   &__overlay
+    @include phone-lg
+      display: none
     position: absolute
     top: 0
     left: 0
@@ -13,6 +15,8 @@
     height: 100%
 
   &__background
+    @include phone-lg
+      display: none
     @include svg-size(100rem, 10rem)
     position: absolute
     top: -8rem
@@ -27,6 +31,14 @@
     min-height: 40rem
 
   &__tabs
+    @include tablet-lg
+      width: calc(100% * (5 / 12))
+    @include phone-lg
+      display: flex
+      position: static
+      align-items: center
+      justify-content: space-between
+      width: 100%
     position: absolute
     top: 0
     left: 0
@@ -36,19 +48,30 @@
 
   &__tab
     @extend .flex-center-start
+    @include phone-lg
+      position: static
+      transform: none
+      width: calc(100% / 3)
     position: absolute
     top: 48%
     left: 5%
     transform: translate(0, -50%)
     cursor: pointer
 
-    &:hover
+    &:hover,
+    &--active
       .custom-home-tabs__tab-icon
         border-color: $sky-blue
       .custom-home-tabs__tab-label
+        @include phone-lg
+          box-shadow: none
+          background: $sky-blue-13
+          color: $sky-blue
         box-shadow: 2px 2px 1px 1px $sunny-yellow
 
     &-icon
+      @include phone-lg
+        display: none
       @include svg-size(5.5rem, 5.5rem)
       transition: border .25s ease-in
       border: .25rem solid $white
@@ -57,6 +80,17 @@
       background: $pale-purple
 
     &-label
+      @include phone-lg
+        display: flex
+        position: static
+        align-items: center
+        justify-content: center
+        box-shadow: none
+        background: $white-two
+        width: 100%
+        min-width: 0
+        min-height: 4rem
+
       @include button
       position: absolute
       bottom: 0
@@ -74,6 +108,14 @@
       left: 0
 
   &__content
+    @include tablet-lg
+      width: calc(100% * (7 / 12))
+    @include phone-lg
+      position: relative
+      top: unset
+      left: 0
+      width: 100%
+      min-height: 45rem
     position: absolute
     top: 0
     left: calc(100% * (5 / 12))
@@ -83,6 +125,12 @@
 
   &__text-box
     @extend .img-centered
+    @include tablet-lg
+      padding-right: .5rem
+    @include phone-lg
+      top: 0
+      transform: translateX(-50%)
+      padding: 1rem
     transition: opacity .25s ease-in
     opacity: 0
     padding-left: 3rem
