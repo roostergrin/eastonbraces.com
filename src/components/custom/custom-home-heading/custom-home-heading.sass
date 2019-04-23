@@ -31,5 +31,18 @@
     &-left
       @extend .col-2--offset
 
+  &__icon
+    @include tablet-lg
+      @include svg-size(10rem, 10rem)
+      margin: auto
+      padding-bottom: 2rem
+      width: 10rem
+
   &__body
+    @include phone-lg
+      text-align: center
     color: $brown-grey
+
+    a
+      text-decoration: none
+      color: $sky-blue
