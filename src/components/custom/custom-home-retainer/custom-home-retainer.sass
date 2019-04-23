@@ -1,10 +1,16 @@
 .custom-home-retainer
+  @include tablet-lg
+    padding: 6rem 0
+  @include phone-lg
+    padding: 4rem 0
   position: relative
   padding: 4rem 0
   overflow: hidden
 
   &__background
     @extend .img-full
+    @include phone-lg
+      display: none
     background-position: bottom
     height: 150%
 
@@ -14,11 +20,15 @@
   &__col
     @extend .col-6
     @extend .col-6--offset
+    @include phone-lg
+      text-align: center
 
   &__title
     padding-bottom: 2rem
     color: $sky-blue
 
   &__body
+    @include phone-lg
+      padding-right: 0
     padding-right: 5rem
     color: $brown-grey
