@@ -1,0 +1,8 @@
+.custom-treatments-faq
+  .custom-treatments-faq__container
+    .custom-treatments-faq__col-title
+      h1.custom-treatments-faq__title(v-html='content.title')
+    .custom-treatments-faq__col
+      .custom-treatments-faq__content
+        .custom-treatments-faq__image(:style="{ backgroundImage: 'url(' + content.image + ')' }")
+        h1.custom-treatments-faq__subtitle(v-html='content.subtitle')
