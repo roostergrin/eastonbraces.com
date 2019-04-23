@@ -19,14 +19,22 @@
 
   &__top-content
     @extend .flex-start
+    @include phone-lg
+      flex-direction: column-reverse
+      align-items: center
 
   &__image
+    @include phone-lg
+      min-width: 15rem
+      min-height: 15rem
     background-repeat: no-repeat
     background-position: center
     background-size: contain
     min-height: 10rem
 
   &__text-box
+    @include phone-lg
+      padding-left: 0
     padding-left: 2rem
 
   &__title
@@ -34,12 +42,16 @@
     color: $sky-blue
 
   &__education
+    @include phone-lg
+      padding-bottom: 2rem
     line-height: 1.5
     color: $brown-grey
 
   &__body
     color: $brown-grey
     &--mid
+      @include phone-lg
+        padding-top: 2rem
       padding: 4rem 0 2rem
 
   &__image-box
@@ -47,3 +59,5 @@
 
   &__layer-image
     @include layer-image(20rem)
+    margin: 0 auto
+    width: 75%
