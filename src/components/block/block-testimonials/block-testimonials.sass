@@ -22,16 +22,22 @@
     &-images
       @extend .col-4
       position: relative
+      margin-bottom: 2rem
       height: 100%
       min-height: 24rem
 
   &__title
     @extend h1
+    @include tablet-lg
+      padding-bottom: 2rem
+      text-align: center
     padding-bottom: 6rem
     color: $sky-blue
 
   &__content-box
-    @include tablet
+    @include tablet-lg
+      min-height: 20rem
+    @include phone-lg
       min-height: 30rem
     position: relative
     box-shadow: 4px 4px 8px 2px $shadow
@@ -49,6 +55,10 @@
 
   &__slide
     @extend .img-centered
+    @include tablet-lg
+      top: 6rem
+      transform: translateX(-50%)
+      padding: 2rem
     transition: opacity .25s ease-in
     opacity: 0
     padding-right: 4rem
@@ -67,8 +77,13 @@
     text-align: right
 
   &__image
-    @include laptop
-      display: none
+    @include tablet-lg
+      right: unset
+      left: 50%
+      transform: translate(-50%, -50%)
+    @include phone
+      width: 19rem
+      height: 19rem
     position: absolute
     top: 50%
     right: -5rem
@@ -84,6 +99,16 @@
     overflow: hidden
 
     &--next
+      @include tablet-lg
+        top: 50%
+        right: unset
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 20rem
+        height: 20rem
+      @include phone
+        width: 19rem
+        height: 19rem
       top: -.25rem
       right: 5.75rem
       z-index: 8
@@ -91,6 +116,16 @@
       height: 15.5rem
 
     &--prev
+      @include tablet-lg
+        top: 50%
+        right: unset
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 20rem
+        height: 20rem
+      @include phone
+        width: 19rem
+        height: 19rem
       top: 19.75rem
       right: 10.75rem
       z-index: 7
