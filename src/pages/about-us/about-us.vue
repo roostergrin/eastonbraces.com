@@ -6,6 +6,7 @@ import BlockHeading from 'components/block/block-heading/block-heading'
 import CustomAboutCommunity from 'components/custom/custom-about-community/custom-about-community'
 import CustomAboutDoctor from 'components/custom/custom-about-doctor/custom-about-doctor'
 import CustomAboutLives from 'components/custom/custom-about-lives/custom-about-lives'
+import CustomAboutMap from 'components/custom/custom-about-map/custom-about-map'
 import CustomAboutTeam from 'components/custom/custom-about-team/custom-about-team'
 
 export default {
@@ -21,6 +22,7 @@ export default {
     CustomAboutCommunity,
     CustomAboutDoctor,
     CustomAboutLives,
+    CustomAboutMap,
     CustomAboutTeam
   }
 }

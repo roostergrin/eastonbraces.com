@@ -1,0 +1,12 @@
+.custom-about-map
+  .custom-about-map__container
+    .custom-about-map__col-title
+      h1.custom-about-map__title(v-html='content.title')
+  .custom-about-map__container
+    .custom-about-map__col-content
+      BaseIcon.custom-about-map__icon(:name='content.icon')
+      h2.custom-about-map__subtitle(v-html='content.subtitle')
+      .custom-about-map__address(v-html='content.address')
+      a.custom-about-map__button(:href='content.button.href' v-html='content.button.label')
+    .custom-about-map__col-map
+      .custom-about-map__map(ref='map')

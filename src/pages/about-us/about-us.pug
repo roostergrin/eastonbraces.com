@@ -13,4 +13,4 @@
     BaseContainer(v-show='$route.hash === "#facebook"' key='4')
       BlockFacebook(slot='first', :content='props.facebook')
     BaseContainer(v-show='$route.hash === "#map"' key='5')
-      pre(slot='second') {{ props.map }}
+      CustomAboutMap(slot='first', :content='props.map')
