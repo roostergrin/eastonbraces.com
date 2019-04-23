@@ -1,0 +1,28 @@
+.navigation-mobile(:class='{ "navigation-mobile--scrolled": navScrolled || menuOpen || $route.name !== "home" }' v-if='loaded')
+  router-link.navigation-mobile__home(to='/' @click.native='closeMenu()')
+    BaseIcon.navigation-mobile__logo(:name='content.logo')
+    
+  .navigation-mobile__hamburger(
+    :class="{ 'navigation-mobile__hamburger--active': menuOpen }"
+    @click='toggleMenu()')
+    span
+    span
+    span
+  
+  .navigation-mobile__drawer(
+    :class="{ 'navigation-mobile__drawer--active': menuOpen }")
+    .navigation-mobile__link(
+      v-for='(link, i) in links'
+      :key="'link -' + i"
+      :class="{ 'navigation-mobile__link--active': menuOpen }")
+      h1.navigation-mobile__link-text(v-html='link.name'
+        @click='openSubMenu(i)')
+      .navigation-mobile__sublinks(
+        :class="{ 'navigation-mobile__sublinks--active': i === subActive }"
+        :style="{ height: link.meta.length * 2.25 + .5 + 'rem' }")
+        router-link.navigation-mobile__sublink(
+          v-for='(sublink, i) in link.meta'
+          :key="'sublink - ' + i"
+          :to='sublink.path'
+          v-html='sublink.name'
+          @click.native='closeMenu()')

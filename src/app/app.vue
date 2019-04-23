@@ -2,6 +2,7 @@
 
 <script>
 import NavigationDesktop from 'components/the-navigation/navigation-desktop/navigation-desktop'
+import NavigationMobile from 'components/the-navigation/navigation-mobile/navigation-mobile'
 import TheFooter from 'components/the-footer/the-footer'
 
 export default {
@@ -16,6 +17,7 @@ export default {
   },
   components: {
     NavigationDesktop,
+    NavigationMobile,
     TheFooter
   }
 }

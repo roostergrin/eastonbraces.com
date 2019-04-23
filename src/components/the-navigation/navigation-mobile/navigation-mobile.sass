@@ -1,0 +1,104 @@
+.navigation-mobile
+  @extend .flex-center-between
+  position: fixed
+  top: 0
+  left: 0
+  transition: background .25s ease-in
+  z-index: 9999
+  padding: 1rem
+  width: 100%
+
+  &--scrolled
+    transition: background .25s ease-in, box-shadow .25s ease-in .15s
+    box-shadow: 0 0 4px 2px $bs1
+    background: $white
+
+  &__home
+    display: block
+    width: 10rem
+    height: 2.65rem
+
+  &__logo
+    @include svg-size(10rem, 3.25rem)
+    .logo-top
+      transition: all .25s ease-in
+      fill: $white
+      stroke: $white
+
+    .logo-bottom
+      transition: all .25s ease-in
+      fill: $white
+      stroke: $white
+
+    .navigation-mobile--scrolled &
+      .logo-top
+        fill: $sky-blue
+        stroke: $sky-blue
+
+      .logo-bottom
+        fill: $light-navy
+        stroke: $light-navy
+
+  &__hamburger
+    @include hamburger-basic($white, .25s, 2.5rem, 2.5rem)
+    span
+      border-radius: 5px
+
+    .navigation-mobile--scrolled &
+      span
+        background: $light-navy
+
+  &__drawer
+    position: absolute
+    top: 0
+    left: 0
+    transform: translateY(-100%)
+    transition: transform .35s ease-in
+    z-index: -1
+    background: $white-two
+    padding-top: 6rem
+    width: 100%
+    height: 100vh
+
+    &--active
+      transform: translateY(0)
+      transition: transform .75s ease-in
+
+  &__link
+    position: relative
+    opacity: 0
+    z-index: 9
+    border-top: 1px solid $brown-grey-two-50
+    padding: 1rem 0
+    text-align: center
+    text-transform: uppercase
+    color: $light-navy
+
+    &--active
+      transition: opacity .35s ease-in .75s
+      opacity: 1
+
+    &-text
+      @include phone
+        font-size: 32px
+
+  &__sublinks
+    opacity: 0
+    height: 0 !important
+    pointer-events: none
+
+    &--active
+      transition: opacity .25s ease-in
+      opacity: 1
+      height: initial !important
+      pointer-events: all
+
+  &__sublink
+    display: block
+    padding: .5rem 0
+    text-transform: uppercase
+    text-decoration: none
+    color: $brown-grey
+
+    &:first-child
+      padding-top: 1rem
