@@ -8,6 +8,7 @@
 <body>
   <div id='app' role='application'></div>
   <?php wp_footer(); ?>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClno4ZMvwmys-6PSHJabuspzz1ZdKJWkA" async defer></script>
   <script type="text/javascript">
     var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
 
