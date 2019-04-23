@@ -1,9 +1,13 @@
 .block-tabs-wheel
+  @include phone-lg
+    padding: 3rem 0
   position: relative
   background: $white
   overflow: hidden
 
   &__overlay
+    @include phone-lg
+      display: none
     position: absolute
     top: 0
     left: 0
@@ -13,6 +17,8 @@
     height: 100%
 
   &__background
+    @include phone-lg
+      display: none
     @include svg-size(100rem, 10rem)
     position: absolute
     top: -8rem
@@ -40,6 +46,16 @@
     color: $sky-blue
 
   &__tabs
+    @include tablet-lg
+      width: calc(100% * (5 / 12))
+    @include phone-lg
+      display: flex
+      position: static
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      padding: 2rem 0 1rem
+      width: 100%
     position: absolute
     top: 0
     left: 0
@@ -49,19 +65,30 @@
 
   &__tab
     @extend .flex-center-start
+    @include phone-lg
+      position: static
+      transform: none
+      width: calc(100% / 3)
     position: absolute
     top: 57%
     left: 5%
     transform: translate(0, -50%)
     cursor: pointer
 
-    &:hover
+    &:hover,
+    &--active
       .block-tabs-wheel__tab-icon
         border-color: $sunny-yellow
       .block-tabs-wheel__tab-label
+        @include phone-lg
+          box-shadow: none
+          background: $sky-blue-13
+          color: $sky-blue
         box-shadow: 2px 2px 1px 1px $sunny-yellow
 
     &-icon
+      @include phone-lg
+        display: none
       @include svg-size(3rem, 3rem)
       transition: border .25s ease-in
       z-index: 9
@@ -73,6 +100,19 @@
       padding: .75rem
 
     &-label
+      @include tablet-lg
+        min-width: 8.5rem
+      @include phone-lg
+        display: flex
+        position: static
+        align-items: center
+        justify-content: center
+        box-shadow: none
+        background: $white-two
+        width: 100%
+        min-width: 0
+        min-height: 4rem
+
       @include button
       position: absolute
       bottom: -.5rem
@@ -95,6 +135,15 @@
       left: 5%
 
   &__content
+    @include tablet-lg
+      left: calc(100% * (5 / 12))
+      width: calc(100% * (7 / 12))
+    @include phone-lg
+      position: relative
+      top: unset
+      left: 0
+      width: 100%
+      min-height: 45rem
     position: absolute
     top: 0
     left: calc(100% * (4 / 12))
@@ -104,6 +153,13 @@
 
   &__text-box
     @extend .img-centered
+    @include tablet-lg
+      padding-right: .5rem
+      padding-left: 1rem
+    @include phone-lg
+      top: 0
+      transform: translateX(-50%)
+      padding: 1rem
     transition: opacity .25s ease-in
     opacity: 0
     height: auto
