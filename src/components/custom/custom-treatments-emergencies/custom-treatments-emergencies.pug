@@ -8,10 +8,10 @@
       .custom-treatments-emergencies__text-box
         .custom-treatments-emergencies__content(
           v-for='(content, i) in content.qa'
-          :key="'content - ' + i")
+          :key="'content - ' + i"
+          @click='setActive(i)')
           .custom-treatments-emergencies__question(
             v-html='content.question'
-            @click='setActive(i)'
             :class="{ 'custom-treatments-emergencies__question--active': activeAccord === i }")
           .custom-treatments-emergencies__answer(
             v-html='content.answer'

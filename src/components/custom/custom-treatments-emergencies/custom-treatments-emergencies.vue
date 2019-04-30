@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     setActive (i) {
-      this.activeAccord = i
+      this.activeAccord === i ? this.activeAccord = null : this.activeAccord = i
     }
   }
 }

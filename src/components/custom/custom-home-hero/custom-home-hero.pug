@@ -4,6 +4,8 @@
     :class="{ 'custom-home-hero__background--active': activeSlide === i }"
     :style="{ backgroundImage: 'url(' + slide.image + ')' }")
   
+  .custom-home-hero__overlay
+  
   .custom-home-hero__nav
     .custom-home-hero__nav-left(@click='setPrev')
       BaseIcon.custom-home-hero__nav-left-icon(name='Lft_Arrow')

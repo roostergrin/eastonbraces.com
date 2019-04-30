@@ -1,4 +1,6 @@
-.block-gradient(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+.block-gradient(
+  :style="{ backgroundImage: 'url(' + content.background + ')' }"
+  :class="{ 'block-gradient--invis': $route.hash.includes('#invis') }")
   .block-gradient__overlay
   .block-gradient__content
     .block-gradient__container

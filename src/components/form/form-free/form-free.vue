@@ -22,7 +22,6 @@ export default {
         .then(result => {
           if (result) {
             this.onSubmit()
-            console.log('validated')
           }
         })
         .catch((e) => {
@@ -41,7 +40,6 @@ export default {
           this.formSuccess = true
           setTimeout(() => {
             this.formSubmitted = false
-            console.log('submitted', this.formSubmitted, this.formSuccess)
           }, 1500)
           this.fullName = ''
           this.guardName = ''

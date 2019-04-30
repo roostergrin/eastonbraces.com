@@ -6,6 +6,9 @@ export default {
     content: {
       type: [Object, Array]
     }
+  },
+  mounted () {
+    console.log(this.$route)
   }
 }
 </script>

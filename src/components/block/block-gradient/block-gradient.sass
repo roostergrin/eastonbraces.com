@@ -1,4 +1,10 @@
 .block-gradient
+  @include laptop-lg
+    background-position: 40% center
+    background-size: cover
+    &--invis
+      background-position: 165% center
+      background-size: contain
   @include tablet-lg
     background-image: none !important
     padding: 6rem 0
@@ -12,7 +18,7 @@
     @extend .img-full
     @include phone-lg
       display: none
-    background-image: linear-gradient(to right, $white, transparent 70%)
+    background-image: linear-gradient(to right, $white 60%, transparent 70%)
 
   &__container
     @extend .container
@@ -26,9 +32,12 @@
     color: $sky-blue
 
   &__subtitle
-    padding-top: 1rem
+    padding-top: 2rem
     padding-bottom: 1rem
     color: $sky-blue
+
+    &:first-child
+      padding-top: 0
 
   &__body
     color: $brown-grey

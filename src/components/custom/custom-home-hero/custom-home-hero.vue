@@ -23,11 +23,9 @@ export default {
     },
     setNext () {
       this.activeSlide !== (this.content.length - 1) ? this.activeSlide += 1 : this.activeSlide = 0
-      console.log('clicked', this.activeSlide)
     },
     setPrev () {
       this.activeSlide !== 0 ? this.activeSlide -= 1 : this.activeSlide = this.content.length - 1
-      console.log('clicked', this.activeSlide)
     }
   }
 }

@@ -21,12 +21,10 @@ export default {
       this.$validator.validateAll()
         .then(result => {
           if (result) {
-            this.onSubmit()
-            console.log('validated')
           }
         })
         .catch((e) => {
-          console.log(e, 'validate')
+          console.log(e)
         })
     },
     onSubmit () {
@@ -41,7 +39,6 @@ export default {
           this.formSuccess = true
           setTimeout(() => {
             this.formSubmitted = false
-            console.log('submitted', this.formSubmitted, this.formSuccess)
           }, 1500)
           this.fullName = ''
           this.guardName = ''
