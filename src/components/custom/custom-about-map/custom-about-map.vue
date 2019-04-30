@@ -36,13 +36,18 @@ export default {
     addMarker (i) {
       // creates new single marker
       /* eslint-disable */
-      const $marker = new google.maps.Marker({
+      this.$marker = new google.maps.Marker({
         position: i,
         map: this.$map,
         icon: {
           url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(Icon),
           scaledSize: new google.maps.Size(60, 60)
         }
+      })
+      this.$marker.addListener('click', function() {
+        let newOpener = window.open()
+        newOpener.opener = null
+        newOpener.location = 'https://goo.gl/maps/qZ6AfFcdg8r'
       })
       /* eslint-enable */
     }

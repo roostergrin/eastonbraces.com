@@ -27,11 +27,12 @@
       width: $width
       height: auto
 
-@mixin layer-image($height)
+@mixin layer-image($height, $height-max)
   position: relative
   width: 100%
   height: 100%
   min-height: $height
+  max-height: $height-max
 
   &-image
     @extend .img-full

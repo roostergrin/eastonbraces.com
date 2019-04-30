@@ -34,6 +34,7 @@ export default {
     onWaypoint ({ going, direction }) {
       if (going === 'in') {
         this.currentImg = this.src
+        console.log(this.src)
       }
     }
   }

@@ -6,7 +6,14 @@ nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' 
           
       .navigation-desktop__content    
         .navigation-desktop__links(@mouseenter='dropdownActive' @mouseleave='dropdownLeave')
-          .navigation-desktop__link(v-for='(link, i) in links', :to='link.path', :key='"link - " + i' @mouseover='hoverDropdown(i, link)' @click='pageLink(link)', :class='{ "navigation-desktop__link--active": $route.name === link.name }' ref='root')
+          .navigation-desktop__link(
+            v-for='(link, i) in links'
+            :to='link.path'
+            :key='"link - " + i'
+            @mouseover='hoverDropdown(i, link)'
+            @click='pageLink(link)'
+            :class='{ "navigation-desktop__link--active": $route.name === link.name }'
+            ref='root')
             h3 {{ link.name }}
           .navigation-desktop__dropdown(:style='{ left: left, height: height }', :class='{ "navigation-desktop__dropdown--active": dropdownShow, "navigation-desktop__dropdown--open": dropdownSmooth }')
             .navigation-desktop__dropdown-arrow
@@ -20,5 +27,5 @@ nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' 
                   h3.navigation-desktop__dropdown-text(v-html='item.name')
         .navigation-desktop__contact
           router-link.navigation-desktop__request(:to='content.appointment.href', v-html='content.appointment.label')
-          a.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", :href="icon.href")
+          a.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", target='_blank', rel='noopener noreferrer', :href="icon.href")
             BaseIcon(:name='icon.icon')
