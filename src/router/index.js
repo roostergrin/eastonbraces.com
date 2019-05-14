@@ -107,7 +107,7 @@ const router = new VueRouter({
         {
           path: '/treatments#invisalign',
           name: 'Invisalign',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'invisalign',
           background: null,
           icon: null
@@ -115,7 +115,7 @@ const router = new VueRouter({
         {
           path: '/treatments#braces',
           name: 'Braces',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'braces',
           background: null,
           icon: null
@@ -123,7 +123,7 @@ const router = new VueRouter({
         {
           path: '/treatments#early',
           name: 'Early Intervention',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'early',
           background: null,
           icon: null
@@ -131,7 +131,7 @@ const router = new VueRouter({
         {
           path: '/treatments#adult',
           name: 'Adult Treatment',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'adult',
           background: null,
           icon: null
@@ -139,7 +139,7 @@ const router = new VueRouter({
         {
           path: '/treatments#life',
           name: 'Life with Braces',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'life',
           background: null,
           icon: null
@@ -147,7 +147,7 @@ const router = new VueRouter({
         {
           path: '/treatments#faq',
           name: 'FAQ',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
           anchor: 'faq',
           background: null,
           icon: null
@@ -164,7 +164,7 @@ const router = new VueRouter({
         {
           path: '/new-patients#first',
           name: 'First Appointment',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
           anchor: 'first',
           background: null,
           icon: null
@@ -172,7 +172,7 @@ const router = new VueRouter({
         {
           path: '/new-patients#financial',
           name: 'Financial Info',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
           anchor: 'financial',
           background: null,
           icon: null
@@ -180,7 +180,7 @@ const router = new VueRouter({
         {
           path: '/new-patients#consultation',
           name: 'Free Consultation',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
           anchor: 'consultation',
           background: null,
           icon: null
@@ -188,7 +188,7 @@ const router = new VueRouter({
         {
           path: '/new-patients#contact',
           name: 'Contact',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
           anchor: 'contact',
           background: null,
           icon: null
@@ -205,7 +205,7 @@ const router = new VueRouter({
         {
           path: '/halvorsen-difference#apart',
           name: 'What Sets Us Apart',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
           anchor: 'apart',
           background: null,
           icon: null
@@ -213,7 +213,7 @@ const router = new VueRouter({
         {
           path: '/halvorsen-difference#reviews',
           name: 'Reviews',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
           anchor: 'reviews',
           background: null,
           icon: null
