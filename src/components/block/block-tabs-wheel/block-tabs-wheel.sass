@@ -163,10 +163,12 @@
     transition: opacity .25s ease-in
     opacity: 0
     height: auto
+    pointer-events: none
 
     &--active
       opacity: 1
       transition-delay: .25s
+      pointer-events: all
 
   &__section-title
     padding-bottom: 2rem
@@ -180,6 +182,38 @@
       @extend h2
       padding: .5rem 0
       color: $sky-blue
+
+    &--content
+      margin-bottom: 1rem
+      background: $pale-purple
+      padding: .5rem 1rem
+      text-align: center
+
+      h3
+        padding-bottom: .5rem
+        color: $light-navy
+
+    &--colored
+      color: $sky-blue
+
+    &--list
+      position: relative
+      padding-left: 1.5rem
+
+      &:after
+        position: absolute
+        top: 0
+        left: 0
+        content: '•'
+
+    a
+      text-decoration: none
+      color: $sky-blue
+
+      &:hover
+        // sass-lint:disable-all
+        color: darken($sky-blue, 5%)
+        // sass-lint:enable-all
 
   &__button
     text-decoration: none
