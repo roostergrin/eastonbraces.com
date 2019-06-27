@@ -10,6 +10,19 @@
   background-size: contain
   padding: 4rem 0
 
+  &__background
+    @extend .img-centered
+    transition: opacity .35s ease-in-out
+    opacity: 0
+    background-repeat: no-repeat
+    background-position: right
+    background-size: contain
+
+    &--active
+      transition: opacity .35s ease-in-out .35s
+      opacity: 1
+
+
   &__container
     @extend .container
 
@@ -38,13 +51,23 @@
     transition: opacity .35s ease-in
     opacity: 0
     width: 100%
+    pointer-events: none
 
     &--active
       opacity: 1
       transition-delay: .35s
+      pointer-events: all
 
   &__body
     padding-bottom: 2rem
+
+    a
+      transition: color .25s ease-in
+      text-decoration: none
+      color: $sky-blue
+
+      &:hover
+        color: $flat-blue
 
   &__button
     &-icon

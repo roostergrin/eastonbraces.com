@@ -1,4 +1,9 @@
-.custom-treatments-braces(:style="{ backgroundImage: 'url(' + content.background + ')' }")
+.custom-treatments-braces
+  BaseLazyBg.custom-treatments-braces__background(
+    v-for='(image, i) in content.tabs'
+    :key='"iamge-" + i'
+    :src='image.background'
+    :class="{ 'custom-treatments-braces__background--active': activeTab === i }")
   .custom-treatments-braces__container
     .custom-treatments-braces__col-title
       h1.custom-treatments-braces__title(v-html='content.title')
