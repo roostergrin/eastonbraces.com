@@ -1,0 +1,10 @@
+.custom-treatments-care
+  .custom-treatments-care__container
+    .custom-treatments-care__col-title
+      h1.custom-treatments-care__title(v-html='content.title')
+    .custom-treatments-care__col-slider
+      .custom-treatments-care__slider
+        BaseLazyImg.custom-treatments-care__image(:src='content.image')
+
+    .custom-treatments-care__col-body
+      .custom-treatments-care__body(v-html='content.body')
