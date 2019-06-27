@@ -3,6 +3,7 @@
 <script>
 import BlockGradient from 'components/block/block-gradient/block-gradient'
 import CustomTreatmentsBraces from 'components/custom/custom-treatments-braces/custom-treatments-braces'
+import CustomTreatmentsCare from 'components/custom/custom-treatments-care/custom-treatments-care'
 import CustomTreatmentsColor from 'components/custom/custom-treatments-color/custom-treatments-color'
 import CustomTreatmentsEarly from 'components/custom/custom-treatments-early/custom-treatments-early'
 import CustomTreatmentsEmergencies from 'components/custom/custom-treatments-emergencies/custom-treatments-emergencies'
@@ -18,6 +19,7 @@ export default {
   components: {
     BlockGradient,
     CustomTreatmentsBraces,
+    CustomTreatmentsCare,
     CustomTreatmentsColor,
     CustomTreatmentsEarly,
     CustomTreatmentsEmergencies,

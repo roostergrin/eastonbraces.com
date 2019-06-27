@@ -7,6 +7,8 @@ import CustomAboutCommunity from 'components/custom/custom-about-community/custo
 import CustomAboutDoctor from 'components/custom/custom-about-doctor/custom-about-doctor'
 import CustomAboutLives from 'components/custom/custom-about-lives/custom-about-lives'
 import CustomAboutMap from 'components/custom/custom-about-map/custom-about-map'
+import CustomAboutMeet from 'components/custom/custom-about-meet/custom-about-meet'
+import CustomAboutSponsorship from 'components/custom/custom-about-sponsorship/custom-about-sponsorship'
 import CustomAboutTeam from 'components/custom/custom-about-team/custom-about-team'
 
 export default {
@@ -23,6 +25,8 @@ export default {
     CustomAboutDoctor,
     CustomAboutLives,
     CustomAboutMap,
+    CustomAboutMeet,
+    CustomAboutSponsorship,
     CustomAboutTeam
   }
 }

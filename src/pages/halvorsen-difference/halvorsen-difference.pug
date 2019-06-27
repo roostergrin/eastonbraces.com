@@ -4,6 +4,4 @@
     BaseContainer(v-show='$route.hash === "#apart" || $route.hash === ""' key='1')
       BlockTabsWheel(slot='first', :content='props.wheel')
     BaseContainer(v-show='$route.hash === "#reviews"' key='2')
-      BlockTestimonials(slot='first', :content='props.testimonials')
-    //- BaseContainer(v-show='$route.hash === "#before"' key='3')
-    //-   pre(slot='first') {{ props.before }}
+      CustomDifferenceTestimonials(slot='first', :content='props.testimonials')
