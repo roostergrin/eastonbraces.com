@@ -1,7 +1,7 @@
 .custom-treatments-color
   @include tablet-lg
     padding: 0 0 4rem
-  padding: 4rem 0
+  background: $pale-grey-two
 
   &__container
     @extend .container
@@ -12,7 +12,9 @@
 
   &__title
     @include tablet-lg
+      display: block
       padding: 0 calc(#{$gutter} / 2) 2rem
+    display: none
     padding-bottom: 2rem
     color: $sky-blue
 
@@ -108,6 +110,7 @@
       position: static
       transform: none
       padding: 0 calc(#{$gutter} / 2)
+      max-width: none
     position: absolute
     top: 50%
     left: calc(50% + 2rem)
