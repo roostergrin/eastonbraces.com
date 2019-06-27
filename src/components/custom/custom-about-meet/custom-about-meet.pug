@@ -1,0 +1,14 @@
+.custom-about-meet
+  BaseIcon.custom-about-meet__background(name='background-circle')
+  .custom-about-meet__container
+    .custom-about-meet__col-title
+      h1.custom-about-meet__title(v-html='content.title')
+    .custom-about-meet__col-body
+      .custom-about-meet__body(v-html='content.body')
+    .custom-about-meet__col-slider
+      .custom-about-meet__slider
+        BaseLazyImg.custom-about-meet__image(
+          v-for='(slide, i) in content.slider'
+          :class="{ 'custom-about-meet__image--active': i === activeImage }"
+          :key='"image-" + i'
+          :src='slide.image')
