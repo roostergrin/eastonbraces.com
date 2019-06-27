@@ -11,7 +11,9 @@
     @extend .img-full
     @include phone-lg
       display: none
+    background-repeat: no-repeat
     background-position: bottom
+    background-size: cover
     height: 150%
 
   &__container
@@ -20,15 +22,15 @@
   &__col
     @extend .col-6
     @extend .col-6--offset
-    @include phone-lg
-      text-align: center
+    text-align: center
 
   &__title
-    padding-bottom: 2rem
+    padding-bottom: 1rem
+    color: $sky-blue
+
+  &__subtitle
+    padding-bottom: 1rem
     color: $sky-blue
 
   &__body
-    @include phone-lg
-      padding-right: 0
-    padding-right: 5rem
     color: $brown-grey

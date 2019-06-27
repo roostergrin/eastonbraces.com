@@ -1,6 +1,7 @@
 .custom-home-retainer
-  BaseBGImg.custom-home-retainer__background(:src='content.image' v-parallax='.1')
+  BaseLazyBg.custom-home-retainer__background(:src='content.image', :bgColor="'#eef5ff'" v-parallax='.1')
   .custom-home-retainer__container
     .custom-home-retainer__col
       h1.custom-home-retainer__title(v-html='content.title')
+      h2.custom-home-retainer__title(v-html='content.subtitle')
       .custom-home-retainer__body(v-html='content.body')
