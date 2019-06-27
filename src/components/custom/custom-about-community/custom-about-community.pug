@@ -5,7 +5,7 @@
       .custom-about-community__slider
         .custom-about-community__prev(@click='slidePrev') <
         .custom-about-community__next(@click='slideNext') >
-        BaseBGImg.custom-about-community__slide(
+        BaseLazyImg.custom-about-community__slide(
           v-for='(slide, i) in content.slides'
           :key="'slide - ' + i"
           :class="{ 'custom-about-community__slide--active': i === activeSlide }"
