@@ -38,7 +38,7 @@
     &:before,
     &:after
       position: absolute
-      top: calc(50% - .5rem)
+      top: .75rem
       left: 0
       transform: translateY(-50%)
       transition: transform .25s ease-in
@@ -63,7 +63,28 @@
     color: $brown-grey
     pointer-events: none
 
+    ul
+      margin: 0
+      padding-left: 1rem
+
+    li
+      padding-top: 1rem
+
+      &:first-child
+        padding-top: 0
+
+    a
+      transition: color .15s ease-in
+      text-decoration: none
+      color: $sky-blue
+
+      &:hover
+        // sass-lint:disable-all
+        color: darken($sky-blue, 15%)
+        // sass-lint:enable-all
+
     &--active
       transition: opacity .25s ease-in, height .25s ease-in
       opacity: 1
       height: auto
+      pointer-events: all

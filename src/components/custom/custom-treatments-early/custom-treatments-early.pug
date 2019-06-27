@@ -7,7 +7,7 @@
         .custom-treatments-early__content(
           v-for='(content, i) in content.qa'
           :key="'content - ' + i")
-          .custom-treatments-early__question(
+          h2.custom-treatments-early__question(
             v-html='content.question'
             @click='setActive(i)'
             :class="{ 'custom-treatments-early__question--active': activeAccord === i }")
