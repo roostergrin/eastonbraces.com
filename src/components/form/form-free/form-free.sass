@@ -17,6 +17,19 @@
         width: 100%
       width: 50%
 
+    &--select
+      select
+        border-color: transparent
+        border-bottom-color: $sunny-yellow
+        background: $white-two
+        padding: .25rem .5rem
+        width: 100%
+        height: 3.5rem
+        color: $brown-grey
+
+        &:focus
+          outline: none
+
   &__label
     position: absolute
     top: 50%
@@ -27,11 +40,20 @@
     color: $brown-grey
     pointer-events: none
 
+    &--textarea
+      top: 1.5rem
+
     &--active
       top: .25rem
       transform: translateY(0)
       color: $brown-grey
       font-size: 11px
+
+    &--select
+      display: block
+      position: static
+      transform: none
+      padding-bottom: 1rem
 
   &__input
     @extend p
@@ -40,6 +62,9 @@
     padding: 1rem
     width: 100%
     color: $brown-grey
+
+    &--textarea
+      min-height: 10rem
 
     &:focus,
     &:active

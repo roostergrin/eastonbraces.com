@@ -16,9 +16,8 @@
       .form-free__message(v-show="errors.has('fullName')") Your name is required.
       
     .form-free__group
-      input.form-free__input(name='guardName', v-model='guardName', v-validate="'required|alpha_spaces'", :class="{ 'form-free__input--error': errors.has('guardName') }", type='text')
-      label.form-free__label(:class="{ 'form-free__label--active': guardName }") Parent/Guardian Name
-      .form-free__message(v-show="errors.has('guardName')") Your Guardian's name is required.
+      input.form-free__input(name='guardName', v-model='guardName', v-validate="'alpha_spaces'", :class="{ 'form-free__input--error': errors.has('guardName') }", type='text')
+      label.form-free__label(:class="{ 'form-free__label--active': guardName }") Parent/Guardian Name (if applicable)
     
     .form-free__group
       input.form-free__input(name='clientEmail', v-model='clientEmail', v-validate="'required|email'", :class="{ 'input': true, 'form-free__input--error': errors.has('clientEmail') }")
@@ -29,6 +28,18 @@
       input.form-free__input(name='clientPhone', v-model='clientPhone', v-validate="'required|numeric'", :class="{ 'input': true, 'form-free__input--error': errors.has('clientPhone') }")
       label.form-free__label(:class="{ 'form-free__label--active': clientPhone }") Phone
       .form-free__message(v-show="errors.has('clientPhone')") Please Input a Valid Phone Number, Only Numbers
+      
+    .form-free__group.form-free__group--select
+      label.form-free__label.form-free__label--select(:class="{ 'form-free__label--active': technology }") I’m interested in:
+      select(name='technology', v-model='technology' v-validate="'required'", :class="{ 'input': true, 'form-free__group--error': errors.has('technology') }")
+        option(value='Braces') Braces
+        option(value='Aligners') Aligners
+        option(value='Early treatment') Early treatment
+      span.help.is-danger(v-show="errors.has('technology')") {{ errors.first('technology') }}   
+      
+    .form-free__group
+      textarea.form-free__input.form-free__input--textarea(name='additionalComments', v-model='additionalComments', v-validate="'alpha_spaces'", :class="{ 'form-free__input--error': errors.has('additionalComments') }", type='textarea')
+      label.form-free__label.form-free__label--textarea(:class="{ 'form-free__label--active': additionalComments }") Additional Comments
     
     .form-free__button-group
       .form-free__submit-button.active(@click='validate')
