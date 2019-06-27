@@ -3,8 +3,8 @@
     .custom-about-lives__col-title
       h1.custom-about-lives__title(v-html='content.title')
     .custom-about-lives__col-left
-      .custom-about-lives__image-box
-        BaseBGImg.custom-about-lives__image(:src='content.icon')
+      a.custom-about-lives__image-box(:href='content.button.href')
+        BaseLazyImg.custom-about-lives__image(:src='content.icon')
     .custom-about-lives__col-right
       .custom-about-lives__body(v-html='content.body')
       a.custom-about-lives__button(

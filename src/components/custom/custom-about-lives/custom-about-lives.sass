@@ -17,31 +17,28 @@
       @extend .col-12
 
     &-right
-      @extend .col-5
+      @extend .col-7
 
     &-left
-      @extend .col-4
-      @extend .col-1--offset
+      @extend .col-5
 
   &__image
     @extend .img-full
     background-repeat: no-repeat
-    background-position: center
+    background-position: left center
     background-size: contain
 
     &-box
+      display: block
       position: relative
       height: 100%
       min-height: 15rem
 
   &__body
+    padding-bottom: 2rem
     color: $brown-grey
 
   &__button
-    display: block
-    padding-top: 2rem
+    @include button
+    display: inline-block
     text-decoration: none
-    color: $sky-blue
-
-    &:hover
-      color: darken($sky-blue, 5%)
