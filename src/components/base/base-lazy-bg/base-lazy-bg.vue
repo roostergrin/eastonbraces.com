@@ -1,21 +1,25 @@
-<template lang='pug' src='./base-bg-img.pug'></template>
+<template lang='pug' src='./base-lazy-bg.pug'></template>
 
 <script>
 export default {
   props: {
     src: {
+      type: String
+    },
+    bgColor: {
       type: String,
-      default: '@/assets/error.png'
+      default: '#f8f8f8'
     },
     alt: {
       type: String,
-      default: 'I am an image.'
+      default: 'I am a decorative image.'
     }
   },
   data () {
     return {
       currentImg: null,
-      compSrc: '@/assets/error.png',
+      loading: true,
+      loaded: false,
       intersectionOptions: {
         root: null,
         rootMargin: '500px 0px 0px 0px',
@@ -24,16 +28,18 @@ export default {
     }
   },
   mounted () {
-    this.setCompressed()
+    this.loaded = true
   },
   methods: {
-    setCompressed () {
-      this.compSrc = this.src.split(/\.(?=[^.]+$)/).join('-compressed.')
-      this.currentImg = this.compSrc
-    },
     onWaypoint ({ going, direction }) {
       if (going === 'in') {
+        let downloadingImage = new Image()
         this.currentImg = this.src
+        downloadingImage.onload = () => {
+          this.loading = false
+          console.log('loaded')
+        }
+        downloadingImage.src = this.src
       }
     }
   }

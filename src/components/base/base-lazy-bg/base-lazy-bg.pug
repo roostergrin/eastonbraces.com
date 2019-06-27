@@ -1,0 +1,10 @@
+.base-lazy-bg(
+  v-if='loaded'
+  role='img'
+  :aria-label='alt'
+  :style="{ backgroundImage: 'url(' + currentImg + ')' }"
+  v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }")
+  .base-lazy-bg__overlay.img-centered(:style="{ backgroundColor: bgColor }" v-if='loading')
+  .base-lazy-bg__image(
+    ref='image'
+    style='visibility: hidden; height: 0;')
