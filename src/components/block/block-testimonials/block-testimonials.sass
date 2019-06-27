@@ -88,7 +88,8 @@
     top: 50%
     right: -5rem
     transform: translateY(-50%)
-    transition: top .5s linear, left.5s linear, right .5s linear, width .5s ease-in, height .5s ease-in
+    transition: top .5s linear, left.5s linear, right .5s linear, width .5s ease-in, height .5s ease-in, opacity .5s ease-in
+    opacity: 0
     z-index: 9
     border-radius: 50%
     background-repeat: no-repeat
@@ -97,6 +98,10 @@
     width: 20rem
     height: 20rem
     overflow: hidden
+
+    &--showing
+      opacity: 1
+      z-index: 10
 
     &--next
       @include tablet-lg
@@ -111,6 +116,7 @@
         height: 19rem
       top: -.25rem
       right: 5.75rem
+      opacity: 1
       z-index: 8
       width: 15.5rem
       height: 15.5rem
@@ -128,22 +134,26 @@
         height: 19rem
       top: 19.75rem
       right: 10.75rem
+      opacity: 1
       z-index: 7
       width: 12.5rem
       height: 12.5rem
 
-  &__image-overlay
-    position: absolute
-    top: 0
-    left: 0
-    transition: background .25s ease-in, opacity .25s ease-in
-    width: 100%
-    height: 100%
+    &-thumb
+      @extend .img-centered
 
-    .block-testimonials__image--next &
-      opacity: .85
-      background: $sky-blue
+    &-overlay
+      position: absolute
+      top: 0
+      left: 0
+      transition: background .25s ease-in, opacity .25s ease-in
+      width: 100%
+      height: 100%
 
-    .block-testimonials__image--prev &
-      opacity: .85
-      background: $light-navy
+      .block-testimonials__image--next &
+        opacity: .85
+        background: $sky-blue
+
+      .block-testimonials__image--prev &
+        opacity: .85
+        background: $light-navy
