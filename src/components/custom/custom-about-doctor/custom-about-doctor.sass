@@ -1,27 +1,40 @@
 .custom-about-doctor
+  background: $white-two
   padding: 6rem 0
 
   &__container
     @extend .container
+    @extend .flex-stretch-start
 
   &__col
     &--top
-      @extend .col-6
+      @extend .col-10
       @extend .col-1--offset
+
     &--mid
-      @extend .col-11
+      @extend .col-10
       @extend .col-1--offset
+
     &--bottom-left
-      @extend .col-6
+      @extend .col-5
       @extend .col-1--offset
+
     &--bottom-right
-      @extend .col-4
+      @extend .col-5
+      @extend .flex-center
+      display: flex
 
   &__top-content
-    @extend .flex-start
+    @extend .flex-stretch-start
     @include phone-lg
       flex-direction: column-reverse
       align-items: center
+
+    .custom-about-doctor__text-box
+      margin-left: 1rem
+
+  &__section
+    padding-top: 2rem
 
   &__image
     @include phone-lg
@@ -30,12 +43,15 @@
     background-repeat: no-repeat
     background-position: center
     background-size: contain
-    min-height: 10rem
+    min-width: 15rem
+    min-height: 15rem
 
   &__text-box
     @include phone-lg
       padding-left: 0
-    padding-left: 2rem
+    box-shadow: 2px 2px 3px 1px $shadow
+    background: $sky-blue-13
+    padding: 2rem
 
   &__title
     padding-bottom: 1rem
@@ -44,20 +60,11 @@
   &__education
     @include phone-lg
       padding-bottom: 2rem
-    line-height: 1.5
     color: $brown-grey
 
   &__body
     color: $brown-grey
-    &--mid
-      @include phone-lg
-        padding-top: 2rem
-      padding: 4rem 0 2rem
 
-  &__image-box
-    padding-top: 4rem
-
-  &__layer-image
-    @include layer-image(17rem, 17rem)
-    margin: 0 auto
-    width: 75%
+  &__image-bottom
+    width: 100%
+    min-height: 20rem
