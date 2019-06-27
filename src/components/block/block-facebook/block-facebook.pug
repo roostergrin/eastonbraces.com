@@ -13,7 +13,7 @@
           BaseIcon.block-facebook__button-icon(:name='content.button.icon')
     .block-facebook__col-2
       .block-facebook__slider
-        .block-facebook__slider-image(v-for='(slide, i) in content.images'
+        BaseLazyImg.block-facebook__slider-image(v-for='(slide, i) in content.images'
           :key="'slide - ' + i"
           :class="{ 'block-facebook__slider-image--active': activeImage === i }"
-          :style="{ backgroundImage: 'url(' + slide.image + ')' }")
+          :src='slide.image')

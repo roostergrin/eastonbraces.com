@@ -17,9 +17,11 @@ export default {
   },
   methods: {
     switchImage () {
-      setInterval(() => {
-        this.activeImage < (this.content.images.length - 1) ? this.activeImage += 1 : this.activeImage = 0
-      }, 5000)
+      if (this.content.images.length > 1) {
+        setInterval(() => {
+          this.activeImage < (this.content.images.length - 1) ? this.activeImage += 1 : this.activeImage = 0
+        }, 5000)
+      }
     }
   }
 }
