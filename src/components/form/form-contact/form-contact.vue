@@ -11,6 +11,7 @@ export default {
       guardName: '',
       clientEmail: '',
       clientPhone: '',
+      additionalComments: '',
       postUrl: api + '/rg-mail/v1/contact',
       formSubmitted: false,
       formSuccess: false
@@ -33,7 +34,8 @@ export default {
         fullName: this.fullName,
         guardName: this.guardName,
         clientEmail: this.clientEmail,
-        clientPhone: this.clientPhone
+        clientPhone: this.clientPhone,
+        additionalComments: this.additionalComments
       })
         .then(res => {
           this.formSuccess = true
@@ -44,6 +46,7 @@ export default {
           this.guardName = ''
           this.clientEmail = ''
           this.clientPhone = ''
+          this.additionalComments = ''
         })
         .catch(e => {
           console.log(e, 'submitted')
