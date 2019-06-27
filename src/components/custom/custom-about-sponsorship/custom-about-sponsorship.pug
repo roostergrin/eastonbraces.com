@@ -1,0 +1,16 @@
+.custom-about-sponsorship
+  BaseIcon.custom-about-sponsorship__background(name='background-circle')
+  .custom-about-sponsorship__container
+    .custom-about-sponsorship__col-title
+      h1.custom-about-sponsorship__title(v-html='content.title')
+          
+    .custom-about-sponsorship__col-body
+      .custom-about-sponsorship__body(v-html='content.body')
+
+    .custom-about-sponsorship__col-slider
+      .custom-about-sponsorship__slider
+        BaseLazyImg.custom-about-sponsorship__image(
+          v-for='(slide, i) in content.slider'
+          :class="{ 'custom-about-sponsorship__image--active': i === activeImage }"
+          :key='"image-" + i'
+          :src='slide.image')
