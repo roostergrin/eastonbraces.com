@@ -15,10 +15,14 @@
     @extend .container
 
   &__col-title
-    @extend .col-6
+    @extend .col-12
+
+  &__col-body
+    @extend .col-8
+    @extend .col-2--offset
 
   &__col-form
-    @extend .col-5
+    @extend .col-6
     @extend .col-3--offset
     position: relative
     z-index: 9
@@ -28,4 +32,12 @@
     z-index: 10
     padding-top: 6rem
     padding-bottom: 4rem
+    text-align: center
     color: $sky-blue
+
+  &__body
+    position: relative
+    z-index: 10
+    padding-bottom: 2rem
+    text-align: center
+    color: $brown-grey
