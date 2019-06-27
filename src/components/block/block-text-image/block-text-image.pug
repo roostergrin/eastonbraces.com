@@ -4,9 +4,11 @@
       h1.block-text-image__title(v-html='content.title')
     .block-text-image__col-image
       .block-text-image__image-box
-        .block-text-image__layer-image
-          BaseBGImg.block-text-image__layer-image-image(:src='content.image')
-          .block-text-image__layer-image-bg-1
-          .block-text-image__layer-image-bg-2
+        .block-text-image__slider
+          BaseLazyImg.block-text-image__image(
+            v-for='(slide, i) in content.slider'
+            :class="{ 'block-text-image__image--active': i === activeImage }"
+            :key='"image-" + i'
+            :src='slide.image')
     .block-text-image__col-body
       .block-text-image__body(v-html='content.body')

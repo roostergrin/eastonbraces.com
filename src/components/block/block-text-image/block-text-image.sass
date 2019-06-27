@@ -8,11 +8,11 @@
     @extend .col-1--offset
 
   &__col-image
-    @extend .col-3
+    @extend .col-5
     @extend .col-1--offset
 
   &__col-body
-    @extend .col-7
+    @extend .col-5
 
   &__col-image,
   &__col-body
@@ -21,11 +21,18 @@
     @include phone-lg
       width: 100%
 
-  &__image-box
+  &__slider
     position: relative
+    min-height: 20rem
 
-  &__layer-image
-    @include layer-image(20rem, 20rem)
+  &__image
+    @extend .img-centered
+    transition: opacity .25s ease-in
+    opacity: 0
+
+    &--active
+      opacity: 1
+      transition-delay: .15s
 
   &__title
     padding: 0 0 4rem
@@ -35,3 +42,11 @@
     @include phone-lg
       padding-top: 2rem
     color: $brown-grey
+
+    a
+      transition: color .25s ease-in
+      text-decoration: none
+      color: $sky-blue
+
+      &:hover
+        color: $flat-blue
