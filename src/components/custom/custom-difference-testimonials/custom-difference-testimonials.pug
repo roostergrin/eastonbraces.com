@@ -1,0 +1,26 @@
+.custom-difference-testimonials
+  BaseIcon.custom-difference-testimonials__background(name='background-circle')
+  .custom-difference-testimonials__container
+    .custom-difference-testimonials__col.custom-difference-testimonials__col--title
+      .custom-difference-testimonials__title(v-html='content.title')
+  
+  .custom-difference-testimonials__container
+
+    .custom-difference-testimonials__col-images
+      .custom-difference-testimonials__image-box
+        BaseLazyBg.custom-difference-testimonials__image(
+          v-for='(tile, i) in content.images'
+          :src="tile.image"
+          :key='"image - " + i')
+            
+    .custom-difference-testimonials__col.custom-difference-testimonials__col--textbox
+      .custom-difference-testimonials__content-box
+        .custom-difference-testimonials__prev(@click='slidePrev') <
+        .custom-difference-testimonials__next(@click='slideNext') >
+        .custom-difference-testimonials__slider
+          .custom-difference-testimonials__slide(v-for='(slide, i) in content.slides'
+            :key='"slide - " + i'
+            :class="{ 'custom-difference-testimonials__slide--active': i === showing }")
+            BaseIcon.custom-difference-testimonials__quotes(:name='content.icon')
+            .custom-difference-testimonials__text(v-html='slide.body')
+            .custom-difference-testimonials__author(v-html='"- " + slide.author')
