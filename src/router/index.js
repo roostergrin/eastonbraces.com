@@ -89,7 +89,7 @@ const router = new VueRouter({
         },
         {
           path: '/about-us#map',
-          name: 'Map & Direction',
+          name: 'Map & Directions',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'map',
           background: 'https://d2h72j3eibsl5m.cloudfront.net/Home_MapBG.jpg',
@@ -170,10 +170,10 @@ const router = new VueRouter({
           icon: null
         },
         {
-          path: '/new-patients#financial',
-          name: 'Financial Info',
+          path: '/new-patients#investment',
+          name: 'Investment',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
-          anchor: 'financial',
+          anchor: 'investment',
           background: null,
           icon: null
         },
