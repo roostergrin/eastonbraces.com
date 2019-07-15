@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1021.7 293.8" style="enable-background:new 0 0 1021.7 293.8;" xml:space="preserve">
 <style type="text/css">
-	.logo-0{fill:url(#SVGID_1_);}
+	.logo-0{fill:url(#logo_gradient_1) #114C9B;}
 	.logo-1{fill:#FFFFFF;}
 	.logo-2{fill:#114C9B;}
 	.logo-3{fill:#76B1E0;}
@@ -16,7 +16,7 @@
 <title>logo</title>
 <g>
 
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="146.5873" y1="301.7858" x2="146.5873" y2="-3.8442" gradientTransform="matrix(0.9997 0 0 -0.9997 0.1427 294.1426)">
+		<linearGradient id="logo_gradient_1" gradientUnits="userSpaceOnUse" x1="146.5873" y1="301.7858" x2="146.5873" y2="-3.8442" gradientTransform="matrix(0.9997 0 0 -0.9997 0.1427 294.1426)">
 		<stop  offset="0" style="stop-color:#8BAAD3"/>
 		<stop  offset="1" style="stop-color:#2161AB"/>
 	</linearGradient>

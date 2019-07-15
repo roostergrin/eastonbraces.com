@@ -8,6 +8,13 @@
     .custom-treatments-braces__col-title
       h1.custom-treatments-braces__title(v-html='content.title')
     .custom-treatments-braces__col-body
+      .custom-treatments-braces__tab-box
+        .custom-treatments-braces__tab(
+          v-for='(tab, i) in content.tabs'
+          :key="'tab - ' + i"
+          :class="{ 'custom-treatments-braces__tab--active': activeTab === i }"
+          @click='setActive(i)'
+          v-html='tab.label')
       .custom-treatments-braces__text-box
         .custom-treatments-braces__content(
           v-for='(content, i) in content.tabs'
@@ -16,10 +23,3 @@
           .custom-treatments-braces__body(v-html='content.body')
           a.custom-treatments-braces__button(:href='content.button.href')
             BaseIcon.custom-treatments-braces__button-icon(:name='content.button.icon')
-      .custom-treatments-braces__tab-box
-        .custom-treatments-braces__tab(
-          v-for='(tab, i) in content.tabs'
-          :key="'tab - ' + i"
-          :class="{ 'custom-treatments-braces__tab--active': activeTab === i }"
-          @click='setActive(i)'
-          v-html='tab.label')

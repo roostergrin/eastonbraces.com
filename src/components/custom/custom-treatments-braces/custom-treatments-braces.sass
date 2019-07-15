@@ -12,6 +12,8 @@
 
   &__background
     @extend .img-centered
+    @include phone-lg
+      display: none
     transition: opacity .35s ease-in-out
     opacity: 0
     background-repeat: no-repeat
@@ -31,9 +33,6 @@
 
   &__col-body
     @extend .col-7
-    @include phone-lg
-      display: flex
-      flex-direction: column-reverse
 
   &__title
     color: $sky-blue
@@ -77,6 +76,8 @@
     @extend .flex-start
     @include phone-lg
       padding: 2rem 0
+
+    padding-top: 2rem
 
   &__tab
     transition: background .25s ease-in

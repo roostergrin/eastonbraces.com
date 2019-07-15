@@ -115,7 +115,9 @@
       top: unset
       left: 0
       width: 100%
-      min-height: 45rem
+      min-height: 40rem
+    @include phone
+      min-height: 47.5rem
     position: absolute
     top: 0
     left: calc(100% * (5 / 12))
@@ -153,6 +155,15 @@
       @extend h2
       padding: .5rem 0
       color: $sky-blue
+
+    a
+      text-decoration: none
+      color: $sky-blue
+
+      &:hover
+        // sass-lint:disable-all
+        color: darken($sky-blue, 5%)
+        // sass-lint:enable-all
 
   &__button
     text-decoration: none

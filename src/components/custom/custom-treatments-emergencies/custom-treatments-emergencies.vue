@@ -9,7 +9,7 @@ export default {
   },
   data () {
     return {
-      activeAccord: 0
+      activeAccord: null
     }
   },
   methods: {

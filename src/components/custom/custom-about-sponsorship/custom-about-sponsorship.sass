@@ -35,6 +35,9 @@
       @include svg-size(10rem, 10rem)
 
   &__body
+    @include phone-lg
+      padding-top: 0
+      padding-bottom: 2rem
     padding-top: 4rem
     color: $brown-grey
 
@@ -44,9 +47,9 @@
 
   &__image
     @extend .img-centered
-    background-position: top
     transition: opacity .25s ease-in
     opacity: 0
+    background-position: top
 
     &--active
       opacity: 1
