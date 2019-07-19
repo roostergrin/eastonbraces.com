@@ -25,6 +25,8 @@
     fill: $white
 
   &__container
+    @include phone-lg
+      min-height: 0
     position: relative
     margin: 3rem auto 0
     max-width: $max-width
@@ -115,15 +117,21 @@
       top: unset
       left: 0
       width: 100%
-      min-height: 40rem
+      min-height: 27.5rem
     @include phone
-      min-height: 47.5rem
+      min-height: 32.5rem
     position: absolute
     top: 0
     left: calc(100% * (5 / 12))
     z-index: 9
     width: calc(100% * (6 / 12))
     height: 100%
+
+    &--tall
+      @include phone-lg
+        min-height: 40rem
+      @include phone
+        min-height: 47.5rem
 
   &__text-box
     @extend .img-centered

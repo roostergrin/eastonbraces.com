@@ -12,7 +12,7 @@
         BaseIcon.custom-home-tabs__tab-icon(:name='title.tab.icon')
         .custom-home-tabs__tab-label(v-html='title.tab.label')
     
-    .custom-home-tabs__content
+    .custom-home-tabs__content(:class="{ 'custom-home-tabs__content--tall': activeTab === 2 }")
       .custom-home-tabs__text-box(v-for='(content, i) in content.tabs'
         :key="'body - ' + i"
         :class="{ 'custom-home-tabs__text-box--active': activeTab === i }")
