@@ -47,7 +47,8 @@ export default {
       this.$marker.addListener('click', function() {
         let newOpener = window.open()
         newOpener.opener = null
-        newOpener.location = 'https://goo.gl/maps/qZ6AfFcdg8r'
+        newOpener.location = 'https://goo.gl/maps/5x7FEpc72ALpkdCNA'
+
       })
       /* eslint-enable */
     }
