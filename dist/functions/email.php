@@ -19,8 +19,8 @@ function rg_serve_route () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   $from = 'info@wordpress.com';
-  // $to = 'info@eastonbraces.com';
-  $to = 'cooper.timmerman@roostergrin.com';
+  $to = 'info@eastonbraces.com';
+  // $to = 'cooper.timmerman@roostergrin.com';
   $subject = 'Easton Contact Form';
   $headers = array('Content-Type: text/html; charset=UTF-8');
   $message = '<html><body>';
@@ -66,8 +66,8 @@ function rg_serve_route_free () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   $from = 'info@wordpress.com';
-  // $to = 'info@eastonbraces.com';
-  $to = 'cooper.timmerman@roostergrin.com';
+  $to = 'info@eastonbraces.com';
+  // $to = 'cooper.timmerman@roostergrin.com';
   $subject = 'Easton Free Consult Contact Form';
   $headers = array('Content-Type: text/html; charset=UTF-8');
   $message = '<html><body>';

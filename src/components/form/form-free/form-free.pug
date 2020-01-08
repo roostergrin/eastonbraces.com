@@ -38,9 +38,10 @@
       span.help.is-danger(v-show="errors.has('technology')") {{ errors.first('technology') }}   
       
     .form-free__group
-      textarea.form-free__input.form-free__input--textarea(name='additionalComments', v-model='additionalComments', v-validate="'alpha_spaces'", :class="{ 'form-free__input--error': errors.has('additionalComments') }", type='textarea')
+      textarea.form-free__input.form-free__input--textarea(name='additionalComments', v-model='additionalComments', v-validate="'required'", :class="{ 'form-free__input--error': errors.has('additionalComments') }", type='textarea')
       label.form-free__label.form-free__label--textarea(:class="{ 'form-free__label--active': additionalComments }") Additional Comments
-    
+      .form-free__message(v-show="errors.has('additionalComments')") Please Provide Some Additional Comments
+
     .form-free__button-group
       .form-free__submit-button.active(@click='validate')
         span Submit
