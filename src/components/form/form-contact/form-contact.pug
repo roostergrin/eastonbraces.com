@@ -31,8 +31,9 @@
       .form-contact__message(v-show="errors.has('clientPhone')") Please Input a Valid Phone Number, Only Numbers
       
     .form-contact__group
-      textarea.form-contact__input.form-contact__input--textarea(name='additionalComments', v-model='additionalComments', v-validate="'alpha_spaces'", :class="{ 'form-contact__input--error': errors.has('additionalComments') }", type='textarea')
+      textarea.form-contact__input.form-contact__input--textarea(name='additionalComments', v-model='additionalComments', v-validate="'required'", :class="{ 'form-contact__input--error': errors.has('additionalComments') }", type='textarea')
       label.form-contact__label.form-contact__label--textarea(:class="{ 'form-contact__label--active': additionalComments }") Additional Comments
+      .form-contact__message(v-show="errors.has('additionalComments')") Please Provide Some Additional Comments
     
     .form-contact__button-group
       .form-contact__submit-button.active(@click='validate')

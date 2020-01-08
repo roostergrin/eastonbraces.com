@@ -22,6 +22,7 @@ export default {
       this.$validator.validateAll()
         .then(result => {
           if (result) {
+            this.onSubmit()
           }
         })
         .catch((e) => {
