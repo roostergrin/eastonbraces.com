@@ -26,8 +26,9 @@ function rg_serve_route () {
   $message = '<html><body>';
   $message .= '<p><h4><strong>Form Submission for: </strong></h4>' . $data['fullName'] . '</p>';
   $message .= '<p><h4><strong>Parent/Guardian: </strong></h4>' . $data['guardName'] . '</p>';
-  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
-  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
+  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['clientEmail'] . '</p>';
+  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['clientPhone'] . '</p>';
+  $message .= '<p><h4><strong>Additional Comments: </strong></h4>' . $data['additionalComments'] . '</p>';
   $message .= '</body></html>';
 
   $table_name = $wpdb->prefix . 'emails';
@@ -65,14 +66,17 @@ function rg_serve_route_free () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   $from = 'info@wordpress.com';
-  $to = 'info@eastonbraces.com';
+  // $to = 'info@eastonbraces.com';
+  $to = 'cooper.timmerman@roostergrin.com';
   $subject = 'Easton Free Consult Contact Form';
   $headers = array('Content-Type: text/html; charset=UTF-8');
   $message = '<html><body>';
   $message .= '<p><h4><strong>Form Submission for: </strong></h4>' . $data['fullName'] . '</p>';
   $message .= '<p><h4><strong>Parent/Guardian: </strong></h4>' . $data['guardName'] . '</p>';
-  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
-  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
+  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['clientEmail'] . '</p>';
+  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['clientPhone'] . '</p>';
+  $message .= '<p><h4><strong>Interested in: </strong></h4>' . $data['technology'] . '</p>';
+  $message .= '<p><h4><strong>Additional Comments: </strong></h4>' . $data['additionalComments'] . '</p>';
   $message .= '</body></html>';
 
   $table_name = $wpdb->prefix . 'emails';
