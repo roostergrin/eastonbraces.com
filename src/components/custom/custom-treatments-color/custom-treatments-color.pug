@@ -25,6 +25,9 @@
           v-for='(selector, i) in content.colors'
           :key='"selector - " + i'
           :style="{ backgroundColor: selector.color }"
-          @click='setActiveColor(selector.color, i)')
+          @click='setActiveColor(selector.color, i)'
+          :class="{ 'custom-treatments-color__selector--selected': i === activeIndex }")
       a.custom-treatments-color__button(:href='content.button.href')
         BaseIcon.custom-treatments-color__button-icon(:name='content.button.icon')
+      br
+      a.custom-treatments-color__privacy-link(:href='content.button.privacyPolicy' target="_blank") Privacy Policy

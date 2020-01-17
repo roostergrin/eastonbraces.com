@@ -14,6 +14,7 @@ export default {
   },
   methods: {
     setActive (i) {
+      console.log('tab selected: ' + i)
       this.activeTab = i
     }
   }

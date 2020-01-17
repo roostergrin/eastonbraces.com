@@ -10,6 +10,7 @@ export default {
   data () {
     return {
       activeColor: null,
+      activeIndex: null,
       band: []
     }
   },
@@ -21,6 +22,8 @@ export default {
   methods: {
     setActiveColor (color, index) {
       this.activeColor = color
+      this.activeIndex = index
+      console.log('setting active color: ' + index)
     },
     setBandColor (i) {
       this.$set(this.band, i, this.activeColor)

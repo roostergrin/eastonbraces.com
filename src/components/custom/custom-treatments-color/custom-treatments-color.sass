@@ -132,14 +132,27 @@
       display: none
     flex-wrap: wrap
 
+
   &__selector
     margin: .25rem
     cursor: pointer
     width: 2rem
     height: 2rem
+    transition: 0.3s ease
+
+    &--selected
+      // border-top: 2px solid black
+      transform: scale(1.25)
 
   &__button
     display: block
     padding-top: 2rem
     &-icon
       @include svg-size(12rem, 3.5rem)
+
+  &__privacy-link
+    text-decoration: none
+
+    &:hover
+      color: $sky-blue-50
+      transition: 0.1s ease-in
