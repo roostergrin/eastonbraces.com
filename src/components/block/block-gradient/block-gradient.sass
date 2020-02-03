@@ -3,7 +3,7 @@
     background-position: 40% center
     background-size: cover
     &--invis
-      background-position: 165% center
+      background-position: top
       background-size: contain
   @include tablet-lg
     background-image: none !important
@@ -12,6 +12,9 @@
   background-repeat: no-repeat
   background-position: right
   background-size: contain
+  &--invis
+    background-position: top
+    background-size: contain
   padding: 4rem 0
 
   &__overlay
@@ -30,6 +33,14 @@
     padding-right: 40%
     padding-bottom: 4rem
     color: $sky-blue
+
+  &__invisalign-title
+    padding-right: 40%
+    padding-bottom: 4rem
+    padding-left: 10px
+    color: $sky-blue
+    margin-top: 30px
+
 
   &__subtitle
     padding-top: 2rem
@@ -61,3 +72,30 @@
 
       &:hover
         color: $flat-blue
+
+  &__image-before, &__image-after
+    @extend .col-6
+    text-align: center
+    padding: 10px 0
+    margin-bottom: 5px
+
+    p
+      background-color: $darkish-blue
+      color: white
+      padding: 1%
+      margin-left: 2px
+      margin-right: 2px
+    img
+      box-shadow: 3px 3px 5px gray
+      border-radius: 3px
+
+#beforeAfterCont
+  padding: 5px 10px
+
+#beforeAfterRow
+  vertical-align: middle
+  // border: 2px $sky-blue solid
+  border-radius: 5px
+  margin: 5px 0
+  padding-top: 4px
+  background-color: rgba($sky-blue, 0.2)

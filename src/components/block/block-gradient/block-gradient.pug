@@ -7,3 +7,12 @@
       .block-gradient__col
         h1.block-gradient__title(v-html='content.title')
         .block-gradient__body(v-html='content.body')
+      h1.block-gradient__invisalign-title(v-if='content.before_after_images') Invisalign Before and After
+  .block-gradient__container#beforeAfterCont(v-if='content.before_after_images')
+    .block-gradient__col#beforeAfterRow(v-for="(image, i) in content.before_after_images")
+      .block-gradient__image-before
+        img(:src='image.before')
+        p Before
+      .block-gradient__image-after
+        img(:src='image.after')
+        p After
