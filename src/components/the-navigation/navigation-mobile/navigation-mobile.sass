@@ -10,6 +10,8 @@
   z-index: 9999
   padding: 1rem
   width: 100%
+  // new addition below (covid19 adjustment)
+  padding-top: 60px
 
   &--scrolled
     transition: background .25s ease-in, box-shadow .25s ease-in .15s
@@ -20,6 +22,28 @@
     display: block
     width: 10rem
     height: 2.65rem
+
+  &__covid-banner
+    position: absolute
+    left: 0
+    right: 0
+    width: 100%
+    top: 0
+    height: 50px
+    color: $white
+    background-color: red
+    text-decoration: none
+    padding: 15px 0
+
+    &:hover
+      background-color: #8b0000
+
+  &__covid-text
+    color: $white
+    text-align: center
+    position: relative
+    margin: 0 auto
+    font-size: 16px
 
   &__logo
     @include svg-size(10rem, 3.25rem)
@@ -59,7 +83,9 @@
     transition: transform .35s ease-in
     z-index: -1
     background: $white-two
-    padding-top: 6rem
+    padding-top: 7.5rem
+    // original below (covid19 adjustment)
+    // padding-top: 6rem
     width: 100%
     height: 100vh
 

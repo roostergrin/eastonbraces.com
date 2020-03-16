@@ -18,6 +18,29 @@
     display: flex
     align-items: center
     justify-content: space-between
+    // new addition below (covid19 adjustment)
+    margin-top: 50px
+
+  &__covid-banner
+    position: absolute
+    left: 0
+    right: 0
+    width: 100%
+    top: 0
+    height: 50px
+    color: $white
+    background-color: red
+    text-decoration: none
+    padding: 15px 0
+
+    &:hover
+      background-color: #8b0000
+
+  &__covid-text
+    color: $white
+    text-align: center
+    position: relative
+    margin: 0 auto
 
   &__home-link
     overflow: hidden

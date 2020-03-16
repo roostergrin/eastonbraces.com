@@ -1,4 +1,6 @@
 .navigation-mobile(:class='{ "navigation-mobile--scrolled": navScrolled || menuOpen || $route.name !== "home" }' v-if='loaded')
+  a.navigation-mobile__covid-banner(:href='content.covid_details.banner_link')
+    .navigation-mobile__covid-text(v-html='content.covid_details.banner_text')
   router-link.navigation-mobile__home(to='/' @click.native='closeMenu()')
     BaseIcon.navigation-mobile__logo(:name='content.logo')
     
