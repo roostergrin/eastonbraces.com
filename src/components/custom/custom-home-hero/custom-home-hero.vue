@@ -19,7 +19,7 @@ export default {
     setActive () {
       setInterval(() => {
         this.activeSlide > (this.content.length - 2) ? this.activeSlide = 0 : this.activeSlide += 1
-      }, 7500)
+      }, 4000)
     },
     setNext () {
       this.activeSlide !== (this.content.length - 1) ? this.activeSlide += 1 : this.activeSlide = 0

@@ -7,11 +7,13 @@ import CustomHomeHeading from 'components/custom/custom-home-heading/custom-home
 import CustomHomeHero from 'components/custom/custom-home-hero/custom-home-hero'
 import CustomHomeRetainer from 'components/custom/custom-home-retainer/custom-home-retainer'
 import CustomHomeTabs from 'components/custom/custom-home-tabs/custom-home-tabs'
+import CustomHomeBanner from 'components/custom/custom-home-banner/custom-home-banner'
 
 export default {
   name: 'Home',
   computed: {
     props () {
+      console.log(this.$store.state.pages.home)
       return this.$store.state.pages.home
     }
   },
@@ -21,7 +23,8 @@ export default {
     CustomHomeHeading,
     CustomHomeHero,
     CustomHomeRetainer,
-    CustomHomeTabs
+    CustomHomeTabs,
+    CustomHomeBanner
   }
 }
 </script>
