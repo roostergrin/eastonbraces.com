@@ -7,8 +7,12 @@
   transform: translateZ(0)
   transition: background .25s ease-in, box-shadow .25s ease-in
   z-index: 9999
-  padding: 0 3rem
+  padding: 0
   width: 100%
+
+  &__background
+    position: relative
+    width: 100vw
 
   &--scrolled
     box-shadow: 0 2px 2px $shadow
@@ -18,29 +22,31 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding: 0 1rem
+    max-width: calc(1180px + 21px)
+    margin: 0 auto
     // new addition below (covid19 adjustment)
-    margin-top: 50px
+    // margin-top: 50px
 
   &__covid-banner
-    position: absolute
-    left: 0
-    right: 0
+    position: relative
     width: 100%
-    top: 0
-    height: 50px
+    height: fit-content
     color: $white
-    background-color: red
+    background: red
     text-decoration: none
-    padding: 15px 0
+    display: block
 
     &:hover
       background-color: #8b0000
 
   &__covid-text
     color: $white
+    width: fit-content
     text-align: center
-    position: relative
+    display: block
     margin: 0 auto
+    padding: .75rem
 
   &__home-link
     overflow: hidden

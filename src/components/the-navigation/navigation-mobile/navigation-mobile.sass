@@ -1,17 +1,17 @@
 .navigation-mobile
   @extend .flex-center-between
   @include tablet-lg
-    display: flex
+    display: block
   display: none
   position: fixed
   top: 0
   left: 0
+  -webkit-transition: background .25s ease-in
   transition: background .25s ease-in
   z-index: 9999
-  padding: 1rem
-  width: 100%
-  // new addition below (covid19 adjustment)
-  padding-top: 60px
+  /* padding: 1rem */
+  width: 100vw
+  /* padding-top: 60px*/
 
   &--scrolled
     transition: background .25s ease-in, box-shadow .25s ease-in .15s
@@ -22,18 +22,17 @@
     display: block
     width: 10rem
     height: 2.65rem
+    float: left
+    margin: .5rem
 
   &__covid-banner
-    position: absolute
-    left: 0
-    right: 0
+    position: relative
     width: 100%
-    top: 0
-    height: 50px
-    color: $white
-    background-color: red
+    height: fit-content
+    color: #ffffff
+    background: red
     text-decoration: none
-    padding: 15px 0
+    display: block
 
     &:hover
       background-color: #8b0000
@@ -44,6 +43,7 @@
     position: relative
     margin: 0 auto
     font-size: 16px
+    padding: .5rem
 
   &__logo
     @include svg-size(10rem, 3.25rem)
@@ -68,6 +68,9 @@
 
   &__hamburger
     @include hamburger-basic($white, .25s, 2.5rem, 2.5rem)
+    float: right
+    margin: .5rem
+
     span
       border-radius: 5px
 

@@ -13,7 +13,6 @@ export default {
   name: 'Home',
   computed: {
     props () {
-      console.log(this.$store.state.pages.home)
       return this.$store.state.pages.home
     }
   },

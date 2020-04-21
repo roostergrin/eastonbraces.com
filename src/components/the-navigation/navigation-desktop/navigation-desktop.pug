@@ -2,6 +2,7 @@ nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' 
   .navigation-desktop__background
     a.navigation-desktop__covid-banner(:href='content.covid_details.banner_link')
       .navigation-desktop__covid-text(v-html='content.covid_details.banner_text')
+    CustomHomeBanner(:content='props["custom_announcement"]')
     .navigation-desktop__container
       router-link.navigation-desktop__home-link(to='/')
         BaseIcon.navigation-desktop__logo(:name='content.logo')

@@ -1,7 +1,7 @@
 .pages-home(v-if='props')
+  //- CustomHomeBanner(:content='props["custom_announcement"]')
   CustomHomeHero(:content='props.hero')
   //- Due to the background configuration eveything had to be slotted into the Tabs component
-  CustomHomeBanner(:content='props["custom_announcement"]')
   CustomHomeTabs(:content='props.tabs')
     //- Top of Tab component, the relocation component
     //- CustomHomeHeading(:content='props.home_heading', slot='top')

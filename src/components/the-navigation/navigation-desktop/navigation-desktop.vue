@@ -1,6 +1,7 @@
 <template lang='pug' src='./navigation-desktop.pug'></template>
 
 <script>
+import CustomHomeBanner from 'components/custom/custom-home-banner/custom-home-banner'
 
 export default {
   computed: {
@@ -12,6 +13,9 @@ export default {
     },
     navScrolled () {
       return this.offsetTop >= (window.innerHeight * 0.45)
+    },
+    props () {
+      return this.$store.state.pages.home
     }
   },
   data () {
@@ -65,6 +69,9 @@ export default {
       this.dropdownSmooth = false
       this.showing = null
     }
+  },
+  components: {
+    CustomHomeBanner
   }
 }
 </script>
