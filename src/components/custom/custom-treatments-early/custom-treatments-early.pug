@@ -3,14 +3,30 @@
     .custom-treatments-early__col-title
       h1.custom-treatments-early__title(v-html='content.title')
     .custom-treatments-early__col-body
-      .custom-treatments-early__text-box
-        .custom-treatments-early__content(
-          v-for='(content, i) in content.qa'
-          :key="'content - ' + i")
-          h2.custom-treatments-early__question(
-            v-html='content.question'
+        .block-tabs-early
+          .treat_early(v-for='(FaqList, i) in content.qa' :key="'FaqList - ' + i")
+            .block-text-image__container
+              .block-early-image__col-title
+                h2.block-early-image__title.left-text(v-html='FaqList.question'
             @click='setActive(i)'
-            :class="{ 'custom-treatments-early__question--active': activeAccord === i }")
-          .custom-treatments-early__answer(
-            v-html='content.answer'
-            :class="{ 'custom-treatments-early__answer--active': activeAccord === i }")
+            :class="{ 'block-early-image__title--active': activeAccord === i }")
+            .contentearlyanswer(:class="{ 'contentearlyanswer--active': activeAccord === i }")
+              #beforeAfterCont.block-gradient__container
+                .block-text-image__container.beforefirst
+                  .block-early-image__col-body
+                    .block-early-image__body(v-html='FaqList.answer')              
+                .block-early__col(v-if='FaqList.img_before')
+                  .block-gradient__image-before
+                    img(v-bind:src='FaqList.img_before' alt='')
+                    p(data-uw-styling-context='true') Before
+                  .block-gradient__image-after
+                    img(v-bind:src='FaqList.img_after' alt='')
+                    p(data-uw-styling-context='true') After
+                .block-text-image__container
+                  .block-early-image__col-body
+                    .block-early-image__body(v-html='FaqList.short_description')
+  .block-gradient__schedules.treatt
+    .over-box
+    .block-gradient__content
+      .block-gradient__col
+        router-link(v-bind:to='content.btn_url' v-html='content.btn_text')

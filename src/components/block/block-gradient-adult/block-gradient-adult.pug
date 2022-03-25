@@ -1,0 +1,12 @@
+.block-gradient.gradadult(
+  :style="{ backgroundImage: 'url(' + content.background + ')' }"
+  :class="{ 'block-gradient--invis': $route.hash.includes('#invis') }")
+  .block-gradient__overlay
+  .block-gradient__content
+    .block-gradient__container
+      .block-gradient__col
+        h1.block-gradient__title(v-html='content.title')
+        .block-gradient__body(v-html='content.body')
+        .block-braces-schedulebtn
+          router-link(v-bind:to='content.btn_url' v-html='content.btn_text')
+

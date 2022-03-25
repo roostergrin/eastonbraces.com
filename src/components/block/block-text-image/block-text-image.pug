@@ -1,14 +1,17 @@
 .block-text-image
   .block-text-image__container
-    .block-text-image__col-title
-      h1.block-text-image__title(v-html='content.title')
-    .block-text-image__col-image
-      .block-text-image__image-box
-        .block-text-image__slider
-          BaseLazyImg.block-text-image__image(
-            v-for='(slide, i) in content.slider'
-            :class="{ 'block-text-image__image--active': i === activeImage }"
-            :key='"image-" + i'
-            :src='slide.image')
     .block-text-image__col-body
-      .block-text-image__body(v-html='content.body')
+    .custom-new-patients__container
+      .custom-new-patients__col-top
+        .custom-new-patients__top-content
+          .custom-new-patients__text-box
+            h1.custom-new-patients__title(v-html='content.title')
+          .patients-imgs
+            .patients-three(v-for='FirstApp in content.img_list')
+              img(v-bind:src='FirstApp.image' alt='')
+          .custom-new-patients__text-box
+            h1.custom-new-patients__title(v-html='content.title_2')
+            .custom-new-patients__education(v-html='content.content')
+          .patients-imgs
+            .patients-three(v-for='FirstApp1 in content.img_list_2')
+              img(v-bind:src='FirstApp1.image' alt='')

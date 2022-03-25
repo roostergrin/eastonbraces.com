@@ -8,14 +8,14 @@
 
   &__content
     position: relative
-    min-height: 35rem
+    min-height: 43rem
 
   &__title
     @include tablet-lg
       display: block
       padding: 0 calc(#{$gutter} / 2) 2rem
     padding-bottom: 2rem
-    color: $sky-blue
+    color: $navy-blue
 
   &__background
     @extend .img-full
@@ -25,8 +25,7 @@
     &-color-fade
       @extend .img-centered
       z-index: 2
-      background-image: linear-gradient(to left, #e7f3fc 25%, transparent 50%, transparent, transparent 65%, $white 77.5%)
-      width: calc(#{$max-width} * 2)
+      width: 100%
       pointer-events: none
 
     &-color
@@ -37,13 +36,14 @@
       pointer-events: none
 
     &-selector
+      left: 45%
       @extend .img-centered
       z-index: 1
-      width: calc(#{$max-width} + 10rem)
+      width: 100%
 
     &-image
       @extend .img-centered
-      width: calc(#{$max-width} + 10rem)
+      width: 100%
 
   &__band
     &-color
@@ -153,5 +153,5 @@
     text-decoration: none
 
     &:hover
-      color: $sky-blue-50
+      color: $navy-blue
       transition: 0.1s ease-in

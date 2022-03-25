@@ -9,12 +9,12 @@ export default {
   },
   data () {
     return {
-      activeTab: 0
+      activeAccord: null
     }
   },
   methods: {
     setActive (i) {
-      this.activeTab = i
+      this.activeAccord === i ? this.activeAccord = null : this.activeAccord = i
     }
   }
 }

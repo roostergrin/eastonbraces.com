@@ -2,11 +2,12 @@
   h1.custom-about-community__title(v-html='content.title')
   .custom-about-community__container
     .custom-about-community__col
-      .custom-about-community__slider
-        .custom-about-community__prev(@click='slidePrev') <
-        .custom-about-community__next(@click='slideNext') >
-        BaseLazyImg.custom-about-community__slide(
-          v-for='(slide, i) in content.slides'
-          :key="'slide - ' + i"
-          :class="{ 'custom-about-community__slide--active': i === activeSlide }"
-          :src='slide.image')
+      .common_slider
+        swiper(:options='swiperOption1')
+          swiper-slide(v-for='officeTour in content.slides')
+            .common_slide(v-bind:style="{ backgroundImage: 'url('+ officeTour.image +')'}")
+          .swiper-pagination(slot='pagination')   
+          .swiper-button-prev(slot='button-prev')
+            .fa.fa-angle-left
+          .swiper-button-next(slot='button-next') 
+            .fa.fa-angle-right          

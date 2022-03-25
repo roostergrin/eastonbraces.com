@@ -3,7 +3,7 @@
 
   .base-hero__overlay
   
-  .base-hero__nav
+  .base-hero__nav(v-if="$route.path !== '/halvorsen-difference'")
     .base-hero__link(
       v-for='(link, i) in $route.meta'
       :key="'link - ' + i"

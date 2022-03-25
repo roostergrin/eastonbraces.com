@@ -19,6 +19,11 @@ export default {
     NavigationDesktop,
     NavigationMobile,
     TheFooter
+  },
+  computed: {
+    contentnav () {
+      return this.$store.state.app.navigation
+    }
   }
 }
 </script>

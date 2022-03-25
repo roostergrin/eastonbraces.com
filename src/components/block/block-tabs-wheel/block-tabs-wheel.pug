@@ -1,22 +1,19 @@
 .block-tabs-wheel
   .block-tabs-wheel__overlay
-  .block-tabs-wheel__container-title
-    .block-tabs-wheel__col-title
-      h1.block-tabs-wheel__title(v-html='content.title')
-  .block-tabs-wheel__container
-    BaseIcon.block-tabs-wheel__background(:name='content.background')
-    .block-tabs-wheel__tabs
-      .block-tabs-wheel__tab(v-for='(title, i) in content.tabs'
-        :key="'tab - ' + i"
-        :class="{ 'block-tabs-wheel__tab--active': activeTab === i }"
-        @mouseenter='setActive(i)'
-        @click='setActive(i)')
-        BaseIcon.block-tabs-wheel__tab-icon(:name='title.tab.icon')
-        .block-tabs-wheel__tab-label(v-html='title.tab.label')
-    
-    .block-tabs-wheel__content
-      .block-tabs-wheel__text-box(v-for='(content, i) in content.tabs'
-        :key="'body - ' + i"
-        :class="{ 'block-tabs-wheel__text-box--active': activeTab === i }")
-        h2.block-tabs-wheel__section-title(v-html='content.tile.title' v-if='content.tile.title')
-        .block-tabs-wheel__body(v-html='content.tile.body')
+  .block-text-image__container
+    .block-Investment-image__col-title
+      h1.block-Investment-image__title(v-html='content.title')
+    .block-main-Investment
+      .block-Investment-image__col-image
+        .block-Investment-image__image-box
+          .block-Investment-image
+            .Investment-img
+              img(v-bind:src='content.image' alt='')
+      .block-Investment-image__col-body
+        .block-Investment-image__body.block-Investment-image__body--active(v-html='content.content')
+  .block-text-image__container(v-for='(PatientTabss, i) in content.tab_list' :key="'PatientTabss - ' + i")
+    .block-Included-image__col-title
+      h2.block-Included-image__title.left-text(v-html='PatientTabss.title' @click='setActive(i)'
+            :class="{ 'block-Included-image__title--active': activeAccord === i }")
+    .block-Included-image__col-body
+      .block-Investment-image__body(v-html='PatientTabss.content' :class="{ 'block-Investment-image__body--active': activeAccord === i }")

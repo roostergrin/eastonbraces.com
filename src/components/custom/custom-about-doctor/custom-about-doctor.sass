@@ -23,6 +23,9 @@
       @extend .col-5
       @extend .flex-center
       display: flex
+      background: rgba(17, 62, 131, 0.13)
+      padding-left: 30px
+      padding-right: 30px
 
   &__top-content
     @extend .flex-stretch-start
@@ -36,21 +39,19 @@
   &__image
     @include phone-lg
       margin-bottom: 2rem
-      min-width: 15rem
-      min-height: 15rem
+      min-width: 27rem
+      min-height: 23rem
 
     position: relative
     background-repeat: no-repeat
     background-position: center
     background-size: contain
-    min-width: 15rem
-    min-height: 15rem
+    min-width: 28rem
+    min-height: 24rem
 
   &__text-box
     @include phone-lg
       padding-left: 2rem
-    box-shadow: 2px 2px 3px 1px $shadow
-    background: $sky-blue-13
     padding: 2rem
 
     .custom-about-doctor__top-content &
@@ -60,7 +61,7 @@
 
   &__title
     padding-bottom: 1rem
-    color: $sky-blue
+    color: $navy-blue
 
   &__education
     @include phone-lg
@@ -80,4 +81,4 @@
     background-position: center
     background-size: cover
     width: 100%
-    min-height: 20rem
+    min-height: 23rem

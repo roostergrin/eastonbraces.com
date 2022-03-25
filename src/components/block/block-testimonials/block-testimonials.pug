@@ -1,24 +1,16 @@
 .block-testimonials
-  BaseIcon.block-testimonials__background(name='background-circle')
   .block-testimonials__container
-    .block-testimonials__col.block-testimonials__col--title
-      .block-testimonials__title(v-html='content.title')
-  
-  .block-testimonials__container
-
-    .block-testimonials__col-images
-      .block-testimonials__image(v-for='(slide, i) in slideList'
-        :key='"image - " + i'
-        :class="{ 'block-testimonials__image--next': next === i, 'block-testimonials__image--prev': prev === i, 'block-testimonials__image--showing': showing === i }")
-        BaseLazyBg.block-testimonials__image-thumb(:src="slide.image")
-        .block-testimonials__image-overlay
-            
-    .block-testimonials__col.block-testimonials__col--textbox
-      .block-testimonials__content-box
-        .block-testimonials__slider
-          .block-testimonials__slide(v-for='(slide, i) in content.slides'
-            :key='"slide - " + i'
-            :class="{ 'block-testimonials__slide--active': i === showing }")
-            BaseIcon.block-testimonials__quotes(:name='content.icon')
-            .block-testimonials__text(v-html='slide.body')
-            .block-testimonials__author(v-html='"- " + slide.author')
+    .block-testimonials_wrap(:style="{ backgroundImage: 'url('+ content.bg_img +')'}")
+      .block-testimonials_title
+        h3(v-html='content.title')
+      .custom-treatments_slider
+        .common_slider.testislider
+          swiper(:options='swiperOptiontestslider')
+            swiper-slide(v-for='(slide, i) in content.slides')
+              .testislide
+                .testislide_body(v-html='slide.body')  
+                .testislide_author(v-html='"- " + slide.author')            
+            .swiper-button-prev(slot='button-prev')
+              .fa.fa-chevron-left
+            .swiper-button-next(slot='button-next') 
+              .fa.fa-chevron-right       

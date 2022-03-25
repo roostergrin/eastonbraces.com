@@ -13,8 +13,7 @@
   background-position: right
   background-size: contain
   &--invis
-    background-position: top right
-    background-attachment: fixed
+    background-position: top
     background-size: contain
   padding: 4rem 0
 
@@ -22,7 +21,7 @@
     @extend .img-full
     @include phone-lg
       display: none
-    background-image: linear-gradient(to right, $white 64%, transparent 63%)
+    background-image: linear-gradient(to right, $white 60%, transparent 70%)
 
   &__container
     @extend .container
@@ -31,22 +30,22 @@
     @extend .col-8
 
   &__title
-    padding-right: 0
+    padding-right: 40%
     padding-bottom: 4rem
-    color: #103d82
+    color: $sky-blue
 
   &__invisalign-title
     padding-right: 40%
     padding-bottom: 4rem
     padding-left: 10px
-    color: #103d82
+    color: $sky-blue
     margin-top: 30px
 
 
   &__subtitle
     padding-top: 2rem
     padding-bottom: 1rem
-    color: #103d82
+    color: $sky-blue
 
     &:first-child
       padding-top: 0
@@ -69,7 +68,7 @@
     a
       transition: color .25s ease-in
       text-decoration: none
-      color: #103d82
+      color: $sky-blue
 
       &:hover
         color: $flat-blue
@@ -100,48 +99,3 @@
   margin: 5px 0
   padding-top: 4px
   background-color: rgba($sky-blue, 0.2)
-
-.block-gradient__schedules
-  background-attachment: fixed
-  background-size: cover
-  position: relative
-  min-height: 200px
-  background-repeat: no-repeat
-  margin-top: 3em
-  width: 100%
-
-.block-gradient__schedules .block-gradient__col
-  text-align: center
-  width: 100%
-  padding: 6em
-
-.over-box
-  position: absolute
-  background: rgba(0, 0, 0, 0.5)
-  width: 100%
-  height: 100%
-.block-gradient__schedules a
-  position: relative
-  z-index: 9
-  text-decoration: none
-  color: #fff
-  font-size: 32px
-  text-transform: uppercase
-  background: #103d82
-  padding: 14px 22px
-  border-radius: 25px
-  border: 2px solid #62bff2
-
-.block-gradient__schedules a:hover
-  background: #fff
-  color: #103d82  
-
-.block-gradient-image__body ul li 
-  color: #7b7b7b
-  font-size: 18px
-  line-height: 25px
-
-.custom-treatments-braces__body
-  color: #7b7b7b
-  font-size: 18px
-  line-height: 25px

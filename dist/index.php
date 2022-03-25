@@ -3,9 +3,10 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" id="sb-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <div id='app' role='application'></div>
   <?php wp_footer(); ?>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClno4ZMvwmys-6PSHJabuspzz1ZdKJWkA" async defer></script>
@@ -35,7 +36,5 @@
     (d.body || d.head).appendChild(ns);})(document);   
 
   </script>
-
-  <div class="footer__container-userway-trigger" id="accessibilityWidget" tabindex="0">Click for Accessibility</div>
 </body>
 </html>

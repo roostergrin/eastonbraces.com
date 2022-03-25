@@ -7,14 +7,6 @@ export default {
       type: [Object, Array]
     }
   },
-  data () {
-    return {
-      showing: 0,
-      next: 1,
-      prev: 2,
-      active: null
-    }
-  },
   computed: {
     slideList () {
       return this.content.slides
@@ -48,6 +40,26 @@ export default {
           this.active = null
         }, 100)
       }, 7500)
+    }
+  },
+  data () {
+    return {
+      swiperOptiontestslider: {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 30,
+        speed: 1000,
+        observer: true,
+        observeParents: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false
+        },
+        navigation: {
+          nextEl: '.testislider .swiper-button-next',
+          prevEl: '.testislider .swiper-button-prev'
+        }
+      }
     }
   }
 }

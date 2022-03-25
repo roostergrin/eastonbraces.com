@@ -9,6 +9,12 @@ import store from './shared/store'
 import { vendors } from './resources/vendors'
 import { fonts } from './resources/fonts'
 import { Icon } from './resources/components'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
+
 /* eslint-enable */
 
 Vue.config.productionTip = false

@@ -1,6 +1,4 @@
 .custom-treatments-color
-  .custom-treatments-color__container
-    h1.custom-treatments-color__title(v-html='content.title')
   .custom-treatments-color__content
     .custom-treatments-color__background
       .custom-treatments-color__background-selector
@@ -18,6 +16,7 @@
       .custom-treatments-color__background-color
       .custom-treatments-color__background-color-fade
     .custom-treatments-color__text-box
+      h1.custom-treatments-color__title.edit45(v-html='content.title')
       .custom-treatments-color__body(v-html='content.body')
       .custom-treatments-color__selectors
         .custom-treatments-color__selector(
@@ -26,7 +25,14 @@
           :style="{ backgroundColor: selector.color }"
           @click='setActiveColor(selector.color, i)'
           :class="{ 'custom-treatments-color__selector--selected': i === activeIndex }")
-      a.custom-treatments-color__button(:href='content.button.href')
-        BaseIcon.custom-treatments-color__button-icon(:name='content.button.icon')
-      br
-      a.custom-treatments-color__privacy-link(:href='content.button.privacyPolicy' target="_blank") Privacy Policy
+      .customapp_section
+        h3.band_choosernew(v-if='content.button.or_choose_app_text' v-html:p='content.button.or_choose_app_text')
+        .app_wrap.clearfix
+          .app_left
+            img(:src='content.button.btn_left' alt='')
+          .app_right
+            img(:src='content.button.btn_right' alt='')                 
+            a.custom-treatments-color__button(:href='content.button.href' target='_blank')
+              img(:src='content.button.btn_app' alt='')
+            br
+            a.custom-treatments-color__privacy-link(:href='content.button.privacyPolicy' target="_blank") Privacy Policy

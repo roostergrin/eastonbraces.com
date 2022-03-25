@@ -4,4 +4,8 @@
   BaseLoader
   router-view
   TheFooter
+  .navigation-mobile__contact.clearfix
+    router-link.navigation-mobile__request(:to='contentnav.appointment.href', v-html='contentnav.appointment.label')
+    a.navigation-mobile__social(v-for="(icon, i) in contentnav.social_bar", :key="'social - ' + i", target='_blank', rel='noopener noreferrer', :href="icon.href")
+      BaseIcon(:name='icon.icon')   
   

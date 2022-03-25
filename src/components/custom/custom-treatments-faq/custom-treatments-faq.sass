@@ -5,8 +5,7 @@
     @extend .container
 
   &__col
-    @extend .col-8
-    @extend .col-2--offset
+    @extend .col-12
 
     &-title
       @extend .col-10
@@ -14,7 +13,8 @@
 
   &__title
     padding-bottom: 4rem
-    color: $sky-blue
+    color: $navy-blue
+    text-align: center
 
   &__content
     position: relative
@@ -28,3 +28,58 @@
     height: auto
     text-align: center
     color: $white
+
+  &__slider
+    @include phone-lg
+      min-height: 20rem
+    position: relative
+    min-height: 30rem
+
+  &__slide
+    @extend .img-centered
+    @include phone-lg
+      top: 0
+      transform: translateX(-50%)
+      width: 100%
+      height: calc(100% - 7.5rem)
+    transition: opacity .25s ease-in
+    opacity: 0
+    width: calc(100% * (8 / 12))
+
+    &--active
+      opacity: 1
+
+  &__prev,
+  &__next
+    @extend h1
+    @extend .img-centered
+    @include phone-lg
+      top: unset
+      bottom: 0
+    transform: translateY(-50%)
+    transition: border-color .25s ease-in
+    border: 4px solid $sky-blue
+    border-top: none
+    border-left: none
+    border-radius: 50%
+    cursor: pointer
+    width: 4rem
+    height: 4rem
+    text-align: center
+    line-height: 1
+    color: $light-navy
+    font-size: 4rem
+
+    &:hover
+      border-color: $sunny-yellow
+
+  &__prev
+    @include phone-lg
+      left: 0
+    left: 2rem
+
+  &__next
+    @include phone-lg
+      right: 0
+    right: 2rem
+    left: auto    

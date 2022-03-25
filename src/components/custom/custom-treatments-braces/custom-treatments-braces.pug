@@ -1,25 +1,63 @@
 .custom-treatments-braces
-  BaseLazyBg.custom-treatments-braces__background(
-    v-for='(image, i) in content.tabs'
-    :key='"iamge-" + i'
-    :src='image.background'
-    :class="{ 'custom-treatments-braces__background--active': activeTab === i }")
+  .custombracesouter
+    BaseLazyBg.custom-treatments-braces__background(
+      v-for='(image, i) in content.tabs'
+      :key='"iamge-" + i' :src='image.background'
+      :class="{ 'custom-treatments-braces__background--active': activeTab === i }")
+    .custom-treatments-braces__container
+      .custom-treatments-braces__col-title
+        h1.custom-treatments-braces__title(v-html='content.title')
+      .custom-treatments-braces__col-body
+        .custom-treatments-braces__tab-box
+          .custom-treatments-braces__tab(
+            v-for='(tab, i) in content.tabs'
+            :key="'tab - ' + i"
+            :class="{ 'custom-treatments-braces__tab--active': activeTab === i }"
+            @click='setActive(i)'
+            v-html='tab.label')
+        .block-braces-divi.custom-treatments-braces__imgg(:class="{ 'custom-treatments-braces__imgg--active': activeTab === 0 }")
+          .block-braces-two-section
+            .block-braces-image__col-body
+              .block-braces-image__col-text
+                .block-braces-image__body(v-html='content.metal_content_1')
+                a.custom-treatments-braces__button(:href='content.metal_button__url')
+                  BaseIcon.custom-treatments-braces__button-icon(:name='content.button')               
+            .block-braces-image__col-image(v-if='content.metal_img_1')
+              .block-braces-image__image-box
+                .block-braces-image
+                  .braces-img
+                    img(v-bind:src='content.metal_img_1' alt='')
+        .custom-treatments-braces__section.custom-treatments-braces__imgg(:class="{ 'custom-treatments-braces__imgg--active': activeTab === 1 }")
+          .block-braces-two-section
+            .block-braces-image__col-body
+              .block-braces-image__col-text
+                .block-braces-image__body(v-html='content.ceramic_content_1')
+            .block-braces-image__col-image(v-if='content.ceramic_img_1')
+              .block-braces-image__image-box
+                .block-braces-image
+                  .braces-img
+                    img(v-bind:src='content.ceramic_img_1' alt='')                
   .custom-treatments-braces__container
-    .custom-treatments-braces__col-title
-      h1.custom-treatments-braces__title(v-html='content.title')
-    .custom-treatments-braces__col-body
-      .custom-treatments-braces__tab-box
-        .custom-treatments-braces__tab(
-          v-for='(tab, i) in content.tabs'
-          :key="'tab - ' + i"
-          :class="{ 'custom-treatments-braces__tab--active': activeTab === i }"
-          @click='setActive(i)'
-          v-html='tab.label')
-      .custom-treatments-braces__text-box
-        .custom-treatments-braces__content(
-          v-for='(content, i) in content.tabs'
-          :key="'content - ' + i"
-          :class="{ 'custom-treatments-braces__content--active': activeTab === i }")
-          .custom-treatments-braces__body(v-html='content.body')
-          a.custom-treatments-braces__button(:href='content.button.href')
-            BaseIcon.custom-treatments-braces__button-icon(:name='content.button.icon')
+    .custom-treatments-braces__section.custom-treatments-braces__imgg(:class="{ 'custom-treatments-braces__imgg--active': activeTab === 0 }")
+      .braces-imgs
+        // .braces-three(v-for='MetalList in content.metal_images_list')
+        //  img(v-bind:src='MetalList.img' alt='')        
+        .block-gradient__schedules
+          .over-box
+          .block-gradient__content
+            .block-gradient__col
+              router-link(v-bind:to='content.metal_schedule_btn_url' v-html='content.metal_schedule_btn')
+    .custom-treatments-braces__section.custom-treatments-braces__imgg(:class="{ 'custom-treatments-braces__imgg--active': activeTab === 1 }") 
+      .block-braces-divi
+        .block-braces-image__col-image(v-for='Ceramic_List in content.ceramic_images_list')
+          .block-braces-image__image-box
+            .block-braces-image
+              .braces-img
+                img(v-bind:src='Ceramic_List.img' alt='')          
+      .block-gradient__schedules
+        .over-box
+        .block-gradient__content
+          .block-gradient__col
+            router-link(v-bind:to='content.ceramic_schedule_btn_url' v-html='content.ceramic_schedule_btn_text')                                     
+
+

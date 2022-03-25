@@ -1,19 +1,13 @@
 .block-facebook
-  .block-facebook__background-overflow
-    .block-facebook__background
-      .block-facebook__overlay
-        BaseIcon.block-facebook__icon(:name='content.icon')
-  
   .block-facebook__container
     .block-facebook__col-1
-      .block-facebook__text-box
-        h1.block-facebook__title(v-html='content.title')
-        .block-facebook__body(v-html='content.body')
-        a.block-facebook__button(:href='content.button.href' target='_blank')
-          BaseIcon.block-facebook__button-icon(:name='content.button.icon')
+      .fb_outerwrap.clearfix
+        .fb_left
+          a(:href='content.button.href' target='_blank')
+            i.fa.fa-facebook-square
+        .fb_right
+          p(v-html='content.body')
     .block-facebook__col-2
-      .block-facebook__slider
-        BaseLazyImg.block-facebook__slider-image(v-for='(slide, i) in content.images'
-          :key="'slide - ' + i"
-          :class="{ 'block-facebook__slider-image--active': activeImage === i }"
-          :src='slide.image')
+      .btn_gallery
+        router-link(:to='content.before_after_gallery_url' v-html:p='content.before_after_gallery_title')
+

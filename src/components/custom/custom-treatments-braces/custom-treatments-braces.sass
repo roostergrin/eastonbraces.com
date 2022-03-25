@@ -35,7 +35,7 @@
     @extend .col-7
 
   &__title
-    color: $sky-blue
+    color: #103d82
 
   &__text-box
     position: relative
@@ -50,12 +50,24 @@
     transition: opacity .35s ease-in
     opacity: 0
     width: 100%
-    pointer-events: none
+    pointer-events: none 
 
     &--active
       opacity: 1
       transition-delay: .35s
       pointer-events: all
+
+  &__imgg
+    transition: opacity .35s ease-in
+    opacity: 0
+    width: 100% 
+    display: none !important
+
+    &--active
+      opacity: 1
+      transition-delay: .35s
+      pointer-events: all
+      display: block !important          
 
   &__body
     padding-bottom: 2rem
@@ -63,7 +75,7 @@
     a
       transition: color .25s ease-in
       text-decoration: none
-      color: $sky-blue
+      color: #103d82
 
       &:hover
         color: $flat-blue
@@ -92,4 +104,4 @@
 
     &--active,
     &:hover
-      background: $sky-blue
+      background: #103d82

@@ -7,11 +7,6 @@ export default {
       type: [Object, Array]
     }
   },
-  data () {
-    return {
-      activeSlide: 0
-    }
-  },
   mounted () {
     this.slideAutomate()
   },
@@ -26,6 +21,31 @@ export default {
     },
     slidePrev () {
       this.activeSlide <= 0 ? this.activeSlide = (this.content.slides.length - 1) : this.activeSlide -= 1
+    }
+  },
+  data () {
+    return {
+      activeSlide: 0,
+      swiperOption1: {
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      }
     }
   }
 }

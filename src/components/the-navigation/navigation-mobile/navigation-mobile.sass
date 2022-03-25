@@ -16,7 +16,7 @@
   &--scrolled
     transition: background .25s ease-in, box-shadow .25s ease-in .15s
     box-shadow: 0 0 4px 2px $bs1
-    background: $white
+    background: #0e3c81
 
   &__home
     display: block
@@ -63,20 +63,24 @@
         stroke: $sky-blue
 
       .logo-bottom
-        fill: $light-navy
-        stroke: $light-navy
+        fill: $white
+        stroke: $white
 
   &__hamburger
     @include hamburger-basic($white, .25s, 2.5rem, 2.5rem)
     float: right
-    margin: .5rem
+    margin: 1rem
+
+    &--active
+      color:#103d82
 
     span
       border-radius: 5px
+      background: $white
 
     .navigation-mobile--scrolled &
       span
-        background: $light-navy
+        background: $white
 
   &__drawer
     position: absolute

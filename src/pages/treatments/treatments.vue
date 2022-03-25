@@ -2,6 +2,8 @@
 
 <script>
 import BlockGradient from 'components/block/block-gradient/block-gradient'
+import BlockGradientAdult from 'components/block/block-gradient-adult/block-gradient-adult'
+import BlockGradientLife from 'components/block/block-gradient-life/block-gradient-life'
 import CustomTreatmentsBraces from 'components/custom/custom-treatments-braces/custom-treatments-braces'
 import CustomTreatmentsCare from 'components/custom/custom-treatments-care/custom-treatments-care'
 import CustomTreatmentsColor from 'components/custom/custom-treatments-color/custom-treatments-color'
@@ -18,6 +20,8 @@ export default {
   },
   components: {
     BlockGradient,
+    BlockGradientAdult,
+    BlockGradientLife,
     CustomTreatmentsBraces,
     CustomTreatmentsCare,
     CustomTreatmentsColor,

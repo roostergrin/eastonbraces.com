@@ -1,7 +1,4 @@
 .navigation-mobile(:class='{ "navigation-mobile--scrolled": navScrolled || menuOpen || $route.name !== "home" }' v-if='loaded')
-  a.navigation-mobile__covid-banner(:href='content.covid_details.banner_link')
-    .navigation-mobile__covid-text(v-html='content.covid_details.banner_text')
-  CustomHomeBanner(:content='props["custom_announcement"]')
   router-link.navigation-mobile__home(to='/' @click.native='closeMenu()')
     BaseIcon.navigation-mobile__logo(:name='content.logo')
     
@@ -29,3 +26,7 @@
           :to='sublink.path'
           v-html='sublink.name'
           @click.native='closeMenu()')
+    .navigation-mobile__link.manualmenu(:class="{ 'navigation-mobile__link--active': menuOpen }")
+      router-link(:to='content.virtual_consultt.link', @click.native='closeMenu()', v-html='content.virtual_consultt.text')
+    .navigation-mobile__link.manualmenu(:class="{ 'navigation-mobile__link--active': menuOpen }")
+      a(:href='content.covid_details.banner_link' target='_blank' v-html='content.covid_details.banner_text')            

@@ -1,7 +1,71 @@
 .pages-halvorsen-difference(v-if='props')
   BaseHero(:content='props.hero')
   transition-group(name='fade')
-    BaseContainer(v-show='$route.hash === "#apart" || $route.hash === ""' key='1')
-      BlockTabsWheel(slot='first', :content='props.wheel')
-    BaseContainer(v-show='$route.hash === "#reviews"' key='2')
-      CustomDifferenceTestimonials(slot='first', :content='props.testimonials')
+  .block-text-image__container
+    .block-main-apart#apart(key='1' v-for='TabDiff1 in props.wheel.tabs_new')
+      .block-apart-image__col-title
+        h1.block-apart-image__title(v-html='props.wheel.title') 
+      .block-apart-image__col-image
+        .block-apart-image__image-box
+          .block-apart-image
+            .apart-img
+              .block-apart-image__body
+                h3.block-apart-info-heading-small(v-html='TabDiff1.image_title') 
+              img(v-bind:src='TabDiff1.image' alt='')
+      .block-apart-image__col-body
+        .block-apart-image__col-title
+          h3.block-apart-info-heading(v-html='TabDiff1.title') 
+        .block-apart-image__col-text
+          .block-apart-image__body(v-html='TabDiff1.content') 
+    .block-main-apart.reverse-apart#service-difference(key='2' v-for='TabDiff2 in props.wheel.tabs_new_2')
+      .block-apart-image__col-image
+        .block-apart-image__image-box
+          .block-apart-image
+            .apart-img
+              .block-apart-image__body
+                h3.block-apart-info-heading-small(v-html='TabDiff2.image_title')            
+              img(v-bind:src='TabDiff2.image' alt='')
+      .block-apart-image__col-body
+        .block-apart-image__col-text
+          .block-apart-image__body
+            h3.block-apart-info-heading(v-html='TabDiff2.title') 
+            .contenttnew(v-html='TabDiff2.content') 
+    .block-main-apart#retention-difference(key='3' v-for='TabDiff3 in props.wheel.tabs_new_3')
+      .block-apart-image__col-image
+        .block-apart-image__image-box
+          .block-apart-image
+            .apart-img
+              .block-apart-image__body
+                h3.block-apart-info-heading-small(v-html='TabDiff3.image_title')            
+              img(v-bind:src='TabDiff3.image' alt='')
+      .block-apart-image__col-body
+        .block-apart-image__col-text
+          .block-apart-image__body
+            h3.block-apart-info-heading(v-html='TabDiff3.title')
+            .contenttnew(v-html='TabDiff3.content')
+    .block-main-apart.reverse-apart#community-difference(key='4' v-for='TabDiff4 in props.wheel.tabs_new_4')
+      .block-apart-image__col-image
+        .block-apart-image__image-box
+          .block-apart-image
+            .apart-img
+              .block-apart-image__body
+                h3.block-apart-info-heading-small(v-html='TabDiff4.image_title')            
+              img(v-bind:src='TabDiff4.image' alt='')
+      .block-apart-image__col-body
+        .block-apart-image__col-text
+          .block-apart-image__body
+            h3.block-apart-info-heading(v-html='TabDiff4.title')
+            .contenttnew(v-html='TabDiff4.content')
+    .block-main-apart#affordable-difference(key='5' v-for='TabDiff5 in props.wheel.tabs_new_5')
+      .block-apart-image__col-image
+        .block-apart-image__image-box
+          .block-apart-image
+            .apart-img
+              .block-apart-image__body
+                h3.block-apart-info-heading-small(v-html='TabDiff5.image_title')            
+              img(v-bind:src='TabDiff5.image' alt='')
+      .block-apart-image__col-body
+        .block-apart-image__col-text
+          .block-apart-image__body
+            h3.block-apart-info-heading(v-html='TabDiff5.title')
+            .contenttnew(v-html='TabDiff5.content')

@@ -1,14 +1,16 @@
 .custom-about-team
-  .custom-about-team__section(
-    v-for="(section, i) in content"
-    :class="{ 'custom-about-team__section--alt': i % 2 }")
+  .custom-about-team__section.custom-about-team__section--alt(
+    v-for="(section, i) in content")
     .custom-about-team__container
       .custom-about-team__col-image
         .custom-about-team__image-box
           .custom-about-team__layer-image
             BaseLazyImg.custom-about-team__layer-image-image(:src='section.image')
-            .custom-about-team__layer-image-bg-1
-            .custom-about-team__layer-image-bg-2
+            .team_bg
+              BaseIcon.custom-teamsvg(name='blue-border')
       .custom-about-team__col-body
-        h1.custom-about-team__title(v-html='section.title')
+        h1.custom-about-team__title
+          span(v-html='section.title')
+          span  - 
+          span(v-html='section.designation')  
         .custom-about-team__body(v-html='section.body')

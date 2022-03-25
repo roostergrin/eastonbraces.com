@@ -1,34 +1,42 @@
 nav.navigation-desktop(:class='{ "navigation-desktop--scrolled": navScrolled }' v-if='loaded')
-  .navigation-desktop__background
-    a.navigation-desktop__covid-banner(:href='content.covid_details.banner_link')
-      .navigation-desktop__covid-text(v-html='content.covid_details.banner_text')
-    CustomHomeBanner(:content='props["custom_announcement"]')
     .navigation-desktop__container
       router-link.navigation-desktop__home-link(to='/')
         BaseIcon.navigation-desktop__logo(:name='content.logo')
-          
-      .navigation-desktop__content    
-        .navigation-desktop__links(@mouseenter='dropdownActive' @mouseleave='dropdownLeave')
-          .navigation-desktop__link(
-            v-for='(link, i) in links'
-            :to='link.path'
-            :key='"link - " + i'
-            @mouseover='hoverDropdown(i, link)'
-            @click='pageLink(link)'
-            :class='{ "navigation-desktop__link--active": $route.name === link.name }'
-            ref='root')
-            h3 {{ link.name }}
-          .navigation-desktop__dropdown(:style='{ left: left, height: height }', :class='{ "navigation-desktop__dropdown--active": dropdownShow, "navigation-desktop__dropdown--open": dropdownSmooth }')
-            .navigation-desktop__dropdown-arrow
-            .navigation-desktop__dropdown-background
-              .navigation-desktop__dropdown-container(v-for='(link, i) in links', :key='"drop-link - " + i' ref='link', :class="{ 'navigation-desktop__dropdown-container--active': showing === i }")
-                .navigation-desktop__dropdown-header
-                  .navigation-desktop__dropdown-image(v-for='(image, i) in link.meta', :style="{ backgroundImage: 'url(' + image.image + ')' }")
-                router-link.navigation-desktop__dropdown-content(v-for='(item, j) in link.meta', :key='j', :to='item.path', :class="{ 'navigation-desktop__dropdown-content--background': item.background }", :style="{ backgroundImage: 'url(' + item.background + ')' }")
-                  .navigation-desktop__dropdown-content-overlay(v-if='item.background')
-                  BaseIcon.navigation-desktop__dropdown-icon(:name='item.icon' v-if='item.icon')
-                  h3.navigation-desktop__dropdown-text(v-html='item.name')
+      .nav_manual    
+       .navigation-desktop__content    
         .navigation-desktop__contact
           router-link.navigation-desktop__request(:to='content.appointment.href', v-html='content.appointment.label')
           a.navigation-desktop__social(v-for="(icon, i) in content.social_bar", :key="'social - ' + i", target='_blank', rel='noopener noreferrer', :href="icon.href")
-            BaseIcon(:name='icon.icon')
+            BaseIcon(:name='icon.icon')  
+       .navigation-mobile__hamburger(
+        :class="{ 'navigation-mobile__hamburger--active': menuOpen }"
+        @click='toggleMenu()')
+        span
+        span
+        span
+  
+       .navigation-mobile__drawer(
+        :class="{ 'navigation-mobile__drawer--active': menuOpen }")
+        .navigation-mobile__link(
+          v-for='(link, i) in links'
+          :key="'link -' + i"
+          :class="{ 'navigation-mobile__link--active': menuOpen }")
+          router-link(:to='link.path' @click.native='closeMenu()')
+            h1.navigation-mobile__link-text(v-html='link.name')
+          span.btnn(@click='openSubMenu(i)', :class="{ 'navigation-mobile__btnn--active': i === subActive }") 
+            i.fa.fa-angle-down
+          .navigation-mobile__sublinks(
+            :class="{ 'navigation-mobile__sublinks--active': i === subActive }"
+            :style="{ height: link.meta.length * 2.25 + .5 + 'rem' }")
+            router-link.navigation-mobile__sublink(
+              v-for='(sublink, i) in link.meta'
+              :key="'sublink - ' + i"
+              :to='sublink.path'
+              v-html='sublink.name'
+              @click.native='closeMenu()') 
+        .navigation-mobile__link.manualmenu(:class="{ 'navigation-mobile__link--active': menuOpen }")
+          router-link(:to='content.virtual_consultt.link', @click.native='closeMenu()', v-html='content.virtual_consultt.text')
+        .navigation-mobile__link.manualmenu(:class="{ 'navigation-mobile__link--active': menuOpen }")
+          a(:href='content.covid_details.banner_link' target='_blank' v-html='content.covid_details.banner_text')
+                         
+

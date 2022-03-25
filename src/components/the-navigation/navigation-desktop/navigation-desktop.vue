@@ -1,7 +1,6 @@
 <template lang='pug' src='./navigation-desktop.pug'></template>
 
 <script>
-import CustomHomeBanner from 'components/custom/custom-home-banner/custom-home-banner'
 
 export default {
   computed: {
@@ -20,13 +19,10 @@ export default {
   },
   data () {
     return {
-      dropdownShow: false,
-      dropdownSmooth: false,
-      height: 0,
-      left: 0,
       loaded: false,
+      menuOpen: false,
       offsetTop: null,
-      showing: null
+      subActive: null
     }
   },
   created () {
@@ -45,33 +41,36 @@ export default {
     }
   },
   methods: {
-    pageLink (i) {
-      this.$router.push(i.path)
+    isLoaded (data) {
+      if (typeof data !== 'undefined') {
+        this.loaded = true
+      }
     },
-    hoverDropdown (i, k) {
-      let left = this.$refs.root[i].offsetLeft
-      let width = this.$refs.root[i].clientWidth
-      this.showing = i
-      this.left = left + width / 2 + 'px'
-      this.$nextTick(this.setHeight(i))
+    toggleMenu () {
+      if (this.menuOpen) {
+        this.menuOpen = false
+        this.closeSubMenu()
+      } else {
+        this.menuOpen = true
+      }
+      this.toggleScreenStop()
     },
-    setHeight (i) {
-      this.height = this.$refs.link[i].clientHeight + 16 + 'px'
+    openSubMenu (i) {
+      this.subActive === i ? this.subActive = null : this.subActive = i
     },
-    dropdownActive () {
-      this.dropdownShow = true
-      setTimeout(() => {
-        this.dropdownSmooth = true
-      }, 500)
+    closeSubMenu () {
+      this.subActive = null
     },
-    dropdownLeave () {
-      this.dropdownShow = false
-      this.dropdownSmooth = false
-      this.showing = null
+    closeMenu () {
+      this.menuOpen = false
+      this.closeSubMenu()
+      this.toggleScreenStop()
+    },
+    toggleScreenStop () {
+      this.menuOpen ? document.body.classList.add('body-stop') : document.body.classList.remove('body-stop')
     }
   },
   components: {
-    CustomHomeBanner
   }
 }
 </script>

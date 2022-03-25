@@ -7,7 +7,7 @@
     @include phone-lg
       padding-bottom: 2rem
     padding: 2rem 0 4rem
-    color: $sky-blue
+    color: $navy-blue
 
   &__container
     @extend .container
@@ -39,6 +39,19 @@
     color: $brown-grey
 
   &__button
-    @include button
+    position: relative
+    transition: box-shadow .25s ease-in
+    border-radius: 25px
+    box-shadow: none
+    background: $navy-blue
+    padding: 12px 15px
+    text-decoration: none
+    color: $white
+    cursor: pointer
     display: inline-block
     text-decoration: none
+    border: 2px solid $sky-blue    
+
+    &:hover  
+      background: $white
+      color: $navy-blue    

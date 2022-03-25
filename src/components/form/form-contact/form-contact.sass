@@ -85,11 +85,23 @@
     width: 100%
 
   &__submit-button
-    @include button
+    position: relative
+    transition: box-shadow .25s ease-in
+    border-radius: 25px
+    box-shadow: none
+    background: $navy-blue
+    padding: 12px 5px
+    text-decoration: none
+    color: $white
     display: inline-block
     cursor: pointer
     width: 10rem
     text-align: center
+    border: 2px solid $sky-blue
+
+    &:hover  
+      background: $white
+      color: $navy-blue
 
 
   &__thank-you

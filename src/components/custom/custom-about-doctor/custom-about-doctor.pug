@@ -2,7 +2,8 @@
   .custom-about-doctor__container
     .custom-about-doctor__col-top.custom-about-doctor__col--top
       .custom-about-doctor__top-content
-        BaseLazyImg.custom-about-doctor__image(:src='content.image')
+        .aboutdocimg
+          BaseLazyImg.custom-about-doctor__image(:src='content.image')
         .custom-about-doctor__text-box
           h1.custom-about-doctor__title(v-html='content.title')
           .custom-about-doctor__education(v-html='content.education')
@@ -14,3 +15,16 @@
           .custom-about-doctor__body(v-html='content.sub_body')
       .custom-about-doctor__col.custom-about-doctor__col--bottom-right
         BaseLazyImg.custom-about-doctor__image-bottom(:src='content.sub_image')
+  .custom-about-doctor__container.roombox
+    .custom-about-doctor__col-top.custom-about-doctor__col--top
+      .custom-about-doctor__top-content
+        .aboutdocroom
+          .aboutdocroominner
+            .custom-about-doctor__image(role='img' aria-label='' v-bind:style="{ backgroundImage: 'url('+ content.below_doc_img_1 +')'}")
+          .aboutdocroominner  
+            .custom-about-doctor__image(role='img' aria-label='' v-bind:style="{ backgroundImage: 'url('+ content.below_doc_img_2 +')'}")
+          .aboutdocroominner  
+            .custom-about-doctor__image(role='img' aria-label='' v-bind:style="{ backgroundImage: 'url('+ content.below_doc_img_3 +')'}")            
+        .custom-about-doctor__text-box
+          .custom-about-doctor__education
+            h3(v-html='content.below_doc_content')

@@ -27,24 +27,20 @@ const router = new VueRouter({
           anchor: 'welcome'
         },
         {
-          path: '/#doctor',
-          name: 'About The Doctor',
-          anchor: 'doctor'
-        },
-        {
           path: '/#treatments',
           name: 'Treatments',
           anchor: 'treatments'
         },
         {
-          path: '/#facebook',
-          name: 'Facebook',
-          anchor: 'facebook'
-        },
-        {
           path: '/#testimonials',
           name: 'Testimonials',
           anchor: 'testimonials'
+        },
+        {
+          path: '/#facebook',
+          name: 'Facebook',
+          anchor: 'facebook',
+          navigation: false
         }
       ],
       component: Home
@@ -76,14 +72,6 @@ const router = new VueRouter({
           name: 'In the Community',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
           anchor: 'gallery',
-          background: null,
-          icon: null
-        },
-        {
-          path: '/about-us#facebook',
-          name: 'Facebook',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'facebook',
           background: null,
           icon: null
         },
@@ -145,10 +133,10 @@ const router = new VueRouter({
           icon: null
         },
         {
-          path: '/treatments#faq',
-          name: 'FAQ',
+          path: '/treatments#gallery',
+          name: 'Before & Afters Gallery',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'faq',
+          anchor: 'gallery',
           background: null,
           icon: null
         }
@@ -179,17 +167,9 @@ const router = new VueRouter({
         },
         {
           path: '/new-patients#consultation',
-          name: 'Free Consultation',
+          name: 'Free Consultation & Contact',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
           anchor: 'consultation',
-          background: null,
-          icon: null
-        },
-        {
-          path: '/new-patients#contact',
-          name: 'Contact',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
-          anchor: 'contact',
           background: null,
           icon: null
         }
@@ -211,10 +191,34 @@ const router = new VueRouter({
           icon: null
         },
         {
-          path: '/halvorsen-difference#reviews',
-          name: 'Reviews',
+          path: '/halvorsen-difference#service-difference',
+          name: 'Service Difference',
           image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'reviews',
+          anchor: 'service-difference',
+          background: null,
+          icon: null
+        },
+        {
+          path: '/halvorsen-difference#retention-difference',
+          name: 'Retention Difference',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
+          anchor: 'retention-difference',
+          background: null,
+          icon: null
+        },
+        {
+          path: '/halvorsen-difference#community-difference',
+          name: 'Community Difference',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
+          anchor: 'community-difference',
+          background: null,
+          icon: null
+        },
+        {
+          path: '/halvorsen-difference#affordable-difference',
+          name: 'Affordable Difference',
+          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
+          anchor: 'affordable-difference',
           background: null,
           icon: null
         }

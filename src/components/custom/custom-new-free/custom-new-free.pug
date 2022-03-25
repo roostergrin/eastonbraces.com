@@ -5,5 +5,9 @@
       h1.custom-new-free__title(v-html='content.title')
     .custom-new-free__col-body
       .custom-new-free__body(v-html='content.body')
-    .custom-new-free__col-form
-      FormFree
+    .custom_beforeform_text(v-html='content.form_heading')   
+    .custom-new-free__col-section
+      .freeleftimg
+        img(v-bind:src='content.img' alt='')
+      .freeform
+        FormFree

@@ -1,9 +1,9 @@
 .custom-new-contact
   .custom-new-contact__container
     .custom-new-contact__col-title
-      h1.custom-new-contact__title(v-html='content.title')
+      h1.custom-new-contact__title(v-if='content.title' v-html='content.title')
   .custom-new-contact__container
-    .custom-new-contact__col-info
+    .custom-new-contact__col-info.customcolor
       h2.custom-new-contact__subtitle(v-html='content.subtitle')
       a.custom-new-contact__link(
         target='_blank'

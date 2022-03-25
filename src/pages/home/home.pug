@@ -1,12 +1,56 @@
 .pages-home(v-if='props')
-  //- CustomHomeBanner(:content='props["custom_announcement"]')
-  CustomHomeHero(:content='props.hero')
-  //- Due to the background configuration eveything had to be slotted into the Tabs component
-  CustomHomeTabs(:content='props.tabs')
-    //- Top of Tab component, the relocation component
-    //- CustomHomeHeading(:content='props.home_heading', slot='top')
-    //-  Facebook Section
-    BlockFacebook(slot='facebook', :content='props.facebook')
-    //- The testimonial section
-    BlockTestimonials(slot='testimonials', :content='props.testimonials')
-  CustomHomeRetainer(:content='props.retainers')
+  .home_heroo
+    CustomHomeHero(:content='props.hero')
+    .home_herocaption
+      h1
+        span(v-html='props.home_banner_caption.title')
+        i.fa(v-bind:class='props.home_banner_caption.icon')
+  .docwelcome#welcome
+    .docwelcome_container
+      .docwelcome_row
+        .docwelcome_colleft
+          h1(v-html='props.home_welcome_section.title')
+          p(v-html='props.home_welcome_section.content')
+          .custom-about-doctor_btn
+            router-link(v-bind:to='props.home_welcome_section.btn_1_url')
+              span(v-html='props.home_welcome_section.btn_1_text')
+              i.fa(v-bind:class='props.home_welcome_section.btn_icon')
+          .custom-about-doctor_btn    
+            router-link(v-bind:to='props.home_welcome_section.btn_2_url')
+              span(v-html='props.home_welcome_section.btn2_text')
+              i.fa(v-bind:class='props.home_welcome_section.btn_icon')
+        .docwelcome_colright                    
+          .docwelcome_img
+            img(v-bind:src='props.home_welcome_section.image' alt='')             
+  .threesection#treatments.new_golist
+    .docwelcome_container
+      .custom_row
+        .full.top
+          h3(v-html='props.go_where_section.title')
+          h4(v-html='props.go_where_section.subtitle')
+        .thress-section
+          .one-three(v-for='GoList in props.go_where_section.go_list')
+            img(v-bind:src='GoList.image' alt='')
+            h3(v-html='GoList.title')
+            p(v-html='GoList.description')
+            router-link(v-bind:to='GoList.url') Learn More 
+              i.fa.fa-long-arrow-right
+    .full.bottom              
+      .docwelcome_container
+        h5(v-html='props.go_where_section.after_list_content')
+        router-link.go_treat(v-bind:to='props.go_where_section.schedule_btn_url' v-html='props.go_where_section.schedule_btn_text')
+    .docwelcome_container            
+        .two-section
+          .two-three(v-for='GoList2 in props.go_where_section.go_list_2')
+            .svg_wrap
+              img(v-bind:src='GoList2.image' alt='')
+              .team_bg
+                BaseIcon.custom-teamsvg(name='photo-wrap')
+            router-link(v-bind:to='GoList2.url')
+              span(v-html:p='GoList2.name')
+              i.fa.fa-long-arrow-right
+  .testimonialshome#testimonials        
+    CustomHomeTabs(:content='props.tabs')
+      BlockTestimonials(slot='testimonials', :content='props.testimonials') 
+    .custom_fb#facebook  
+      BlockFacebook(slot='facebook', :content='props.facebook')

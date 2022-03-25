@@ -3,6 +3,17 @@
     .custom-treatments-faq__col-title
       h1.custom-treatments-faq__title(v-html='content.title')
     .custom-treatments-faq__col
-      .custom-treatments-faq__content
+      .custom-treatments-faq__content.hid
         .custom-treatments-faq__image(:style="{ backgroundImage: 'url(' + content.image + ')' }")
         h1.custom-treatments-faq__subtitle(v-html='content.subtitle')
+      .custom-treatments-faq__slider
+        .common_slider.beforeafter_slider.newfullwidth
+          swiper(:options='swiperOptionbeforeafter')
+            swiper-slide(v-for='BeforeAfterSlider in content.slides')
+              .common_slide
+                img(v-bind:src='BeforeAfterSlider.image')
+            .swiper-pagination(slot='pagination')   
+            .swiper-button-prev(slot='button-prev')
+              .fa.fa-angle-left
+            .swiper-button-next(slot='button-next') 
+              .fa.fa-angle-right      

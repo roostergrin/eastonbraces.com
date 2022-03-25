@@ -1,6 +1,6 @@
 .custom-treatments-early
   @include laptop-lg
-    background-position: 110% center
+    background-position: top center
   @include tablet-lg
     background-image: none !important
     padding: 6rem 0
@@ -8,7 +8,7 @@
   background-repeat: no-repeat
   background-position: right
   background-size: contain
-  padding: 4rem 0
+  padding: 4rem 0 0
 
   &__container
     @extend .container
@@ -21,7 +21,7 @@
 
   &__title
     padding-bottom: 2rem
-    color: $sky-blue
+    color: #103d82
 
   &__text-box
     min-height: 35rem
@@ -33,7 +33,7 @@
     position: relative
     padding-bottom: .5rem
     padding-left: 1rem
-    color: $sky-blue
+    color: #103d82
 
     &:before,
     &:after
@@ -42,7 +42,7 @@
       left: 0
       transform: translateY(-50%)
       transition: transform .25s ease-in
-      background: $sky-blue
+      background: #103d82
       width: .5rem
       height: 1px
       content: ''
@@ -76,11 +76,11 @@
     a
       transition: color .15s ease-in
       text-decoration: none
-      color: $sky-blue
+      color: #103d82
 
       &:hover
         // sass-lint:disable-all
-        color: darken($sky-blue, 15%)
+        color: darken(#103d82, 15%)
         // sass-lint:enable-all
 
     &--active

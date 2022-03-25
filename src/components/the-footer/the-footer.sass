@@ -3,6 +3,7 @@
     padding-top: 2rem
   position: relative
   padding-top: 8rem
+  z-index: 10
 
   &__background
     @extend .img-full
@@ -107,11 +108,12 @@
     @extend .flex-center
     @include phone-lg
       text-align: center
-    background: $sky-blue
+    background: $navy-blue
     height: 4rem
     text-decoration: none
     color: $white
     font-size: 14px
+    position: relative
 
     &:hover
       color: $white-14
