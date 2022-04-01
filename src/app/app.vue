@@ -4,6 +4,7 @@
 import NavigationDesktop from 'components/the-navigation/navigation-desktop/navigation-desktop'
 import NavigationMobile from 'components/the-navigation/navigation-mobile/navigation-mobile'
 import TheFooter from 'components/the-footer/the-footer'
+import BaseBaseAccess from 'components/base-access/index'
 
 export default {
   async created () {
@@ -18,7 +19,8 @@ export default {
   components: {
     NavigationDesktop,
     NavigationMobile,
-    TheFooter
+    TheFooter,
+    BaseBaseAccess
   },
   computed: {
     contentnav () {

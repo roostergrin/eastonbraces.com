@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Styleguide from '@/pages/styleguide/styleguide'
 import PageNotFound from '@/pages/404/404'
+import Accessibility from '@/pages/accessibility/accessibility'
 import scrollBehavior from '@/shared/functionality/scroll-behavior'
 
 const Home = () => import('@/pages/home/home')
@@ -232,6 +233,13 @@ const router = new VueRouter({
         // }
       ],
       component: HalvorsenDifference
+    },
+    {
+      path: '/accessibility',
+      name: 'Accessibility',
+      navigation: false,
+      list: false,
+      component: Accessibility
     },
     {
       path: '/styleguide',
