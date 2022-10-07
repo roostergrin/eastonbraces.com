@@ -11,6 +11,19 @@
         .block-gradient-image
           .gradient-img
             img(v-bind:src='content.background' alt='')
+  .block-gradient-newslider
+    h4.block-gradient-newslidertitle Invisalign Before and After
+    .invislidernew.common_slider
+      swiper(:options='swiperOptioninvibeforeafter')
+        swiper-slide(v-for='InviBeforeAfterSlider in content.invisalign_before_and_after_slider')
+          .common_slideinvi
+            img(v-bind:src='InviBeforeAfterSlider.img')
+        .swiper-pagination(slot='pagination')   
+        .swiper-button-prev(slot='button-prev')
+          .fa.fa-angle-left
+        .swiper-button-next(slot='button-next') 
+          .fa.fa-angle-right     
+
   .aftergradient_info(v-html='content.afterinfo')          
   .block-gradient__schedules
     .over-box
