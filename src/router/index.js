@@ -1,143 +1,144 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Styleguide from '@/pages/styleguide/styleguide'
-import PageNotFound from '@/pages/404/404'
-import Accessibility from '@/pages/accessibility/accessibility'
-import scrollBehavior from '@/shared/functionality/scroll-behavior'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Styleguide from "@/pages/styleguide/styleguide";
+import PageNotFound from "@/pages/404/404";
+import Accessibility from "@/pages/accessibility/accessibility";
+import scrollBehavior from "@/shared/functionality/scroll-behavior";
 
-const Home = () => import('@/pages/home/home')
-const AboutUs = () => import('@/pages/about-us/about-us')
-const Treatments = () => import('@/pages/treatments/treatments')
-const NewPatients = () => import('@/pages/new-patients/new-patients')
-const HalvorsenDifference = () => import('@/pages/halvorsen-difference/halvorsen-difference')
+const Home = () => import("@/pages/home/home");
+const AboutUs = () => import("@/pages/about-us/about-us");
+const Treatments = () => import("@/pages/treatments/treatments");
+const NewPatients = () => import("@/pages/new-patients/new-patients");
+const HalvorsenDifference = () =>
+  import("@/pages/halvorsen-difference/halvorsen-difference");
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: "/",
+      name: "home",
       navigation: false,
       list: true,
       meta: [
         {
-          path: '/#welcome',
-          name: 'Welcome',
-          anchor: 'welcome'
+          path: "/#welcome",
+          name: "Welcome",
+          anchor: "welcome"
         },
         {
-          path: '/#treatments',
-          name: 'Treatments',
-          anchor: 'treatments'
+          path: "/#treatments",
+          name: "Treatments",
+          anchor: "treatments"
         },
         {
-          path: '/#testimonials',
-          name: 'Testimonials',
-          anchor: 'testimonials'
+          path: "/#testimonials",
+          name: "Testimonials",
+          anchor: "testimonials"
         },
         {
-          path: '/#facebook',
-          name: 'Facebook',
-          anchor: 'facebook',
+          path: "/#facebook",
+          name: "Facebook",
+          anchor: "facebook",
           navigation: false
         }
       ],
       component: Home
     },
     {
-      path: '/about-us',
-      name: 'about us',
+      path: "/about-us",
+      name: "about us",
       navigation: true,
       list: true,
       meta: [
         {
-          path: '/about-us#doctor',
-          name: 'Meet Dr. Halvorsen',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'doctor',
+          path: "/about-us#doctor",
+          name: "Meet Dr. Halvorsen",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg",
+          anchor: "doctor",
           background: null,
           icon: null
         },
         {
-          path: '/about-us#team',
-          name: 'Meet the Team',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'team',
+          path: "/about-us#team",
+          name: "Meet the Team",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg",
+          anchor: "team",
           background: null,
           icon: null
         },
         {
-          path: '/about-us#gallery',
-          name: 'In the Community',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'gallery',
+          path: "/about-us#gallery",
+          name: "In the Community",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg",
+          anchor: "gallery",
           background: null,
           icon: null
         },
         {
-          path: '/about-us#map',
-          name: 'Map & Directions',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg',
-          anchor: 'map',
-          background: 'https://d2h72j3eibsl5m.cloudfront.net/Home_MapBG.jpg',
-          icon: 'Location'
+          path: "/about-us#map",
+          name: "Map & Directions",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide1.jpg",
+          anchor: "map",
+          background: "https://d2h72j3eibsl5m.cloudfront.net/Home_MapBG.jpg",
+          icon: "Location"
         }
       ],
       component: AboutUs
     },
     {
-      path: '/treatments',
-      name: 'treatments',
+      path: "/treatments",
+      name: "treatments",
       navigation: true,
       list: true,
       meta: [
         {
-          path: '/treatments#invisalign',
-          name: 'Invisalign',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'invisalign',
+          path: "/treatments#invisalign",
+          name: "Aligners",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "invisalign",
           background: null,
           icon: null
         },
         {
-          path: '/treatments#braces',
-          name: 'Braces',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'braces',
+          path: "/treatments#braces",
+          name: "Braces",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "braces",
           background: null,
           icon: null
         },
         {
-          path: '/treatments#early',
-          name: 'Early Intervention',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'early',
+          path: "/treatments#early",
+          name: "Early Intervention",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "early",
           background: null,
           icon: null
         },
         {
-          path: '/treatments#adult',
-          name: 'Adult Treatment',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'adult',
+          path: "/treatments#adult",
+          name: "Adult Treatment",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "adult",
           background: null,
           icon: null
         },
         {
-          path: '/treatments#life',
-          name: 'Life with Braces',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'life',
+          path: "/treatments#life",
+          name: "Life with Braces",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "life",
           background: null,
           icon: null
         },
         {
-          path: '/treatments#gallery',
-          name: 'Before & Afters Gallery',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg',
-          anchor: 'gallery',
+          path: "/treatments#gallery",
+          name: "Before & Afters Gallery",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide4.jpg",
+          anchor: "gallery",
           background: null,
           icon: null
         }
@@ -145,32 +146,32 @@ const router = new VueRouter({
       component: Treatments
     },
     {
-      path: '/new-patients',
-      name: 'new patients',
+      path: "/new-patients",
+      name: "new patients",
       navigation: true,
       list: true,
       meta: [
         {
-          path: '/new-patients#first',
-          name: 'First Appointment',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
-          anchor: 'first',
+          path: "/new-patients#first",
+          name: "First Appointment",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg",
+          anchor: "first",
           background: null,
           icon: null
         },
         {
-          path: '/new-patients#investment',
-          name: 'Investment',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
-          anchor: 'investment',
+          path: "/new-patients#investment",
+          name: "Investment",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg",
+          anchor: "investment",
           background: null,
           icon: null
         },
         {
-          path: '/new-patients#consultation',
-          name: 'Free Consultation & Contact',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg',
-          anchor: 'consultation',
+          path: "/new-patients#consultation",
+          name: "Free Consultation & Contact",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/NewPatients_Hero.jpg",
+          anchor: "consultation",
           background: null,
           icon: null
         }
@@ -178,48 +179,48 @@ const router = new VueRouter({
       component: NewPatients
     },
     {
-      path: '/halvorsen-difference',
-      name: 'halvorsen difference',
+      path: "/halvorsen-difference",
+      name: "halvorsen difference",
       navigation: true,
       list: true,
       meta: [
         {
-          path: '/halvorsen-difference#apart',
-          name: 'What Sets Us Apart',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'apart',
+          path: "/halvorsen-difference#apart",
+          name: "What Sets Us Apart",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg",
+          anchor: "apart",
           background: null,
           icon: null
         },
         {
-          path: '/halvorsen-difference#service-difference',
-          name: 'Service Difference',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'service-difference',
+          path: "/halvorsen-difference#service-difference",
+          name: "Service Difference",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg",
+          anchor: "service-difference",
           background: null,
           icon: null
         },
         {
-          path: '/halvorsen-difference#retention-difference',
-          name: 'Retention Difference',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'retention-difference',
+          path: "/halvorsen-difference#retention-difference",
+          name: "Retention Difference",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg",
+          anchor: "retention-difference",
           background: null,
           icon: null
         },
         {
-          path: '/halvorsen-difference#community-difference',
-          name: 'Community Difference',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'community-difference',
+          path: "/halvorsen-difference#community-difference",
+          name: "Community Difference",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg",
+          anchor: "community-difference",
           background: null,
           icon: null
         },
         {
-          path: '/halvorsen-difference#affordable-difference',
-          name: 'Affordable Difference',
-          image: 'https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg',
-          anchor: 'affordable-difference',
+          path: "/halvorsen-difference#affordable-difference",
+          name: "Affordable Difference",
+          image: "https://d2h72j3eibsl5m.cloudfront.net/Comm_Slide3.jpg",
+          anchor: "affordable-difference",
           background: null,
           icon: null
         }
@@ -235,35 +236,35 @@ const router = new VueRouter({
       component: HalvorsenDifference
     },
     {
-      path: '/accessibility',
-      name: 'Accessibility',
+      path: "/accessibility",
+      name: "Accessibility",
       navigation: false,
       list: false,
       component: Accessibility
     },
     {
-      path: '/styleguide',
-      name: 'Styleguide',
+      path: "/styleguide",
+      name: "Styleguide",
       navigation: false,
       list: false,
       component: Styleguide
     },
     {
-      path: '/*',
-      name: '404',
+      path: "/*",
+      name: "404",
       navigation: false,
       list: false,
       component: PageNotFound
     }
   ],
   scrollBehavior
-})
+});
 
 router.beforeEach((to, from, next) => {
   if (to.path !== from.path) {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
-  next()
-})
+  next();
+});
 
-export default router
+export default router;
