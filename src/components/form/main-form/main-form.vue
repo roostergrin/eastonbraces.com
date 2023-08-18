@@ -39,8 +39,8 @@ export default {
         .then(res => {
           this.formSuccess = true
           setTimeout(() => {
-            this.formSubmitted = false
-          }, 1500)
+            window.location.href = 'https://eastonbraces.com/thank-you/'
+          }, 400)
           this.fullName = ''
           this.clientEmail = ''
           this.clientPhone = ''

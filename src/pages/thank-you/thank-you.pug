@@ -1,0 +1,8 @@
+.pages-halvorsen-difference.page-access(v-if='props')
+  BaseHero(:content='props.hero')
+  transition-group(name='fade')
+  .block-text-image__container
+    .block-main-apart#apartthnk
+      .block-apart-image__col-title
+        h1.block-apart-image__title(v-html='`Thank you`')
+        p(v-html='`We will get back to you soon.`') 

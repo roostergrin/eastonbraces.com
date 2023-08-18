@@ -9,6 +9,7 @@ const Home = () => import('@/pages/home/home');
 const AboutUs = () => import('@/pages/about-us/about-us');
 const Treatments = () => import('@/pages/treatments/treatments');
 const NewPatients = () => import('@/pages/new-patients/new-patients');
+import thankyou from '@/pages/thank-you/thank-you';
 const HalvorsenDifference = () =>
   import('@/pages/halvorsen-difference/halvorsen-difference');
 
@@ -234,6 +235,13 @@ const router = new VueRouter({
         // }
       ],
       component: HalvorsenDifference
+    },
+    {
+      path: '/thank-you',
+      name: 'thankyou',
+      navigation: false,
+      list: false,
+      component: thankyou
     },
     {
       path: '/accessibility',
